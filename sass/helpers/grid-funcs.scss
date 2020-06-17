@@ -1,0 +1,26 @@
+/**
+Using display: grid;
+*/
+@import "../sizes/major-sizes.scss";
+
+
+@mixin createGridCols($gridNums, $prefixer, $pieces) {
+  @for $len from 0 to $gridNums+1 {
+    .col-#{$prefixer}-#{$len}-#{$len}{
+      grid-template-columns: #{$len}fr #{$len}fr;
+      @include gridGap($major-spacing);
+    }
+  }
+  
+}
+
+@mixin createPcs($pieces, $prop) {
+  $allValue: "";
+  @for $pcs from 0 to $pieces+1 {
+      $allValue: $pcs
+  }
+}
+
+@mixin  gridGap ($gapLimit) {
+  grid-gap: $gapLimit;
+}
