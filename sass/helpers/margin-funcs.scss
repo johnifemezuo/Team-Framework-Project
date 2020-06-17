@@ -1,0 +1,11 @@
+@mixin marginHelper($top, $right, $left, $bottom) {
+  margin: $top $right $left $bottom;
+}
+
+@mixin  infiniteMargin ($limit) {
+  @for $current from 0 to $limit {
+    .m-#{$current}{
+      margin: $current
+    } 
+  }
+}
