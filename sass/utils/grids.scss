@@ -1,0 +1,3 @@
+@import "../helpers/grid-funcs.scss";
+
+@include createGridCols(8, 'm', 5) 
