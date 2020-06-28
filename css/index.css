@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /**
   ============================================
 
@@ -6,7 +7,8 @@
   ============================================
 */
 .btn {
-  color: green; }
+  color: green;
+}
 
 /**
   || GRID SECTIONS
@@ -16,38 +18,116 @@ Using display: grid;
 */
 .col-m-0-0 {
   grid-template-columns: 0fr 0fr;
-  grid-gap: 0.8rem; }
+  grid-gap: 0.8rem;
+}
 
 .col-m-1-1 {
   grid-template-columns: 1fr 1fr;
-  grid-gap: 0.8rem; }
+  grid-gap: 0.8rem;
+}
 
 .col-m-2-2 {
   grid-template-columns: 2fr 2fr;
-  grid-gap: 0.8rem; }
+  grid-gap: 0.8rem;
+}
 
 .col-m-3-3 {
   grid-template-columns: 3fr 3fr;
-  grid-gap: 0.8rem; }
+  grid-gap: 0.8rem;
+}
 
 .col-m-4-4 {
   grid-template-columns: 4fr 4fr;
-  grid-gap: 0.8rem; }
+  grid-gap: 0.8rem;
+}
 
 .col-m-5-5 {
   grid-template-columns: 5fr 5fr;
-  grid-gap: 0.8rem; }
+  grid-gap: 0.8rem;
+}
 
 .col-m-6-6 {
   grid-template-columns: 6fr 6fr;
-  grid-gap: 0.8rem; }
+  grid-gap: 0.8rem;
+}
 
 .col-m-7-7 {
   grid-template-columns: 7fr 7fr;
-  grid-gap: 0.8rem; }
+  grid-gap: 0.8rem;
+}
 
 .col-m-8-8 {
   grid-template-columns: 8fr 8fr;
   grid-gap: 0.8rem;
 }
 
+.showcase__Area {
+  height: 57vh;
+}
+.showcase__Area-img {
+  background-image: url("/public/assets/img/bunch-of-camels-in-desert-dune-2222241.jpg");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px 0;
+  position: relative;
+  -webkit-clip-path: polygon(100% 0, 100% 35%, 0 82%, 0 0);
+          clip-path: polygon(100% 0, 100% 35%, 0 82%, 0 0);
+}
+.showcase__Area-img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(100.56deg, rgba(27, 104, 174, 0.73) 26%, #D100A3 104.2%);
+}
+.showcase__Area-img .creative__team {
+  height: 200px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  z-index: 1;
+  position: relative;
+  place-content: center;
+  width: 85%;
+  margin: 0 auto;
+  font-family: "Poppins";
+  color: white;
+}
+.showcase__Area-img .creative__team .Ds_wrapper {
+  text-align: center;
+}
+.showcase__Area-img .creative__team .Ds_wrapper .Ds {
+  background-color: black;
+  padding: 10px;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  font-size: 35px;
+  height: 70px;
+  width: 70px;
+  margin: 0 auto;
+}
+.showcase__Area-img .creative__team-design-team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.showcase__Area-img .creative__team-design-team p {
+  font-size: 16px;
+}
+.showcase__Area-img .creative__team-design-team img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
