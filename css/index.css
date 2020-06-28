@@ -62,7 +62,7 @@ Using display: grid;
 }
 
 .showcase__Area {
-  height: 57vh;
+  height: 2git 7vh;
 }
 .showcase__Area-img {
   background-image: url("/public/assets/img/bunch-of-camels-in-desert-dune-2222241.jpg");
@@ -73,8 +73,6 @@ Using display: grid;
   background-size: cover;
   padding: 10px 0;
   position: relative;
-  -webkit-clip-path: polygon(100% 0, 100% 35%, 0 82%, 0 0);
-          clip-path: polygon(100% 0, 100% 35%, 0 82%, 0 0);
 }
 .showcase__Area-img::after {
   content: "";
