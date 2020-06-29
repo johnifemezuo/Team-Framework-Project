@@ -6,8 +6,63 @@
 
   ============================================
 */
-.btn {
-  color: green;
+.section__btn {
+  background-color: #F3F3F3;
+  margin: 20px 0;
+}
+.section__btn_wrap {
+  width: 85%;
+  margin: 0 auto;
+}
+.section__btn_wrap h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  color: #1B6CA8;
+}
+.section__btn_wrap p.btn_radius {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  padding: 8px 0;
+  text-transform: uppercase;
+  color: #1B6CA8;
+}
+.section__btn_wrap_flex {
+  display: flex;
+  width: 100%;
+}
+.section__btn_wrap_flex .btn_wrap {
+  margin-right: 30px;
+  align-self: center;
+}
+.section__btn_wrap_flex .btn_wrap p {
+  font-family: "Poppins";
+  font-size: 18px;
+  padding: 10px 0;
+  color: #000000;
+  text-align: center;
+}
+.section__btn_wrap_flex .btn_wrap .lg_btn, .section__btn_wrap_flex .btn_wrap .md_btn, .section__btn_wrap_flex .btn_wrap .sm_btn {
+  background-color: #1B6CA8;
+  color: #fff;
+  border-radius: 5.74615px;
+  outline: block;
+  border: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+}
+.section__btn_wrap_flex .btn_wrap .lg_btn {
+  padding: 17px;
+}
+.section__btn_wrap_flex .btn_wrap .md_btn {
+  padding: 13px;
+}
+.section__btn_wrap_flex .btn_wrap .sm_btn {
+  padding: 9px;
 }
 
 /**
@@ -128,4 +183,65 @@ Using display: grid;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+.components {
+  height: auto;
+}
+.components .cp_title {
+  width: 85%;
+  margin: 0 auto;
+}
+.components .cp_title h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 2;
+  color: black;
+}
+.components .bg_color {
+  background: #F3F3F3;
+}
+.components .bg_color .cp_ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style-type: none;
+  width: 85%;
+  margin: 0 auto;
+  align-items: center;
+  height: 99px;
+}
+.components .bg_color .cp_ul .cp__li {
+  position: relative;
+}
+.components .bg_color .cp_ul .cp__li :after {
+  content: "";
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: #1B6CA8;
+  left: -15px;
+  top: 10px;
+}
+.components .bg_color .cp_ul .cp__li a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #1B6CA8;
+}
+.components h3 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 57px;
+  /* identical to box height */
+  color: #000000;
 }

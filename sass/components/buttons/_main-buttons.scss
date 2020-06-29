@@ -1,0 +1,75 @@
+.section__btn{
+    background-color:$lightGray-color;
+    margin: 20px 0;
+
+
+    &_wrap{
+        width:  85%;
+        margin:0 auto;
+
+    h3{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 28px;
+            color: #1B6CA8;
+    }
+    p.btn_radius{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            padding: 8px 0;
+            text-transform: uppercase;
+    
+            color: #1B6CA8;
+    }
+   
+       &_flex{
+            // height: 100px;
+            display:flex;
+            width:  100%;
+            
+
+            .btn_wrap{
+                margin-right: 30px;
+                align-self:center;
+
+                p{
+                    font-family: 'Poppins';
+                    font-size: 18px;
+                    padding: 10px 0;
+                    color: #000000;
+                    text-align: center;
+        
+                }
+                .lg_btn, .md_btn, .sm_btn{
+                    background-color: $btn-color;
+                    color:$sbtnText-color;
+                    border-radius: 5.74615px;
+                    outline: block;
+                    border: none;
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: normal;
+
+                    
+                }
+                .lg_btn{
+                   padding:17px;
+                }
+                .md_btn{
+                    padding: 13px;
+                }
+                .sm_btn{
+                    padding: 9px;
+                   
+                    
+                }
+            }
+    
+            
+        }
+    }
+    
+}

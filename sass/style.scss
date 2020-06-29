@@ -8,8 +8,10 @@
 
   ============================================
 */
-@import "./components/buttons/main-buttons.scss";
-@import "./components/margins/bigger-margins.scss";
+@import '../sass/colors/main-colors';
+@import '../sass/colors/button-colors';
+@import "./components/buttons/main-buttons";
+@import "./components/margins/bigger-margins";
 
 /**
   || GRID SECTIONS
@@ -17,7 +19,8 @@
 @import "./utils/grids.scss";
 
 
-@import '../sass/colors/main-colors.scss';
+
 @import '../sass/showcase_image/showcase__Area';
 @import '../sass/reset/reset';
+@import './showcase_image/Component';
 
