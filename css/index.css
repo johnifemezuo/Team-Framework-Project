@@ -8,11 +8,12 @@
 */
 .section__btn {
   background-color: #F3F3F3;
-  margin: 20px 0;
+  margin: 60px 0;
+  padding: 10px 0;
 }
 .section__btn_wrap {
   width: 85%;
-  margin: 0 auto;
+  margin: 60px auto;
 }
 .section__btn_wrap h3 {
   font-family: "Poppins";
@@ -45,7 +46,10 @@
   color: #000000;
   text-align: center;
 }
-.section__btn_wrap_flex .btn_wrap .lg_btn, .section__btn_wrap_flex .btn_wrap .md_btn, .section__btn_wrap_flex .btn_wrap .sm_btn {
+
+.lg_btn, .lg-r_btn, .lg-l_btn, .lg-s_btn,
+.md_btn, .md-r_btn, .md-l_btn, .md-s_btn,
+.sm_btn, .sm-r_btn, .sm-l_btn, .sm-s_btn {
   background-color: #1B6CA8;
   color: #fff;
   border-radius: 5.74615px;
@@ -54,15 +58,92 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: normal;
+  text-align: center;
 }
-.section__btn_wrap_flex .btn_wrap .lg_btn {
-  padding: 17px;
+
+.btn_active {
+  border: 2px solid #52A2DD;
 }
-.section__btn_wrap_flex .btn_wrap .md_btn {
-  padding: 13px;
+
+.btn_hover:hover {
+  background-color: #52A2DD;
 }
-.section__btn_wrap_flex .btn_wrap .sm_btn {
-  padding: 9px;
+
+.btn_disabled {
+  background-color: #A5D3F5;
+}
+
+.lg_btn i, .lg-r_btn i, .lg-l_btn i, .lg-s_btn i,
+.md_btn i, .md-r_btn i, .md-l_btn i, .md-s_btn i,
+.sm_btn i, .sm-r_btn i, .sm-l_btn i, .sm-s_btn i {
+  padding-left: 5px;
+  font-size: 15px;
+}
+
+.lg_btn,
+.lg-r_btn,
+.lg-l_btn,
+.lg-s_btn {
+  padding: 15px 17px;
+}
+
+.md_btn,
+.md-r_btn,
+.md-l_btn,
+.md-s_btn {
+  padding: 12px 15px;
+}
+
+.sm_btn,
+.sm-r_btn,
+.sm-l_btn,
+.sm-s_btn {
+  padding: 10px 12px;
+}
+
+.lg-r_btn,
+.md-r_btn,
+.sm-r_btn {
+  border-radius: 30.6462px;
+}
+
+.lg-l_btn,
+.md-l_btn,
+.sm-l_btn {
+  background-color: unset;
+  border: 0.638462px solid #1B6CA8;
+  color: #1B6CA8;
+}
+
+.lg-s_btn, .md-s_btn, .sm-s_btn {
+  border-radius: 30.6462px;
+  background-color: unset;
+  border: 0.638462px solid #1B6CA8;
+  color: #1B6CA8;
+}
+
+.ico-sm-l_btn, .ico-sm-r_btn {
+  background-color: #1B6CA8;
+  color: #fff;
+  border-radius: 5.74615px;
+  outline: block;
+  border: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+}
+
+.ico-sm-r_btn {
+  border-radius: 50%;
+}
+
+.ico-sm-l_btn {
+  border-radius: 5.74615px;
 }
 
 /**
@@ -120,10 +201,9 @@ Using display: grid;
   height: 2git 7vh;
 }
 .showcase__Area-img {
-  background-image: url("/public/assets/img/bunch-of-camels-in-desert-dune-2222241.jpg");
+  background-image: url("/Css-Framework/public/assets/img/bunch-of-camels-in-desert-dune-2222241.jpg");
   width: 100%;
   height: 100%;
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 10px 0;
