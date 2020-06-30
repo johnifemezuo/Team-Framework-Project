@@ -195,8 +195,7 @@ Using display: grid;
 .col-m-8-8 {
   grid-template-columns: 8fr 8fr;
   grid-gap: 0.8rem;
-<<<<<<< HEAD
-=======
+
 }
 
 .showcase__Area {
@@ -265,9 +264,7 @@ Using display: grid;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-<<<<<<< HEAD
->>>>>>> ShowcaseHeader
-=======
+
 }
 
 .components {
@@ -329,5 +326,5 @@ Using display: grid;
   line-height: 57px;
   /* identical to box height */
   color: #000000;
->>>>>>> component
+
 }
