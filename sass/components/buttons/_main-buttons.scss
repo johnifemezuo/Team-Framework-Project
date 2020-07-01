@@ -1,6 +1,6 @@
 .section__btn{
     background-color:$lightGray-color;
-    margin:60px 0;
+    margin:60px 0 0;
     padding:10px 0 ;
 
 
@@ -44,14 +44,9 @@
                     text-align: center;
         
                 }
-             
-
-           
-
                
             }
-    
-            
+  
         }
     }
     
@@ -105,19 +100,19 @@
     .lg-r_btn, 
     .lg-l_btn,
     .lg-s_btn {
-        padding:15px 17px;
+        padding:15px 18px;
     }
     .md_btn,  
     .md-r_btn, 
     .md-l_btn ,
     .md-s_btn {
-        padding: 12px 15px;
+        padding: 12px 16px;
     }
     .sm_btn, 
     .sm-r_btn ,
     .sm-l_btn,
     .sm-s_btn {
-        padding: 10px 12px;
+        padding: 10px 14px;
     }
 
     //================== ROUNDED BUTTON WITH BACKGROUND COLOR ==================
