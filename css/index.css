@@ -337,8 +337,6 @@ Using display: grid;
   line-height: 57px;
   /* identical to box height */
   color: #000000;
-<<<<<<< HEAD
-=======
 }
 
 .form_wrapper {
@@ -451,5 +449,4 @@ Using display: grid;
 .Dropdown_grey {
   background: #F3F3F3;
   border: 1px solid #999999;
->>>>>>> FormControls
 }
