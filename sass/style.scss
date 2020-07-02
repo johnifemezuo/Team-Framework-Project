@@ -8,11 +8,13 @@
 
   ============================================
 */
+
+@import "./utils/global.scss";
 @import '../sass/colors/main-colors';
 @import '../sass/colors/button-colors';
 @import "./components/buttons/main-buttons";
 @import "./components/margins/bigger-margins";
-
+@import "./components/buttons/button-defaults.scss";
 /**
   || GRID SECTIONS
 */
