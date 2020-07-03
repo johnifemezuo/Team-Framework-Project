@@ -24,3 +24,17 @@ Using display: grid;
 @mixin  gridGap ($gapLimit) {
   grid-gap: $gapLimit;
 }
+
+@mixin  createGrid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 2px;
+}
+
+@mixin createGridSpan($limit) {
+  @for $i from 1 to $limit {
+    .g-col-#{$i} {
+      grid-column: span $i;
+    }
+  }
+}
