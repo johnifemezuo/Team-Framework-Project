@@ -26,3 +26,10 @@
 @import '../sass/reset/reset';
 @import './showcase_image/Component';
 
+/**
+|| INPUT SECTION
+*/
+@import "./helpers/input.scss";
+@import "../sass/colors/form-colors.scss";
+@import "./components/inputs/input-widths.scss";
+@import "./components/inputs/input-default.scss";
