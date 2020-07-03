@@ -9,6 +9,15 @@
   ============================================
 */
 
+// SIZE
+@import "./sizes/major-sizes.scss";
+
+// WRAPPERS
+@import "./utils/wrapper.scss";
+
+// MARGIN AND PADDINGS
+@import "./utils/margin.scss";
+
 @import "./utils/global.scss";
 @import '../sass/colors/main-colors';
 @import '../sass/colors/button-colors';
@@ -19,7 +28,7 @@
   || GRID SECTIONS
 */
 @import "./utils/grids.scss";
-
+@import "./utils/grid_helper.scss";
 
 
 @import '../sass/showcase_image/showcase__Area';
