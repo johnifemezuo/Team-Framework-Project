@@ -2,7 +2,8 @@
     height:2git 7vh;
    
      &-img{
-       background-image: url('/Css-Framework/public/assets/img/bunch-of-camels-in-desert-dune-2222241.jpg');
+    //    background-image: url(../public/assets/img/bunch-of-camels-in-desert-dune-2222241.jpg);
+
        width: 100%;
        height:100%;
        background-repeat: no-repeat;
@@ -54,6 +55,21 @@
                      display: flex;
                      justify-content: center;
                      align-items: center;
+
+                     div{
+                         position: relative;
+
+                         &:after{
+                             content: '';
+                             position: absolute;
+                             background: #FFFFFF;
+                             border-radius: 1.5px;
+                             width: 110px;
+                             height: 2px;
+                             bottom: 2px;
+                             left:-20px;
+                         }
+                     }
  
                      p {
                          font-size: 16px;
