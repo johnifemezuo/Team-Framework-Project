@@ -1,0 +1,41 @@
+.section__btn{
+    // background-color:$lightGray-color;
+    background-color: #fff;
+    margin:60px 0 0;
+    padding:10px 0 ;
+
+
+    &_wrap{
+        width:  85%;
+        margin:60px auto;
+
+    h3{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 28px;
+            color: #1B6CA8;
+    }
+    p.btn_radius{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            padding: 8px 0;
+            text-transform: uppercase;
+    
+            color: #1B6CA8;
+    }
+   
+       .btn_flex_wrap{
+            // height: 100px;
+            // display:flex;
+            justify-content: space-between;
+            
+
+            
+  
+        }
+    }
+    
+}
