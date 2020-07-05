@@ -224,7 +224,7 @@ Using display: grid;
   grid-gap: 0.8rem; }
 
 .section__btn {
-  background-color: #fff;
+  background-color: #F3F3F3;
   margin: 60px 0 0;
   padding: 10px 0; }
   .section__btn_wrap {
@@ -244,8 +244,6 @@ Using display: grid;
       padding: 8px 0;
       text-transform: uppercase;
       color: #1B6CA8; }
-    .section__btn_wrap .btn_flex_wrap {
-      justify-content: space-between; }
 
 .showcase__Area {
   height: 27vh; }
