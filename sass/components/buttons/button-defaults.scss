@@ -8,11 +8,11 @@
   padding: .5rem .80rem;
   outline: none;
   border: 2px solid $btnDefaultColor;
-  // min-width: 100px;
-  font: inherit;
+  min-width: 100px;
+  font:inherit;
   font-size: inherit;
   font-family: inherit;
-  border-radius: 4px;
+  border-radius: 6px;
   box-shadow: 0px 0px 3px $btnDefaultColor;
   cursor: pointer;
   appearance: button;
@@ -34,54 +34,102 @@
   }
 }
 
+// BTN SIZE ELG
 .btn__exlg{
     padding: .7rem 1.1rem;
     min-width: 120px;
     font-size: 115%;
   }
 
+// BTN SIZE LG
  .btn__lg{
       padding: .6rem 1rem;
       min-width: 120px;
       font-size: 115%;
   }
+  // BTN SIZE MD
   .btn__md{
       padding: .5rem .8rem;
       min-width: 100px;
-      font-size: 110%;
+      font-size: 100%;
   }
+  //  BTN SIZE SM
   .btn__sm{
-      padding: .3rem .5rem;
+      padding: .4rem .5rem;
       min-width: 100px;
-      font-size: 110%;
+      font-size: 95%;
   }
+
+  // BTN SIZE EXSM
   .btn__exsm{
     padding: .2rem .2rem;
-    min-width: 60px;
-    font-size: 110%;
+    min-width: 80px;
+    font-size: 100%;
   }
 
 
+
+//======================= Default Hovering Effect==========================
 .btn__hover:hover{
   background-color: $btnDefaultColorHover;
 }
-// $component-color-hover:
+
+//======================= Reset Border  ==========================
+.btn__reset__border{
+  border-radius: unset!important;
+}
+// <================ Button Radius  Global Styling here   ========================>
+.btn__round__primary, .btn__round__warning, .btn__round__success, .btn__round__danger, .btn__round__info{
+  background-color: unset;
+  color: $black-color;
+  border-radius: 23.8154px;
+
+  &:focus{
+    border-radius: 23.8154px;
+    border: 1px solid transparent;
+  }
+}
+
+
+// <================  BORDER Round  Global Styling here ========================>
+.btn__border__primary, .btn__border__warning,  .btn__border__success, .btn__border__danger, .btn__border__info{
+  background-color: unset;
+  color: $black-color;
+  border-radius: 10px;
+
+  &:focus{
+    border: 1px solid transparent;
+    border-radius: 10px;
+  }
+}
 
 
 .btn__primary{
-   background-color:$component-color;
+   background-color:$primary-color;
    color: $secondary-color;
 
     &.btn__hover:hover{
-      background-color: $component-color-hover;
+      background-color: $primary-color-hover;
     }
-
     &:focus{
       border: 1px solid transparent;
       box-shadow: 0px 0px 0px 2px #122b40;
     }
-}
 
+}
+// Button Radius and BORDER
+.btn__round__primary, .btn__border__primary{
+  border: 2px solid $component-color;
+
+  &.btn__hover:hover{
+    background-color: $primary-color-hover;
+    color:$secondary-color!important;
+  }
+  &:focus{
+    box-shadow: 0px 0px 0px 2px #122b40;
+  }
+ 
+}
 
 
 .btn__success{
@@ -95,12 +143,25 @@
     border: 1px solid transparent;
     box-shadow: 0px 0px 0px 2px #255625;
   }
+  
 }
+// Button Radius and BORDER
+.btn__round__success, .btn__border__success{
+  border: 2px solid  $success-color;
 
+  &.btn__hover:hover{
+    background-color:$success-color;
+    color:$secondary-color!important;
+  }
+  &:focus{
+    box-shadow: 0px 0px 0px 2px #255625;
+  }
+}
 
 
 .btn__warning{
    background-color: $warning-color;
+   color: $secondary-color;
 
    &.btn__hover:hover{
     background-color:$warning-hover-color; 
@@ -109,11 +170,25 @@
     box-shadow: 0px 0px 0px 2px#985f0d;
   }
 }
+// Button Radius and BORDER
+.btn__round__warning, .btn__border__warning{
+  border: 2px solid  $warning-color;
+
+  &.btn__hover:hover{
+    background-color: $warning-color;
+    color:$secondary-color!important;
+  }
+  &:focus{
+    box-shadow: 0px 0px 0px 2px #985f0d;
+  
+  }
+}
 
 
 
 .btn__info{
   background-color: $info-color;
+  color: $secondary-color;
 
   &.btn__hover:hover{
     background-color:  $info-hover-color;
@@ -123,6 +198,21 @@
   }
       
 }
+// Button Radius and BORDER
+.btn__round__info, .btn__border__info{
+  border: 2px solid $info-color;
+
+  &.btn__hover:hover{
+    background-color: $info-color;
+    color:$secondary-color!important;
+  }
+  &:focus{
+    box-shadow: 0px 0px 0px 2px #1b6d85;;
+  
+  }
+}
+
+
 
 
 .btn__danger{
@@ -136,5 +226,27 @@
     box-shadow: 0px 0px 0px 2px#761c19;
   }
 }
+// Button Radius and BORDER
+.btn__round__danger, .btn__border__danger{
+  border: 2px solid $danger-color;
 
-// // BTN SIZE
+  &.btn__hover:hover{
+    background-color: $danger-color;
+    color:$secondary-color!important;
+  }
+
+  &:focus{
+    box-shadow: 0px 0px 0px 2px #761c19;
+  
+  }
+}
+
+
+
+
+
+
+
+// .btn_rad{
+//   border-radius: 23.8154px
+// }

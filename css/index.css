@@ -25,10 +25,11 @@ body {
   padding: .5rem .80rem;
   outline: none;
   border: 2px solid #f8f9fa;
+  min-width: 100px;
   font: inherit;
   font-size: inherit;
   font-family: inherit;
-  border-radius: 4px;
+  border-radius: 6px;
   box-shadow: 0px 0px 3px #f8f9fa;
   cursor: pointer;
   appearance: button;
@@ -64,20 +65,39 @@ body {
 .btn__md {
   padding: .5rem .8rem;
   min-width: 100px;
-  font-size: 110%; }
+  font-size: 100%; }
 
 .btn__sm {
-  padding: .3rem .5rem;
+  padding: .4rem .5rem;
   min-width: 100px;
-  font-size: 110%; }
+  font-size: 95%; }
 
 .btn__exsm {
   padding: .2rem .2rem;
-  min-width: 60px;
-  font-size: 110%; }
+  min-width: 80px;
+  font-size: 100%; }
 
 .btn__hover:hover {
   background-color: #dadada; }
+
+.btn__reset__border {
+  border-radius: unset !important; }
+
+.btn__round__primary, .btn__round__warning, .btn__round__success, .btn__round__danger, .btn__round__info {
+  background-color: unset;
+  color: black;
+  border-radius: 23.8154px; }
+  .btn__round__primary:focus, .btn__round__warning:focus, .btn__round__success:focus, .btn__round__danger:focus, .btn__round__info:focus {
+    border-radius: 23.8154px;
+    border: 1px solid transparent; }
+
+.btn__border__primary, .btn__border__warning, .btn__border__success, .btn__border__danger, .btn__border__info {
+  background-color: unset;
+  color: black;
+  border-radius: 10px; }
+  .btn__border__primary:focus, .btn__border__warning:focus, .btn__border__success:focus, .btn__border__danger:focus, .btn__border__info:focus {
+    border: 1px solid transparent;
+    border-radius: 10px; }
 
 .btn__primary {
   background-color: #2e6da4;
@@ -86,6 +106,14 @@ body {
     background-color: #286090; }
   .btn__primary:focus {
     border: 1px solid transparent;
+    box-shadow: 0px 0px 0px 2px #122b40; }
+
+.btn__round__primary, .btn__border__primary {
+  border: 2px solid #1B6CA8; }
+  .btn__round__primary.btn__hover:hover, .btn__border__primary.btn__hover:hover {
+    background-color: #286090;
+    color: white !important; }
+  .btn__round__primary:focus, .btn__border__primary:focus {
     box-shadow: 0px 0px 0px 2px #122b40; }
 
 .btn__success {
@@ -97,18 +125,44 @@ body {
     border: 1px solid transparent;
     box-shadow: 0px 0px 0px 2px #255625; }
 
+.btn__round__success, .btn__border__success {
+  border: 2px solid #449d44; }
+  .btn__round__success.btn__hover:hover, .btn__border__success.btn__hover:hover {
+    background-color: #449d44;
+    color: white !important; }
+  .btn__round__success:focus, .btn__border__success:focus {
+    box-shadow: 0px 0px 0px 2px #255625; }
+
 .btn__warning {
-  background-color: #ec971f; }
+  background-color: #ec971f;
+  color: white; }
   .btn__warning.btn__hover:hover {
     background-color: #F0AD4E; }
   .btn__warning:focus {
     box-shadow: 0px 0px 0px 2px #985f0d; }
 
+.btn__round__warning, .btn__border__warning {
+  border: 2px solid #ec971f; }
+  .btn__round__warning.btn__hover:hover, .btn__border__warning.btn__hover:hover {
+    background-color: #ec971f;
+    color: white !important; }
+  .btn__round__warning:focus, .btn__border__warning:focus {
+    box-shadow: 0px 0px 0px 2px #985f0d; }
+
 .btn__info {
-  background-color: #5bc0de; }
+  background-color: #5bc0de;
+  color: white; }
   .btn__info.btn__hover:hover {
     background-color: #31b0d5; }
   .btn__info:focus {
+    box-shadow: 0px 0px 0px 2px #1b6d85; }
+
+.btn__round__info, .btn__border__info {
+  border: 2px solid #5bc0de; }
+  .btn__round__info.btn__hover:hover, .btn__border__info.btn__hover:hover {
+    background-color: #5bc0de;
+    color: white !important; }
+  .btn__round__info:focus, .btn__border__info:focus {
     box-shadow: 0px 0px 0px 2px #1b6d85; }
 
 .btn__danger {
@@ -117,6 +171,14 @@ body {
   .btn__danger.btn__hover:hover {
     background-color: #d9534f; }
   .btn__danger:focus {
+    box-shadow: 0px 0px 0px 2px #761c19; }
+
+.btn__round__danger, .btn__border__danger {
+  border: 2px solid #c9302c; }
+  .btn__round__danger.btn__hover:hover, .btn__border__danger.btn__hover:hover {
+    background-color: #c9302c;
+    color: white !important; }
+  .btn__round__danger:focus, .btn__border__danger:focus {
     box-shadow: 0px 0px 0px 2px #761c19; }
 
 /**
@@ -167,7 +229,7 @@ Using display: grid;
   padding: 10px 0; }
   .section__btn_wrap {
     width: 85%;
-    margin: 60px auto; }
+    margin: 40px auto; }
     .section__btn_wrap h3 {
       font-family: 'Poppins';
       font-style: normal;
@@ -216,7 +278,7 @@ Using display: grid;
       .showcase__Area-img .creative__team .Ds_wrapper {
         text-align: center; }
         .showcase__Area-img .creative__team .Ds_wrapper .Ds {
-          background-color: black;
+          background-color: #2e6da4;
           padding: 10px;
           display: grid;
           place-content: center;
@@ -264,7 +326,7 @@ Using display: grid;
       font-weight: 500;
       font-size: 38px;
       line-height: 2;
-      color: black; }
+      color: #2e6da4; }
   .components .bg_color {
     background: #F3F3F3; }
     .components .bg_color .cp_ul {
@@ -284,7 +346,7 @@ Using display: grid;
           height: 8px;
           width: 8px;
           border-radius: 50%;
-          background-color: #2e6da4;
+          background-color: #1B6CA8;
           left: -15px;
           top: 10px; }
         .components .bg_color .cp_ul .cp__li a {
@@ -294,7 +356,7 @@ Using display: grid;
           font-size: 20px;
           line-height: 30px;
           text-decoration-line: underline;
-          color: #2e6da4; }
+          color: #1B6CA8; }
   .components h3 {
     font-family: Poppins;
     font-style: normal;
@@ -312,7 +374,7 @@ Using display: grid;
     font-style: normal;
     font-weight: normal;
     font-size: 28px;
-    color: #2e6da4;
+    color: #1B6CA8;
     padding: 10px 0px; }
   .form_wrapper p {
     font-style: normal;
@@ -320,7 +382,7 @@ Using display: grid;
     font-size: 16px;
     line-height: 24px;
     text-transform: uppercase;
-    color: #2e6da4;
+    color: #1B6CA8;
     padding: 10px 0; }
   .form_wrapper--flex {
     display: grid;
