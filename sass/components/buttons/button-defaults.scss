@@ -69,7 +69,11 @@
   }
 
 
+.btn_icon_chev_rg{
+  content: '';
+  position: absolute;
 
+}
 //======================= Default Hovering Effect==========================
 .btn__hover:hover{
   background-color: $btnDefaultColorHover;
