@@ -1,0 +1,29 @@
+.inp{
+    border: none;
+    outline: none;
+    padding: .9rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    color: $text-color;
+    font-size: inherit;
+    letter-spacing: 1px;
+    font-family: inherit;
+    box-shadow: 0px 0px 6px 2px $shadow-color;
+    
+    @include default_transition();
+
+    &::placeholder{
+        font-size: 1rem;
+        letter-spacing: 1px;
+        color: $placeholder-color;
+    }    
+
+    &:focus{
+    box-shadow: 0px 0px 2px 1px $success-color;
+    }
+
+}
+
+.color{
+    background-color: $transparent;
+}

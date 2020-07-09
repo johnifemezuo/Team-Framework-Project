@@ -8,19 +8,37 @@
 
   ============================================
 */
+
+// SIZE
+@import "./sizes/major-sizes.scss";
+
+// WRAPPERS
+@import "./utils/wrapper.scss";
+
+// MARGIN AND PADDINGS
+@import "./utils/margin.scss";
+
+@import "./utils/global.scss";
 @import '../sass/colors/main-colors';
 @import '../sass/colors/button-colors';
 @import "./components/buttons/main-buttons";
 @import "./components/margins/bigger-margins";
-
+@import "./components/buttons/button-defaults.scss";
 /**
   || GRID SECTIONS
 */
 @import "./utils/grids.scss";
+@import "./utils/grid_helper.scss";
 
-
-
+@import './helpers/frame-work-ui/button__section/button__section.scss';
 @import '../sass/showcase_image/showcase__Area';
-@import '../sass/reset/reset';
 @import './showcase_image/Component';
+@import './components/form/formInput';
 
+/**
+|| INPUT SECTION
+*/
+@import "./helpers/input.scss";
+@import "../sass/colors/form-colors.scss";
+@import "./components/inputs/input-widths.scss";
+@import "./components/inputs/input-default.scss";
