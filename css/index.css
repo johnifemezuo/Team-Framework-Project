@@ -3045,7 +3045,9 @@
   outline: none;
   text-decoration: none;
   font-size: 98%;
-  font-variant: 1.2rem; }
+  font-variant: 1.2rem;
+  padding: 0;
+  margin: 0; }
 
 body {
   font-family: FontAwesome; }
@@ -3352,6 +3354,7 @@ Using display: grid;
 .showcase__Area {
   height: 27vh; }
   .showcase__Area-img {
+    background-image: url("/public/assets/img/bunch-of-camels-in-desert-dune-2222241.jpg");
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
