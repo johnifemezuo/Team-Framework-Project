@@ -5,13 +5,13 @@
 .btn {
   box-sizing: border-box;
   display: inline-block;
-  padding: .5rem .80rem;
+  padding: .6rem .80rem;
   outline: none;
   border: 2px solid transparent;
   min-width: 100px;
-  font:inherit;
   font-size: inherit;
   font-family: inherit;
+  margin: 0;
   border-radius: 6px;
   box-shadow: 0px 0px 3px $btnDefaultColor;
   cursor: pointer;
@@ -24,6 +24,7 @@
   user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+  position: relative;
   @include default_transition();
   &.btn_full_w{
     @include full_w()
@@ -36,58 +37,68 @@
 
 // BTN SIZE ELG
 .btn__ex__lg{
-    padding: .7rem 1.1rem;
+    padding: .77rem 1.1rem;
     min-width: 150px;
-    font-size: 135%;
+    font-size: 1.4em;
   }
 
 // BTN SIZE LG
  .btn__lg{
-      padding: .6rem 1rem;
+      padding: .62rem .9rem;
       min-width: 140px;
-      font-size: 125%;
+      font-size: 1.3em;
   }
   // BTN SIZE MD
   .btn__md{
-      padding: .5rem .8rem;
+      padding: .50rem .7rem;
       min-width: 130px;
-      font-size: 115%;
+      font-size: 1.2em;
   }
   //  BTN SIZE SM
   .btn__sm{
-      padding: .4rem .5rem;
-      min-width: 110px;
-      font-size: 109%;
+      padding: .45rem .5rem;
+      min-width: 120px;
+      font-size: 1.1em;
   }
 
-  // BTN SIZE EXSM
+  // BTN SIZE EXSM .btn__round__info{
   .btn__ex__sm{
-    padding: .3rem .4rem;
-    min-width: 100px;
-    font-size: 100%;
+      padding: .40rem .7rem;
+      min-width: 100px;
+      font-size: 1em;
     
   }
 
 
-.btn_icon_chev_rg{
-  content: '';
-  position: absolute;
 
-}
 //======================= Default Hovering Effect==========================
 .btn__hover:hover{
   background-color: $btnDefaultColorHover;
 }
 
+// btn__iocn_border__radius
+
+.btn__icon__circle{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    min-width: 0;
+}
+.btn__icon__squre{
+    height: 50px;
+    width: 50px;
+    min-width: 0;
+}
 //======================= Reset Border  ==========================
-.btn__reset__border{
+.btn__no__border_radius{
   border-radius: unset!important;
 }
 // <================ Button Radius  Global Styling here   ========================>
 .btn__round__primary, .btn__round__warning, .btn__round__success, .btn__round__danger, .btn__round__info{
-  background-color: unset;
-  color: $black-color;
-  border-radius: 23.8154px;
+    background-color: unset;
+    color: $black-color;
+    border-radius: 23.8154px;
 
   &:focus{
     border-radius: 23.8154px;
@@ -98,9 +109,9 @@
 
 // <================  BORDER Round  Global Styling here ========================>
 .btn__border__primary, .btn__border__warning,  .btn__border__success, .btn__border__danger, .btn__border__info{
-  background-color: unset;
-  color: $black-color;
-  border-radius: 10px;
+    background-color: unset;
+    color: $black-color;
+    border-radius: 10px;
 
   &:focus{
     border-radius: 10px;
@@ -116,8 +127,7 @@
       background-color: $primary-color-hover;
     }
     &:focus{
-      box-shadow: 0px 0px 0px 2px #122b40;
-
+      box-shadow: 0px 0px 0px 2px #7fbcff
     }
 
 }
@@ -130,7 +140,7 @@
     color:$secondary-color!important;
   }
   &:focus{
-    box-shadow: 0px 0px 0px 2px #122b40;
+    box-shadow: 0px 0px 0px 2px #7fbcff;
   }
 }
 
@@ -143,7 +153,7 @@
     background-color: $success-color-hover;
   }
   &:focus{
-    box-shadow: 0px 0px 0px 2px #255625;
+    box-shadow: 0px 0px 0px 2px #93d3a1;
   }
 }
 // Button Radius and BORDER
@@ -155,11 +165,11 @@
     color:$secondary-color!important;
   }
   &:focus{
-    box-shadow: 0px 0px 0px 2px #255625;
+    box-shadow: 0px 0px 0px 2px #93d3a1;
   }
 }
 
-
+// #7fbcff
 .btn__warning{
    background-color: $warning-color;
    color: $secondary-color;
@@ -168,7 +178,7 @@
     background-color:$warning-hover-color; 
   }
   &:focus {
-    box-shadow: 0px 0px 0px 2px#985f0d;
+    box-shadow: 0px 0px 0px 2px #ffe082;
   }
 }
 // Button Radius and BORDER
@@ -180,7 +190,7 @@
     color:$secondary-color!important;
   }
   &:focus{
-    box-shadow: 0px 0px 0px 2px #985f0d;
+    box-shadow: 0px 0px 0px 2px #ffe082;
   
   }
 }
@@ -208,7 +218,7 @@
     color:$secondary-color!important;
   }
   &:focus{
-    box-shadow: 0px 0px 0px 2px #1b6d85;;
+    box-shadow: 0px 0px 0px 2px #1b6d85;
   
   }
 }
@@ -224,7 +234,7 @@
     background-color:$danger-hover;
   }
   &:focus {
-    box-shadow: 0px 0px 0px 2px#761c19;
+    box-shadow: 0px 0px 0px 2px#ed99a1;
   }
 }
 // Button Radius and BORDER
@@ -237,12 +247,25 @@
   }
 
   &:focus{
-    box-shadow: 0px 0px 0px 2px #761c19;
+    box-shadow: 0px 0px 0px 2px #ed99a1;
   
   }
 }
 
 
+.btn__dark{
+  background-color:$dark;
+  color: $secondary-color;
+
+  &.btn__hover:hover{
+    background-color:#222;
+  }
+
+  &:focus{
+    box-shadow: 0px 0px 0px 2px #999c9f;
+  
+  }
+}
 
 
 
