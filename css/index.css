@@ -3045,10 +3045,12 @@
   outline: none;
   text-decoration: none;
   font-size: 98%;
-  font-variant: 1.2rem; }
+  font-variant: 1.2rem;
+  padding: 0;
+  margin: 0; }
 
 body {
-  font-family: Poppins; }
+  font-family: FontAwesome; }
 
 /**
   DEFAULTS
@@ -3056,13 +3058,13 @@ body {
 .btn {
   box-sizing: border-box;
   display: inline-block;
-  padding: .5rem .80rem;
+  padding: .6rem .80rem;
   outline: none;
-  border: 2px solid #f8f9fa;
+  border: 2px solid transparent;
   min-width: 100px;
-  font: inherit;
   font-size: inherit;
   font-family: inherit;
+  margin: 0;
   border-radius: 6px;
   box-shadow: 0px 0px 3px #f8f9fa;
   cursor: pointer;
@@ -3075,6 +3077,7 @@ body {
   user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+  position: relative;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   -moz-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
@@ -3083,38 +3086,50 @@ body {
   .btn.btn_full_w {
     width: 100%; }
   .btn:focus {
-    border: 1px solid transparent;
-    box-shadow: 0px 0px 0px 2px #f8f9fa; }
+    box-shadow: 0px 0px 0px 2px #f8f9fa;
+    box-sizing: border-box; }
 
-.btn__exlg {
-  padding: .7rem 1.1rem;
-  min-width: 120px;
-  font-size: 115%; }
+.btn__ex__lg {
+  padding: .77rem 1.1rem;
+  min-width: 150px;
+  font-size: 1.4em; }
 
 .btn__lg {
-  padding: .6rem 1rem;
-  min-width: 120px;
-  font-size: 115%; }
+  padding: .62rem .9rem;
+  min-width: 140px;
+  font-size: 1.3em; }
 
 .btn__md {
-  padding: .5rem .8rem;
-  min-width: 100px;
-  font-size: 100%; }
+  padding: .50rem .7rem;
+  min-width: 130px;
+  font-size: 1.2em; }
 
 .btn__sm {
-  padding: .4rem .5rem;
-  min-width: 100px;
-  font-size: 95%; }
+  padding: .45rem .5rem;
+  min-width: 120px;
+  font-size: 1.1em; }
 
-.btn__exsm {
-  padding: .2rem .2rem;
-  min-width: 80px;
-  font-size: 100%; }
+.btn__ex__sm {
+  padding: .40rem .7rem;
+  min-width: 100px;
+  font-size: 1em; }
 
 .btn__hover:hover {
   background-color: #dadada; }
 
-.btn__reset__border {
+.btn__icon__circle {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  min-width: 0; }
+
+.btn__icon__squre {
+  height: 50px;
+  width: 50px;
+  min-width: 0; }
+
+.btn__no__border_radius {
   border-radius: unset !important; }
 
 .btn__round__primary, .btn__round__warning, .btn__round__success, .btn__round__danger, .btn__round__info {
@@ -3122,15 +3137,13 @@ body {
   color: black;
   border-radius: 23.8154px; }
   .btn__round__primary:focus, .btn__round__warning:focus, .btn__round__success:focus, .btn__round__danger:focus, .btn__round__info:focus {
-    border-radius: 23.8154px;
-    border: 1px solid transparent; }
+    border-radius: 23.8154px; }
 
 .btn__border__primary, .btn__border__warning, .btn__border__success, .btn__border__danger, .btn__border__info {
   background-color: unset;
   color: black;
   border-radius: 10px; }
   .btn__border__primary:focus, .btn__border__warning:focus, .btn__border__success:focus, .btn__border__danger:focus, .btn__border__info:focus {
-    border: 1px solid transparent;
     border-radius: 10px; }
 
 .btn__primary {
@@ -3139,8 +3152,7 @@ body {
   .btn__primary.btn__hover:hover {
     background-color: #286090; }
   .btn__primary:focus {
-    border: 1px solid transparent;
-    box-shadow: 0px 0px 0px 2px #122b40; }
+    box-shadow: 0px 0px 0px 2px #7fbcff; }
 
 .btn__round__primary, .btn__border__primary {
   border: 2px solid #1B6CA8; }
@@ -3148,7 +3160,7 @@ body {
     background-color: #286090;
     color: white !important; }
   .btn__round__primary:focus, .btn__border__primary:focus {
-    box-shadow: 0px 0px 0px 2px #122b40; }
+    box-shadow: 0px 0px 0px 2px #7fbcff; }
 
 .btn__success {
   background-color: #449d44;
@@ -3156,8 +3168,7 @@ body {
   .btn__success.btn__hover:hover {
     background-color: #4caf50; }
   .btn__success:focus {
-    border: 1px solid transparent;
-    box-shadow: 0px 0px 0px 2px #255625; }
+    box-shadow: 0px 0px 0px 2px #93d3a1; }
 
 .btn__round__success, .btn__border__success {
   border: 2px solid #449d44; }
@@ -3165,7 +3176,7 @@ body {
     background-color: #449d44;
     color: white !important; }
   .btn__round__success:focus, .btn__border__success:focus {
-    box-shadow: 0px 0px 0px 2px #255625; }
+    box-shadow: 0px 0px 0px 2px #93d3a1; }
 
 .btn__warning {
   background-color: #ec971f;
@@ -3173,7 +3184,7 @@ body {
   .btn__warning.btn__hover:hover {
     background-color: #F0AD4E; }
   .btn__warning:focus {
-    box-shadow: 0px 0px 0px 2px #985f0d; }
+    box-shadow: 0px 0px 0px 2px #ffe082; }
 
 .btn__round__warning, .btn__border__warning {
   border: 2px solid #ec971f; }
@@ -3181,7 +3192,7 @@ body {
     background-color: #ec971f;
     color: white !important; }
   .btn__round__warning:focus, .btn__border__warning:focus {
-    box-shadow: 0px 0px 0px 2px #985f0d; }
+    box-shadow: 0px 0px 0px 2px #ffe082; }
 
 .btn__info {
   background-color: #5bc0de;
@@ -3205,7 +3216,7 @@ body {
   .btn__danger.btn__hover:hover {
     background-color: #d9534f; }
   .btn__danger:focus {
-    box-shadow: 0px 0px 0px 2px #761c19; }
+    box-shadow: 0px 0px 0px 2px #ed99a1; }
 
 .btn__round__danger, .btn__border__danger {
   border: 2px solid #c9302c; }
@@ -3213,7 +3224,15 @@ body {
     background-color: #c9302c;
     color: white !important; }
   .btn__round__danger:focus, .btn__border__danger:focus {
-    box-shadow: 0px 0px 0px 2px #761c19; }
+    box-shadow: 0px 0px 0px 2px #ed99a1; }
+
+.btn__dark {
+  background-color: #3C3A3A;
+  color: white; }
+  .btn__dark.btn__hover:hover {
+    background-color: #222; }
+  .btn__dark:focus {
+    box-shadow: 0px 0px 0px 2px #999c9f; }
 
 /**
   || GRID SECTIONS
@@ -3257,27 +3276,6 @@ Using display: grid;
   grid-template-columns: 8fr 8fr;
   grid-gap: 0.8rem; }
 
-.section__btn {
-  background-color: #F3F3F3;
-  margin: 60px 0 0;
-  padding: 10px 0; }
-  .section__btn_wrap {
-    width: 85%;
-    margin: 40px auto; }
-    .section__btn_wrap h3 {
-      font-family: 'Poppins';
-      font-style: normal;
-      font-weight: normal;
-      font-size: 28px;
-      color: #1B6CA8; }
-    .section__btn_wrap p.btn_radius {
-      font-family: 'Poppins';
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      padding: 8px 0;
-      text-transform: uppercase;
-      color: #1B6CA8; }
 .grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -3326,11 +3324,37 @@ Using display: grid;
 
 .grid-color {
   background-color: #f7f7f7;
-  border: 1px solid #aaa8a8;
+  border: 1px solid #aaa8a8; }
+
+.section__btn {
+  margin: 60px 0 0;
+  padding: 10px 0; }
+  .section__btn_wrap {
+    width: 85%;
+    margin: 40px auto; }
+    .section__btn_wrap .btn_flex_wrap {
+      width: 100%; }
+      .section__btn_wrap .btn_flex_wrap button {
+        margin: 0 10px; }
+    .section__btn_wrap h3 {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 28px;
+      color: #1B6CA8; }
+    .section__btn_wrap p.btn_radius {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      padding: 8px 0;
+      text-transform: uppercase;
+      color: #1B6CA8; }
 
 .showcase__Area {
   height: 27vh; }
   .showcase__Area-img {
+    background-image: url("/public/assets/img/bunch-of-camels-in-desert-dune-2222241.jpg");
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
@@ -3390,11 +3414,6 @@ Using display: grid;
           width: 40px;
           border-radius: 50%;
           margin: 0 10px; }
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box; }
 
 .components {
   height: auto; }
@@ -3586,7 +3605,7 @@ Using display: grid;
     letter-spacing: 1px;
     color: #696969; }
   .inp:focus {
-    box-shadow: 0px 0px 2px 1px #2bb449; }
+    box-shadow: 0px 0px 2px 1px #449d44; }
 
 .color {
   background-color: transparent; }
