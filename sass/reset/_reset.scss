@@ -3,3 +3,31 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+
+.container {
+    width : 1200px;
+    margin : 0 auto;
+}
+
+.container_fluid {
+    width: 100%;
+}
+
+// link reset
+a {
+    color: #0a3077;
+    transition: 0.5s all ease-in-out ;
+
+    &:hover {
+        color: black;
+    }
+}
+
+
+
+
+
+
+
+
