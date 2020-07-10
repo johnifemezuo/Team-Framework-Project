@@ -34,10 +34,16 @@
            margin: 0 auto;
            font-family: 'Poppins';
            color:$secondary-color;
+
+          
  
  
              .Ds_wrapper{
                  text-align: center;
+
+                 p{
+                    font-size: 16px;
+                }
                  .Ds{
                      background-color:  $primary-color;
                      padding: 10px;
