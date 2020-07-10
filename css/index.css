@@ -3584,7 +3584,7 @@ Using display: grid;
 .inp_full_w-80 {
   width: 20%; }
 
-.inp {
+.inp_1 {
   border: none;
   outline: none;
   padding: .9rem;
@@ -3600,12 +3600,65 @@ Using display: grid;
   -moz-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   -ms-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   -o-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out; }
-  .inp::placeholder {
+  .inp_1::placeholder {
     font-size: 1rem;
+    padding-left: 4px;
     letter-spacing: 1px;
     color: #696969; }
+<<<<<<< HEAD
+  .inp_1:focus {
+    box-shadow: 0px 0px 2px 1px #2bb449; }
+
+.inp_2 {
+  border: none;
+  outline: none;
+  padding: .9rem;
+  font-size: 1rem;
+  color: #575d63;
+  font-size: inherit;
+  letter-spacing: 1px;
+  font-family: inherit;
+  border-bottom: 1px solid black;
+  box-shadow: 0px 0px 6px 2px #dadada;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  -moz-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  -ms-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  -o-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out; }
+  .inp_2::placeholder {
+    font-size: 1rem;
+    padding-left: 4px;
+    letter-spacing: 1px;
+    color: #696969; }
+  .inp_2:focus {
+    box-shadow: 0px 0px 2px 1px #2bb449; }
+
+.inp_3 {
+  border: none;
+  outline: none;
+  padding: .9rem;
+  font-size: 1rem;
+  color: #575d63;
+  font-size: inherit;
+  letter-spacing: 1px;
+  font-family: inherit;
+  box-shadow: 0px 0px 6px 2px #dadada;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  -moz-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  -ms-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  -o-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out; }
+  .inp_3::placeholder {
+    font-size: 1rem;
+    padding-left: 4px;
+    letter-spacing: 1px;
+    color: #696969; }
+  .inp_3:focus {
+    box-shadow: 0px 0px 2px 1px #2bb449; }
+=======
   .inp:focus {
     box-shadow: 0px 0px 2px 1px #449d44; }
+>>>>>>> victor-upstream/ThompsonMaster
 
 .color {
   background-color: transparent; }
