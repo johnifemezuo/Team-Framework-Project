@@ -3,18 +3,27 @@
 
 
 .cards__wrapper {
-    width: 100%;
-      
+   padding: 15px; 
+    max-width: 1200px;
+    margin: 0 auto;
 
-    @include mobile {
-       
-    }
+
+
+   @include tablet {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+   }
+   @include medium-desktop {
+    grid-template-columns: repeat(3, 1fr);
 }
 
-.own_st {
-    margin: 10px;
-
 }
+
+// .own_st {
+//     margin: 10px;
+
+// }
 
 
 // .lengthed-wrapper {

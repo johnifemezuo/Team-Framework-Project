@@ -3415,27 +3415,6 @@ Using display: grid;
           border-radius: 50%;
           margin: 0 10px; }
 
-<<<<<<< HEAD
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box; }
-
-.container {
-  width: 1200px;
-  margin: 0 auto; }
-
-.container_fluid {
-  width: 100%; }
-
-a {
-  color: #0a3077;
-  transition: 0.5s all ease-in-out; }
-  a:hover {
-    color: black; }
-
-=======
->>>>>>> upstream/master
 .components {
   height: auto; }
   .components .cp_title {
@@ -3626,9 +3605,8 @@ a {
     padding-left: 4px;
     letter-spacing: 1px;
     color: #696969; }
-<<<<<<< HEAD
   .inp_1:focus {
-    box-shadow: 0px 0px 2px 1px #2bb449; }
+    box-shadow: 0px 0px 2px 1px #449d44; }
 
 .inp_2 {
   border: none;
@@ -3652,7 +3630,7 @@ a {
     letter-spacing: 1px;
     color: #696969; }
   .inp_2:focus {
-    box-shadow: 0px 0px 2px 1px #2bb449; }
+    box-shadow: 0px 0px 2px 1px #449d44; }
 
 .inp_3 {
   border: none;
@@ -3675,11 +3653,7 @@ a {
     letter-spacing: 1px;
     color: #696969; }
   .inp_3:focus {
-    box-shadow: 0px 0px 2px 1px #2bb449; }
-=======
-  .inp:focus {
     box-shadow: 0px 0px 2px 1px #449d44; }
->>>>>>> victor-upstream/ThompsonMaster
 
 .color {
   background-color: transparent; }
@@ -3688,49 +3662,66 @@ a {
 || CARD SECTION
 */
 .cards__wrapper {
-  width: 100%; }
+  padding: 15px;
+  max-width: 1200px;
+  margin: 0 auto; }
+  @media (min-width: 869px) {
+    .cards__wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px; } }
+  @media (min-width: 1100px) {
+    .cards__wrapper {
+      grid-template-columns: repeat(3, 1fr); } }
 
-.own_st {
-  margin: 10px; }
+@media (min-width: 869px) {
+  .card {
+    width: 50%;
+    height: auto; } }
 
-.card {
-  background-color: #fff;
+@media (min-width: 450px) {
+  .card {
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    display: block;
+    margin-bottom: 12px; } }
+
+.card__img {
   width: 100%;
-  height: auto;
-  border: 1px solid #ddd;
-  display: block; }
-  @media (max-width: 450px) {
-    .card__img {
-      width: 100%;
-      height: 200px;
-      margin-bottom: 10px;
-      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.376); } }
-  .card__text {
-    line-height: 2rem; }
-    .card__text--link {
-      font-size: 1.6rem; }
-  .card__button {
-    margin-top: 6px; }
-    .card__button--btn {
-      width: 100%; }
-  .card__profile {
-    display: flex;
-    align-items: center;
-    margin-top: 8px; }
-    .card__profile img {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      border: 5px solid #1f1e1e;
-      margin-right: 5px; }
-    .card__profile--text {
-      display: block;
-      line-height: 0.6; }
-      .card__profile--text b {
-        font-size: 1rem; }
-      .card__profile--text p {
-        font-size: 0.9rem;
-        font-style: italic; }
+  height: 200px;
+  margin-bottom: 10px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.376); }
+
+.card__text {
+  line-height: 2rem; }
+  .card__text--link {
+    font-size: 1.6rem; }
+
+.card__button {
+  margin-top: 6px; }
+  .card__button--btn {
+    width: 100%; }
+
+.card__profile {
+  display: flex;
+  align-items: center;
+  margin-top: 8px; }
+  .card__profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 5px solid #1f1e1e;
+    margin-right: 5px; }
+  .card__profile--text {
+    display: block;
+    line-height: 0.6; }
+    .card__profile--text b {
+      font-size: 1rem; }
+    .card__profile--text p {
+      font-size: 0.9rem;
+      font-style: italic; }
 
 .profile {
   width: 300px;
