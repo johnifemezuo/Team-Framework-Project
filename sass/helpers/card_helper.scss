@@ -1,8 +1,14 @@
+
+@import '../media_query/card_media-query.scss';
+
+
 .cards__wrapper {
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr,);
-    grid-gap: 22px;
+    width: 100%;
+      
+
+    @include mobile {
+       
+    }
 }
 
 .own_st {

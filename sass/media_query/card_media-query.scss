@@ -1,0 +1,42 @@
+
+// Desktop
+$larger-desktop : 1500px;
+$medium-desktop : 1100px;
+$table : 869px;
+$mobile : 450px;
+
+
+@mixin mobile {
+    @media (max-width : $mobile) {
+        @content;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

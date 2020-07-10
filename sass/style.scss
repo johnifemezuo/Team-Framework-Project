@@ -45,7 +45,6 @@
 @import "./components/inputs/input-default.scss";
 
 
-
 /**
 || CARD SECTION
 */
@@ -65,6 +64,18 @@
 || FONT SIZES SECTION
 */
 @import "../sass/sizes/font_sizes.scss";
+
+
+
+/**
+|| MEDIA QUERY
+*/
+@import "../sass/media_query/card_media-query.scss";
+
+
+
+
+
 
 
 
