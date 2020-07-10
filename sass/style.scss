@@ -30,9 +30,8 @@
 @import "./utils/grids.scss";
 @import "./utils/grid_helper.scss";
 
-
+@import './helpers/frame-work-ui/button__section/button__section.scss';
 @import '../sass/showcase_image/showcase__Area';
-@import '../sass/reset/reset';
 @import './showcase_image/Component';
 @import './components/form/formInput';
 
