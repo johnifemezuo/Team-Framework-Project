@@ -3241,38 +3241,47 @@ body {
 Using display: grid;
 */
 .col-m-0-0 {
+  display: grid;
   grid-template-columns: 0fr 0fr;
   grid-gap: 0.8rem; }
 
 .col-m-1-1 {
+  display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 0.8rem; }
 
 .col-m-2-2 {
+  display: grid;
   grid-template-columns: 2fr 2fr;
   grid-gap: 0.8rem; }
 
 .col-m-3-3 {
+  display: grid;
   grid-template-columns: 3fr 3fr;
   grid-gap: 0.8rem; }
 
 .col-m-4-4 {
+  display: grid;
   grid-template-columns: 4fr 4fr;
   grid-gap: 0.8rem; }
 
 .col-m-5-5 {
+  display: grid;
   grid-template-columns: 5fr 5fr;
   grid-gap: 0.8rem; }
 
 .col-m-6-6 {
+  display: grid;
   grid-template-columns: 6fr 6fr;
   grid-gap: 0.8rem; }
 
 .col-m-7-7 {
+  display: grid;
   grid-template-columns: 7fr 7fr;
   grid-gap: 0.8rem; }
 
 .col-m-8-8 {
+  display: grid;
   grid-template-columns: 8fr 8fr;
   grid-gap: 0.8rem; }
 
@@ -3476,6 +3485,48 @@ Using display: grid;
 /**
 || Tooltips SECTIONS
 **/
+.tooltips_wrapper {
+  background-color: rgba(129, 113, 113, 0.281);
+  height: 100vh;
+  text-align: center; }
+  .tooltips_wrapper h1 {
+    font-size: 23px;
+    padding: 10px;
+    text-align: center; }
+  .tooltips_wrapper .tooltips__helper__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    width: 80%;
+    margin: 20px auto; }
+
+.tooltips {
+  position: relative;
+  width: 270px;
+  margin: 0 auto; }
+  .tooltips .tooltips__hover {
+    background: linear-gradient(100.56deg, blue 26%, rgba(0, 0, 255, 0.5));
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px; }
+  .tooltips:hover .tooltips__inner {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.3s ease-in-out; }
+  .tooltips .tooltips__inner {
+    visibility: hidden;
+    background-color: #555;
+    text-align: center;
+    padding: 7px;
+    border-radius: 6px;
+    color: #fff;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    min-width: 150px;
+    display: inline-block;
+    margin: 5px auto; }
+
 /**
 || INPUT SECTION
 */

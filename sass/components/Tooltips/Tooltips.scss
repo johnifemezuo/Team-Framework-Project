@@ -1,0 +1,42 @@
+// Tooltips wrappr //
+.tooltips{
+    position: relative;
+    width: 270px;
+    margin: 0 auto;
+
+    // tooltips__hover ///
+    .tooltips__hover{
+     background: linear-gradient(100.56deg,blue 26%, rgba(0, 0, 255, 0.5));
+     padding: 10px;
+     cursor: pointer;
+     color:$secondary-color;
+     border-radius:10px;
+
+ }
+    &:hover .tooltips__inner{
+     visibility: visible;
+     opacity: 1;
+     transition:all 0.3s ease-in-out;
+  }
+
+
+//    Default Tooltips //
+ .tooltips__inner{
+     visibility: hidden;
+     background-color: #555;
+     text-align: center;
+     padding: 7px;
+     border-radius: 6px;
+     color: #fff;
+     opacity: 0;
+     transition:all 0.5s ease-in-out;
+     min-width: 150px;
+     display: inline-block;
+     margin:5px auto;
+  
+ }
+ .tooltips__top{
+     
+ }
+
+}

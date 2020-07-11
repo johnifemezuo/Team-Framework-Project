@@ -42,7 +42,8 @@
 /**
 || Tooltips SECTIONS
 **/
-@import './helpers/frame-work-ui/Tooltips.scss';
+@import './helpers/frame-work-ui/TooltipsHelper.scss';
+@import './components/Tooltips/Tooltips.scss';
 /**
 || INPUT SECTION
 */
