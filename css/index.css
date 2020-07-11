@@ -3050,7 +3050,8 @@
   margin: 0; }
 
 body {
-  font-family: 'Poppins'; }
+  font-family: 'Poppins';
+  overflow-x: hidden; }
 
 /**
   DEFAULTS
@@ -3502,12 +3503,14 @@ Using display: grid;
 
 .tooltips {
   position: relative;
-  width: 270px;
+  width: 80%;
   margin: 0 auto; }
   .tooltips .tooltips__hover {
     background: linear-gradient(100.56deg, blue 26%, rgba(0, 0, 255, 0.5));
     padding: 10px;
     cursor: pointer;
+    width: 70%;
+    display: inline-block;
     color: white;
     border-radius: 10px; }
   .tooltips:hover .tooltips__inner {
@@ -3518,14 +3521,37 @@ Using display: grid;
     visibility: hidden;
     background-color: #555;
     text-align: center;
-    padding: 7px;
+    padding: 6px 12px;
     border-radius: 6px;
-    color: #fff;
+    color: white;
     opacity: 0;
     transition: all 0.5s ease-in-out;
-    min-width: 150px;
-    display: inline-block;
-    margin: 5px auto; }
+    margin: 5px auto;
+    width: 70%;
+    position: relative;
+    box-sizing: border-box; }
+  .tooltips .tooltips__top {
+    top: -100%;
+    transform: translateY(-calc(50% - 12px)); }
+  .tooltips .tooltips__top__arrow::after {
+    content: '';
+    position: absolute;
+    background-color: #555;
+    height: 13px;
+    width: 13px;
+    left: 50%;
+    bottom: -3px;
+    transform: rotate(52deg); }
+  .tooltips .tooltips__bottom {
+    bottom: -5px; }
+  .tooltips .tooltips__left {
+    top: 0%;
+    left: 0%;
+    transform: translate(-105%, -110%); }
+  .tooltips .tooltips__right {
+    top: 0%;
+    right: 0%;
+    transform: translate(105%, -110%); }
 
 /**
 || INPUT SECTION
