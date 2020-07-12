@@ -43,7 +43,8 @@
 || Tooltips SECTIONS
 **/
 @import './helpers/frame-work-ui/TooltipsHelper.scss';
-@import './components/Tooltips/Tooltips.scss';
+@import './components/Tooltips/DefaultTooltips.scss';
+@import './components/Tooltips/arrowTooltips.scss';
 /**
 || INPUT SECTION
 */

@@ -1,0 +1,148 @@
+// Tooltips wrappr //
+.tooltips{
+    position: relative;
+    width: 80%;
+    margin: 30px auto;
+
+
+    // tooltips__hover ///
+    .tooltips_hover{
+     background: linear-gradient(100.56deg,blue 26%, rgba(0, 0, 255, 0.5));
+     padding:5px;
+     cursor: pointer;
+     display: inline-block;
+     color: $secondary-color;
+     border-radius:10px;
+     position: relative;
+     width: 100%;
+
+ }
+   
+
+
+//     Tooltips top //
+ 
+}
+.tooltips_top{
+  position: relative;
+
+  &::after{
+    content: attr(tooltips_title);
+    background-color: #555;
+    padding:5px 15px!important;
+    border-radius: 6px;
+    position: absolute;
+    margin: 0;
+    left: 50%;
+    top:-135%;
+    z-index: 2;
+    display: block;
+    transform: translateX(-50%);
+    color:white;
+    visibility: hidden;
+    opacity: 0;
+    transition:all 0.3s ease-in-out;
+    border: 1px solid white;
+    width: unset;
+  }
+  &:hover::after{
+    // position: relative;
+    visibility: visible;
+     opacity: 1;
+    transition:all 0.3s ease-in-out;
+    }
+}
+
+
+.tooltips_bottom{
+  position: relative;
+
+  &::after{
+    content: attr(tooltips_title);
+    background-color: #555;
+    padding:5px 15px!important;
+    border-radius: 6px;
+    position: absolute;
+    margin: 0;
+    left: 50%;
+    top:135%;
+    z-index: 2;
+    display: block;
+    transform: translateX(-50%);
+    color:white;
+    visibility: hidden;
+    opacity: 0;
+    transition:all 0.3s ease-in-out;
+    border: 1px solid white;
+    width: unset;
+  }
+  &:hover::after{
+    // position: relative;
+    visibility: visible;
+     opacity: 1;
+    transition:all 0.3s ease-in-out;
+    }
+}
+
+// tooltips left
+.tooltips_left{
+  position: relative;
+
+  &::after{
+    content: attr(tooltips_title);
+    background-color: #555;
+    padding:5px 15px!important;
+    border-radius: 6px;
+    position: absolute;
+    margin: 0;
+    left: 0;
+    top:0px;
+    z-index: 2;
+    display: block;
+    transform: translateX(-120%);
+    color:white;
+    visibility: hidden;
+    opacity: 0;
+    transition:all 0.3s ease-in-out;
+    border: 1px solid white;
+    width: unset;
+  }
+  &:hover::after{
+    // position: relative;
+    visibility: visible;
+     opacity: 1;
+    transition:all 0.3s ease-in-out;
+    }
+}
+
+// tooltips_right
+
+.tooltips_right{
+  position: relative;
+
+  &::after{
+    content: attr(tooltips_title);
+    background-color: #555;
+    padding:5px 15px!important;
+    border-radius: 6px;
+    position: absolute;
+    margin: 0;
+    right: 0;
+    top:0px;
+    z-index: 2;
+    display: block;
+    transform: translateX(120%);
+    color:white;
+    visibility: hidden;
+    opacity: 0;
+    transition:all 0.3s ease-in-out;
+    border: 1px solid white;
+    width: unset;
+  }
+  &:hover::after{
+    // position: relative;
+    visibility: visible;
+     opacity: 1;
+    transition:all 0.3s ease-in-out;
+    }
+}

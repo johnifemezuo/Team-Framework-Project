@@ -1,0 +1,50 @@
+.tooltips_top_arrow{
+    position: relative;
+
+    &::after{
+      content: attr(tooltips_title);
+      background-color: #555;
+      padding:5px 15px;
+      border-radius: 6px;
+      position: absolute;
+      left: 50%;
+      top:-135%;
+      z-index: 1;
+      display: block;
+      transform: translateX(-50%);
+      color:white;
+      visibility: hidden;
+      opacity: 0;
+      transition:all 0.3s ease-in-out;
+      border: 1px solid white;
+      width: unset;
+    }
+
+    &::before{
+        content: '';
+        background-color: #555;
+        height: 15px;
+        width:15px;
+        position: absolute;
+        left: 50%;
+        padding:0;
+        top:-70%;
+        z-index:1;
+        display: block;
+        visibility: hidden;
+        opacity: 0;
+        transition:all 0.3s ease-in-out;
+        transform: translateX(-50%) rotate(45deg);
+    }
+    &:hover::after{
+      // position: relative;
+      visibility: visible;
+       opacity: 1;
+      transition:all 0.3s ease-in-out;
+      }
+      &:hover::before{
+        visibility: visible;
+        opacity: 1;
+       transition:all 0.3s ease-in-out;
+      }
+}

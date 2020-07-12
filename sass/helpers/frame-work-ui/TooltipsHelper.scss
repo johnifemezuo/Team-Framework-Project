@@ -1,7 +1,6 @@
 // helpers Tooltips //
 .tooltips_wrapper{
     background-color: rgba(129, 113, 113, 0.281);
-    height:100vh;
     text-align: center;
 
     h1{
@@ -11,12 +10,10 @@
     }
 
     .tooltips__helper__grid{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 20px;
         width: 80%;
-        margin: 20px auto;
+        margin: 0px auto;
         border: 1px solid black;
+        padding: 20px 0;
     }
 }
  
