@@ -3499,59 +3499,94 @@ Using display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
     width: 80%;
-    margin: 20px auto; }
+    margin: 20px auto;
+    border: 1px solid black; }
 
 .tooltips {
   position: relative;
   width: 80%;
-  margin: 0 auto; }
-  .tooltips .tooltips__hover {
+  margin: 30px auto; }
+  .tooltips .tooltips_hover {
     background: linear-gradient(100.56deg, blue 26%, rgba(0, 0, 255, 0.5));
-    padding: 10px;
+    padding: 5px;
     cursor: pointer;
     width: 70%;
     display: inline-block;
     color: white;
     border-radius: 10px; }
-  .tooltips:hover .tooltips__inner {
+  .tooltips:hover .tooltips_inner {
     visibility: visible;
     opacity: 1;
     transition: all 0.3s ease-in-out; }
-  .tooltips .tooltips__inner {
+  .tooltips .tooltips_inner {
     visibility: hidden;
-    background-color: #555;
-    text-align: center;
-    padding: 6px 12px;
-    border-radius: 6px;
     color: white;
     opacity: 0;
     transition: all 0.5s ease-in-out;
-    margin: 5px auto;
-    width: 70%;
-    position: relative;
-    box-sizing: border-box; }
-  .tooltips .tooltips__top {
-    top: -100%;
-    transform: translateY(-calc(50% - 12px)); }
-  .tooltips .tooltips__top__arrow::after {
-    content: '';
+    margin: 5px 0;
+    box-sizing: border-box;
     position: absolute;
-    background-color: #555;
-    height: 13px;
-    width: 13px;
-    left: 50%;
-    bottom: -3px;
-    transform: rotate(52deg); }
-  .tooltips .tooltips__bottom {
-    bottom: -5px; }
-  .tooltips .tooltips__left {
-    top: 0%;
-    left: 0%;
-    transform: translate(-105%, -110%); }
-  .tooltips .tooltips__right {
-    top: 0%;
-    right: 0%;
-    transform: translate(105%, -110%); }
+    min-width: 100%; }
+    .tooltips .tooltips_inner p {
+      display: inline-block;
+      background-color: #555;
+      padding: 4px 13px;
+      border-radius: 6px;
+      position: relative; }
+
+.tooltips_top {
+  top: -140%; }
+
+.tooltips_tp_arrow::after {
+  content: '';
+  position: absolute;
+  background-color: #555;
+  height: 12px;
+  width: 12px;
+  left: 50%;
+  bottom: -3px;
+  transform: rotate(45deg); }
+
+.tooltips_bottom {
+  bottom: -140%; }
+
+.tooltips_bm_arrow::after {
+  content: '';
+  position: absolute;
+  background-color: #555;
+  height: 12px;
+  width: 12px;
+  top: -4px;
+  left: 50%;
+  transform: rotate(45deg); }
+
+.tooltips_left {
+  top: -20%;
+  left: -70%; }
+
+.tooltips_lf_arrow::after {
+  content: '';
+  position: absolute;
+  background-color: #555;
+  height: 12px;
+  width: 12px;
+  top: 25%;
+  left: 73%;
+  transform: rotate(43deg); }
+
+.tooltips_right {
+  top: -20%;
+  right: -70%; }
+
+.tooltips_rg_arrow::after {
+  content: '';
+  position: absolute;
+  background-color: #555;
+  height: 12px;
+  width: 12px;
+  top: 25%;
+  right: 76%;
+  transform: rotate(43deg); }
 
 /**
 || INPUT SECTION
