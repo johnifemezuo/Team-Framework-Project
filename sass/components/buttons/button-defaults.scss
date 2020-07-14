@@ -73,7 +73,7 @@
 
 //======================= Default Hovering Effect==========================
 .btn_hover:hover{
-  background-color: $btnDefaultColorHover;
+  background-color: $btnDefaultColorHover!important;
 }
 
 // btn__iocn_border__radius
@@ -120,7 +120,7 @@
 
 
 .btn_primary{
-   background-color:$primary-color;
+   background-color:$primary-color!important;
    color: $secondary-color;
 
     &.btn_hover:hover{
@@ -146,7 +146,7 @@
 
 
 .btn_success{
-  background-color: $success-color;
+  background-color: $success-color!important;
   color: $secondary-color;
 
   &.btn_hover:hover{
@@ -171,7 +171,7 @@
 
 // #7fbcff
 .btn_warning{
-   background-color: $warning-color;
+   background-color: $warning-color!important;
    color: $secondary-color;
 
    &.btn_hover:hover{
@@ -198,7 +198,7 @@
 
 
 .btn_info{
-  background-color: $info-color;
+  background-color: $info-color!important;
   color: $secondary-color;
 
   &.btn_hover:hover{
@@ -214,7 +214,7 @@
   border: 2px solid $info-color;
 
   &.btn_hover:hover{
-    background-color: $info-color;
+    background-color: $info-color !important;
     color:$secondary-color!important;
   }
   &:focus{

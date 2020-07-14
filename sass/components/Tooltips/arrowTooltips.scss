@@ -1,50 +1,62 @@
-.tooltips_top_arrow{
-    position: relative;
+// .tooltips_top_arrow
+.tooltips_top_arrow::after{
+  content:'';
+  background-color: #555;
+  position: absolute;
+  left: 50%;
+  top:100%;
+  z-index: 1;
+  display: block;
+  height: 10px;
+  width:10px;
+  transform: translate(-50%, -50%) rotate(47deg);
+  
+}
 
-    &::after{
-      content: attr(tooltips_title);
-      background-color: #555;
-      padding:5px 15px;
-      border-radius: 6px;
-      position: absolute;
-      left: 50%;
-      top:-135%;
-      z-index: 1;
-      display: block;
-      transform: translateX(-50%);
-      color:white;
-      visibility: hidden;
-      opacity: 0;
-      transition:all 0.3s ease-in-out;
-      border: 1px solid white;
-      width: unset;
-    }
 
-    &::before{
-        content: '';
-        background-color: #555;
-        height: 15px;
-        width:15px;
-        position: absolute;
-        left: 50%;
-        padding:0;
-        top:-70%;
-        z-index:1;
-        display: block;
-        visibility: hidden;
-        opacity: 0;
-        transition:all 0.3s ease-in-out;
-        transform: translateX(-50%) rotate(45deg);
-    }
-    &:hover::after{
-      // position: relative;
-      visibility: visible;
-       opacity: 1;
-      transition:all 0.3s ease-in-out;
-      }
-      &:hover::before{
-        visibility: visible;
-        opacity: 1;
-       transition:all 0.3s ease-in-out;
-      }
+
+// .tooltips_bottom_arrow:
+.tooltips_bottom_arrow::after{
+  content:'';
+  background-color: #555;
+  position: absolute;
+  left: 50%;
+  top:0;
+  z-index: 1;
+  display: block;
+  height: 10px;
+  width:10px;
+  transform: translate(-50%, -50%) rotate(47deg);
+}
+
+
+
+// .tooltips_left_arrow
+.tooltips_left_arrow::after{
+  content:'';
+  background-color: #555;
+  position: absolute;
+  left: 100%;
+  top:50%;
+  z-index: 1;
+  display: block;
+  height: 10px;
+  width:10px;
+  transform: translate(-50%, -50%) rotate(47deg);
+}
+
+
+
+// .tooltips_right_arrow
+.tooltips_right_arrow::after{
+  content:'';
+  background-color: #555;
+  position: absolute;
+  right: 100%;
+  top:50%;
+  z-index: 1;
+  display: block;
+  height: 10px;
+  width:10px;
+  transform: translate(50%, -50%) rotate(47deg);
 }

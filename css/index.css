@@ -3116,7 +3116,7 @@ body {
   font-size: 1em; }
 
 .btn_hover:hover {
-  background-color: #dadada; }
+  background-color: #dadada !important; }
 
 .btn_icon_circle {
   border-radius: 50%;
@@ -3148,7 +3148,7 @@ body {
     border-radius: 10px; }
 
 .btn_primary {
-  background-color: #2e6da4;
+  background-color: #2e6da4 !important;
   color: white; }
   .btn_primary.btn_hover:hover {
     background-color: #286090; }
@@ -3164,7 +3164,7 @@ body {
     box-shadow: 0px 0px 0px 2px #7fbcff; }
 
 .btn_success {
-  background-color: #449d44;
+  background-color: #449d44 !important;
   color: white; }
   .btn_success.btn_hover:hover {
     background-color: #4caf50; }
@@ -3180,7 +3180,7 @@ body {
     box-shadow: 0px 0px 0px 2px #93d3a1; }
 
 .btn_warning {
-  background-color: #ec971f;
+  background-color: #ec971f !important;
   color: white; }
   .btn_warning.btn_hover:hover {
     background-color: #F0AD4E; }
@@ -3196,7 +3196,7 @@ body {
     box-shadow: 0px 0px 0px 2px #ffe082; }
 
 .btn_info {
-  background-color: #5bc0de;
+  background-color: #5bc0de !important;
   color: white; }
   .btn_info.btn_hover:hover {
     background-color: #31b0d5; }
@@ -3206,7 +3206,7 @@ body {
 .btn_round_info, .btn_border_info {
   border: 2px solid #5bc0de; }
   .btn_round_info.btn_hover:hover, .btn_border_info.btn_hover:hover {
-    background-color: #5bc0de;
+    background-color: #5bc0de !important;
     color: white !important; }
   .btn_round_info:focus, .btn_border_info:focus {
     box-shadow: 0px 0px 0px 2px #1b6d85; }
@@ -3486,175 +3486,161 @@ Using display: grid;
 /**
 || Tooltips SECTIONS
 **/
-.tooltips_wrapper {
+.tooltips_section {
   background-color: rgba(129, 113, 113, 0.281);
+  padding: 20px 0;
   text-align: center; }
-  .tooltips_wrapper h1 {
+  .tooltips_section h1 {
     font-size: 23px;
-    padding: 10px;
+    padding: 0 0 10px;
     text-align: center; }
-  .tooltips_wrapper .tooltips__helper__grid {
+  .tooltips_section .tooltips__helper {
     width: 80%;
-    margin: 0px auto;
+    margin: 10px auto;
     border: 1px solid black;
     padding: 20px 0; }
+    .tooltips_section .tooltips__helper .tooltips_wrapper {
+      position: relative;
+      width: 80%;
+      margin: 30px auto; }
 
-.tooltips {
-  position: relative;
-  width: 80%;
-  margin: 30px auto; }
-  .tooltips .tooltips_hover {
-    background: linear-gradient(100.56deg, blue 26%, rgba(0, 0, 255, 0.5));
-    padding: 5px;
-    cursor: pointer;
-    display: inline-block;
-    color: white;
-    border-radius: 10px;
-    position: relative;
-    width: 100%; }
+.tooltips_top, .tooltips_top_arrow {
+  background-color: #555;
+  padding: 5px 10px;
+  border-radius: 6px;
+  position: absolute;
+  margin: 0;
+  left: 50%;
+  top: -135%;
+  visibility: hidden;
+  opacity: 0;
+  display: block;
+  transform: translateX(-50%);
+  color: white;
+  border: 1px solid white;
+  transition: all  .8s ease-in-out; }
 
-.tooltips_top {
-  position: relative; }
-  .tooltips_top::after {
-    content: attr(tooltips_title);
-    background-color: #555;
-    padding: 5px 15px !important;
-    border-radius: 6px;
-    position: absolute;
-    margin: 0;
-    left: 50%;
-    top: -135%;
-    z-index: 2;
-    display: block;
-    transform: translateX(-50%);
-    color: white;
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.3s ease-in-out;
-    border: 1px solid white;
-    width: unset; }
-  .tooltips_top:hover::after {
-    visibility: visible;
-    opacity: 1;
-    transition: all 0.3s ease-in-out; }
+.toolTips:hover .tooltips_top, .toolTips:hover .tooltips_top_arrow {
+  visibility: visible;
+  opacity: 1;
+  transition: all  .8s ease-in-out; }
 
-.tooltips_bottom {
-  position: relative; }
-  .tooltips_bottom::after {
-    content: attr(tooltips_title);
-    background-color: #555;
-    padding: 5px 15px !important;
-    border-radius: 6px;
-    position: absolute;
-    margin: 0;
-    left: 50%;
-    top: 135%;
-    z-index: 2;
-    display: block;
-    transform: translateX(-50%);
-    color: white;
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.3s ease-in-out;
-    border: 1px solid white;
-    width: unset; }
-  .tooltips_bottom:hover::after {
-    visibility: visible;
-    opacity: 1;
-    transition: all 0.3s ease-in-out; }
+.tooltips_bottom, .tooltips_bottom_arrow {
+  background-color: #555;
+  padding: 5px 15px !important;
+  border-radius: 6px;
+  position: absolute;
+  margin: 0;
+  left: 50%;
+  top: 135%;
+  z-index: 2;
+  display: block;
+  transform: translateX(-50%);
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  border: 1px solid white;
+  width: unset; }
 
-.tooltips_left {
-  position: relative; }
-  .tooltips_left::after {
-    content: attr(tooltips_title);
-    background-color: #555;
-    padding: 5px 15px !important;
-    border-radius: 6px;
-    position: absolute;
-    margin: 0;
-    left: 0;
-    top: 0px;
-    z-index: 2;
-    display: block;
-    transform: translateX(-120%);
-    color: white;
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.3s ease-in-out;
-    border: 1px solid white;
-    width: unset; }
-  .tooltips_left:hover::after {
-    visibility: visible;
-    opacity: 1;
-    transition: all 0.3s ease-in-out; }
+.toolTips:hover .tooltips_bottom, .toolTips:hover .tooltips_bottom_arrow {
+  visibility: visible;
+  opacity: 1;
+  transition: all  .8s ease-in-out; }
 
-.tooltips_right {
-  position: relative; }
-  .tooltips_right::after {
-    content: attr(tooltips_title);
-    background-color: #555;
-    padding: 5px 15px !important;
-    border-radius: 6px;
-    position: absolute;
-    margin: 0;
-    right: 0;
-    top: 0px;
-    z-index: 2;
-    display: block;
-    transform: translateX(120%);
-    color: white;
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.3s ease-in-out;
-    border: 1px solid white;
-    width: unset; }
-  .tooltips_right:hover::after {
-    visibility: visible;
-    opacity: 1;
-    transition: all 0.3s ease-in-out; }
+.tooltips_left, .tooltips_left_arrow {
+  background-color: #555;
+  padding: 5px 15px !important;
+  border-radius: 6px;
+  position: absolute;
+  margin: 0;
+  left: 0;
+  top: 0px;
+  z-index: 2;
+  display: block;
+  transform: translateX(-120%);
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid white;
+  width: unset; }
 
-.tooltips_top_arrow {
-  position: relative; }
-  .tooltips_top_arrow::after {
-    content: attr(tooltips_title);
-    background-color: #555;
-    padding: 5px 15px;
-    border-radius: 6px;
-    position: absolute;
-    left: 50%;
-    top: -135%;
-    z-index: 1;
-    display: block;
-    transform: translateX(-50%);
-    color: white;
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.3s ease-in-out;
-    border: 1px solid white;
-    width: unset; }
-  .tooltips_top_arrow::before {
-    content: '';
-    background-color: #555;
-    height: 15px;
-    width: 15px;
-    position: absolute;
-    left: 50%;
-    padding: 0;
-    top: -70%;
-    z-index: 1;
-    display: block;
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.3s ease-in-out;
-    transform: translateX(-50%) rotate(45deg); }
-  .tooltips_top_arrow:hover::after {
-    visibility: visible;
-    opacity: 1;
-    transition: all 0.3s ease-in-out; }
-  .tooltips_top_arrow:hover::before {
-    visibility: visible;
-    opacity: 1;
-    transition: all 0.3s ease-in-out; }
+.toolTips:hover .tooltips_left, .toolTips:hover .tooltips_left_arrow {
+  visibility: visible;
+  opacity: 1;
+  transition: all  .8s ease-in-out; }
+
+.tooltips_right, .tooltips_right_arrow {
+  background-color: #555;
+  padding: 5px 15px !important;
+  border-radius: 6px;
+  position: absolute;
+  margin: 0;
+  right: 0;
+  top: 0px;
+  z-index: 2;
+  display: block;
+  transform: translateX(120%);
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid white;
+  width: unset; }
+
+.toolTips:hover .tooltips_right, .toolTips:hover .tooltips_right_arrow {
+  visibility: visible;
+  opacity: 1;
+  transition: all  .8s ease-in-out; }
+
+.tooltips_top_arrow::after {
+  content: '';
+  background-color: #555;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  z-index: 1;
+  display: block;
+  height: 10px;
+  width: 10px;
+  transform: translate(-50%, -50%) rotate(47deg); }
+
+.tooltips_bottom_arrow::after {
+  content: '';
+  background-color: #555;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  z-index: 1;
+  display: block;
+  height: 10px;
+  width: 10px;
+  transform: translate(-50%, -50%) rotate(47deg); }
+
+.tooltips_left_arrow::after {
+  content: '';
+  background-color: #555;
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  z-index: 1;
+  display: block;
+  height: 10px;
+  width: 10px;
+  transform: translate(-50%, -50%) rotate(47deg); }
+
+.tooltips_right_arrow::after {
+  content: '';
+  background-color: #555;
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  z-index: 1;
+  display: block;
+  height: 10px;
+  width: 10px;
+  transform: translate(50%, -50%) rotate(47deg); }
 
 /**
 || INPUT SECTION
