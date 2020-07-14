@@ -1,8 +1,9 @@
-.showcase__Area{
-    height:2git 7vh;
+.showcase_Area{
+    height:27vh;
    
      &-img{
-       background-image: url('/Css-Framework/public/assets/img/bunch-of-camels-in-desert-dune-2222241.jpg');
+       background-image: url('/public/assets/img/bunch-of-camels-in-desert-dune-2222241.jpg');
+
        width: 100%;
        height:100%;
        background-repeat: no-repeat;
@@ -21,7 +22,7 @@
              width: 100%;
              background: linear-gradient(100.56deg, rgba(27, 104, 174, 0.73) 26%, #D100A3 104.2%);
            }
-       .creative__team{
+       .creative_team{
            height: 200px;
            display: grid;
            grid-template-columns: repeat(2, 1fr);
@@ -33,10 +34,16 @@
            margin: 0 auto;
            font-family: 'Poppins';
            color:$secondary-color;
+
+          
  
  
              .Ds_wrapper{
                  text-align: center;
+
+                 p{
+                    font-size: 16px;
+                }
                  .Ds{
                      background-color:  $primary-color;
                      padding: 10px;
@@ -54,6 +61,21 @@
                      display: flex;
                      justify-content: center;
                      align-items: center;
+
+                     div{
+                         position: relative;
+
+                         &:after{
+                             content: '';
+                             position: absolute;
+                             background: #FFFFFF;
+                             border-radius: 1.5px;
+                             width: 110px;
+                             height: 2px;
+                             bottom: 2px;
+                             left:-20px;
+                         }
+                     }
  
                      p {
                          font-size: 16px;

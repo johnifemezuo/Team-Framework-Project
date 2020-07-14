@@ -1,0 +1,276 @@
+/**
+  DEFAULTS
+**/
+
+.btn {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: .6rem .80rem;
+  outline: none;
+  border: 2px solid transparent;
+  min-width: 100px;
+  font-size: inherit;
+  font-family: inherit;
+  margin: 0;
+  border-radius: 6px;
+  box-shadow: 0px 0px 3px $btnDefaultColor;
+  cursor: pointer;
+  appearance: button;
+  -webkit-appearance: button;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  position: relative;
+  @include default_transition();
+  &.btn_full_w{
+    @include full_w()
+  }
+  &:focus{
+    box-shadow: 0px 0px 0px 2px $btnDefaultColor;
+    box-sizing: border-box;
+  }
+}
+
+// BTN SIZE ELG
+.btn_ex_lg{
+    padding: .77rem 1.1rem;
+    min-width: 150px;
+    font-size: 1.4em;
+  }
+
+// BTN SIZE LG
+ .btn_lg{
+      padding: .62rem .9rem;
+      min-width: 140px;
+      font-size: 1.3em;
+  }
+  // BTN SIZE MD
+  .btn_md{
+      padding: .50rem .7rem;
+      min-width: 130px;
+      font-size: 1.2em;
+  }
+  //  BTN SIZE SM
+  .btn_sm{
+      padding: .45rem .5rem;
+      min-width: 120px;
+      font-size: 1.1em;
+  }
+
+  // BTN SIZE EXSM .btn_round_info{
+  .btn_ex_sm{
+      padding: .40rem .7rem;
+      min-width: 100px;
+      font-size: 1em;
+    
+  }
+
+
+
+//======================= Default Hovering Effect==========================
+.btn_hover:hover{
+  background-color: $btnDefaultColorHover!important;
+}
+
+// btn__iocn_border__radius
+
+.btn_icon_circle{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    min-width: 0;
+}
+.btn_icon_squre{
+    height: 50px;
+    width: 50px;
+    min-width: 0;
+}
+//======================= Reset Border  ==========================
+.btn_no_border_radius{
+  border-radius: unset!important;
+}
+// <================ Button Radius  Global Styling here   ========================>
+.btn_round_primary, .btn_round_warning, .btn_round_success, .btn_round_danger, .btn_round_info{
+    background-color: unset;
+    color: $black-color;
+    border-radius: 23.8154px;
+
+  &:focus{
+    border-radius: 23.8154px;
+    // border: 1px solid transparent;
+  }
+}
+
+
+// <================  BORDER Round  Global Styling here ========================>
+.btn_border_primary, .btn_border_warning,  .btn_border_success, .btn_border_danger, .btn_border_info{
+    background-color: unset;
+    color: $black-color;
+    border-radius: 10px;
+
+  &:focus{
+    border-radius: 10px;
+  }
+}
+
+
+.btn_primary{
+   background-color:$primary-color!important;
+   color: $secondary-color;
+
+    &.btn_hover:hover{
+      background-color: $primary-color-hover;
+    }
+    &:focus{
+      box-shadow: 0px 0px 0px 2px #7fbcff
+    }
+
+}
+// Button Radius and BORDER
+.btn_round_primary, .btn_border_primary{
+  border: 2px solid $component-color;
+
+  &.btn_hover:hover{
+    background-color: $primary-color-hover;
+    color:$secondary-color!important;
+  }
+  &:focus{
+    box-shadow: 0px 0px 0px 2px #7fbcff;
+  }
+}
+
+
+.btn_success{
+  background-color: $success-color!important;
+  color: $secondary-color;
+
+  &.btn_hover:hover{
+    background-color: $success-color-hover;
+  }
+  &:focus{
+    box-shadow: 0px 0px 0px 2px #93d3a1;
+  }
+}
+// Button Radius and BORDER
+.btn_round_success, .btn_border_success{
+  border: 2px solid  $success-color;
+
+  &.btn_hover:hover{
+    background-color:$success-color;
+    color:$secondary-color!important;
+  }
+  &:focus{
+    box-shadow: 0px 0px 0px 2px #93d3a1;
+  }
+}
+
+// #7fbcff
+.btn_warning{
+   background-color: $warning-color!important;
+   color: $secondary-color;
+
+   &.btn_hover:hover{
+    background-color:$warning-hover-color; 
+  }
+  &:focus {
+    box-shadow: 0px 0px 0px 2px #ffe082;
+  }
+}
+// Button Radius and BORDER
+.btn_round_warning, .btn_border_warning{
+  border: 2px solid  $warning-color;
+
+  &.btn_hover:hover{
+    background-color: $warning-color;
+    color:$secondary-color!important;
+  }
+  &:focus{
+    box-shadow: 0px 0px 0px 2px #ffe082;
+  
+  }
+}
+
+
+
+.btn_info{
+  background-color: $info-color!important;
+  color: $secondary-color;
+
+  &.btn_hover:hover{
+    background-color:  $info-hover-color;
+  }
+  &:focus{
+    box-shadow: 0px 0px 0px 2px#1b6d85;
+  }
+      
+}
+// Button Radius and BORDER
+.btn_round_info, .btn_border_info{
+  border: 2px solid $info-color;
+
+  &.btn_hover:hover{
+    background-color: $info-color !important;
+    color:$secondary-color!important;
+  }
+  &:focus{
+    box-shadow: 0px 0px 0px 2px #1b6d85;
+  
+  }
+}
+
+
+
+
+.btn_danger{
+  background-color:$danger-color;
+  color: $secondary-color;
+
+  &.btn_hover:hover{
+    background-color:$danger-hover;
+  }
+  &:focus {
+    box-shadow: 0px 0px 0px 2px#ed99a1;
+  }
+}
+// Button Radius and BORDER
+.btn_round_danger, .btn_border_danger{
+  border: 2px solid $danger-color;
+
+  &.btn_hover:hover{
+    background-color: $danger-color;
+    color:$secondary-color!important;
+  }
+
+  &:focus{
+    box-shadow: 0px 0px 0px 2px #ed99a1;
+  
+  }
+}
+
+
+.btn_dark{
+  background-color:$dark;
+  color: $secondary-color;
+
+  &.btn_hover:hover{
+    background-color:#222;
+  }
+
+  &:focus{
+    box-shadow: 0px 0px 0px 2px #999c9f;
+  
+  }
+}
+
+
+
+
+
+// .btn_rad{
+//   border-radius: 23.8154px
+// }
