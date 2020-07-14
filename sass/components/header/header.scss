@@ -1,0 +1,50 @@
+header{
+    background: #1B6CA8;
+    height: 100%;
+    padding: 15px;
+
+    .logo img{
+        width:60px;
+        height: 60px;
+        border-radius: 50%;
+
+    }
+
+    .nav {
+
+        .header_search_box input{
+            background: #4589BB;
+            border-radius: 6px;
+            border: none;
+            outline: none;
+            padding: 10px;
+            width: 100%;
+            color:white;
+            margin: 10px 0;
+
+           &::placeholder{
+                color:white;
+            }
+        }
+
+        .nav_ul{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+           
+
+
+            .nav_ul_li a{
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 3;
+                /* identical to box height */
+
+                color: #FFFFFF;
+            }
+        }
+    }
+}

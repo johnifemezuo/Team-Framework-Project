@@ -10,6 +10,13 @@
 
 // SIZE
 @import "./sizes/major-sizes.scss";
+/**
+ MEDIA QUERY HELPERS
+**/
+@import './helpers/media-funcs.scss';
+
+// header.scss
+@import './components/header/header.scss';
 
 // WRAPPERS
 @import "./utils/wrapper.scss";
@@ -23,8 +30,14 @@
 @import "./components/buttons/main-buttons";
 @import "./components/margins/bigger-margins";
 @import "./components/buttons/button-defaults.scss";
+
 /**
-  || GRID SECTIONS
+  Button SECTIONS HELPERS
+**/
+@import './helpers/button__section.scss';
+
+/**
+   GRID SECTIONS
 */
 @import "./utils/grids.scss";
 @import "./utils/grid_helper.scss";
@@ -34,15 +47,12 @@
 **/
 @import '../sass/showcase_image/showcase__Area';
 @import './showcase_image/Component';
-/**
-|| Button SECTIONS
-**/
-@import './helpers/frame-work-ui/button__section/button__section.scss';
+
 
 /**
 || Tooltips SECTIONS
 **/
-@import './helpers/frame-work-ui/TooltipsHelper.scss';
+@import './helpers/TooltipsHelper.scss';
 @import './components/Tooltips/DefaultTooltips.scss';
 @import './components/Tooltips/arrowTooltips.scss';
 /**

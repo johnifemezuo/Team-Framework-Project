@@ -26,32 +26,25 @@
               flex-wrap: wrap;
               list-style-type: none;
               width:  85%;
-              margin: 0 auto;
+              margin: 30px auto ;
               align-items: center;
-              height: 99px;
+          
+              @include TablelSize{
+                height: 99px;
+              }
 
 
             .cp_li{
                 position: relative;
+                padding: 0 10px;
 
-
-                :after{
-                    content: '';
-                    position: absolute;
-                    height: 8px;
-                    width: 8px;
-                    border-radius: 50%;
-                    background-color: $component-color;
-                    left: -15px;
-                    top: 10px;
-                }
       
                 a{
                     font-family: 'Poppins';
                     font-style: normal;
                     font-weight: 300;
                     font-size: 20px;
-                    line-height: 30px;
+                    line-height: 40px;
                     text-decoration-line: underline;
                     color: $component-color;
                   }
