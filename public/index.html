@@ -15,9 +15,14 @@
                      <img src="/public/assets/img/thompson.JPG" alt="">
                  </div>
 
-                 <nav class="nav">
+                 <nav id="nav" class="header_close">
                     <div class="header_search_box">
-                        <input type="text" placeholder="Search">       
+                        <input type="text" placeholder="Search">    
+                       
+                        <div class="register">
+                            <button class="btn btn_ex_sm btn_info ">Register</button>
+                            <button class="btn btn_ex_sm btn_info">Login</button>
+                        </div>   
                     </div>
 
                      <ul class="nav_ul">
@@ -29,8 +34,13 @@
                      </ul>
                  </nav>
             </div>
-            <div class="bars">
-                
+
+            <div class="menu">
+                <div id="bars">
+                    <div class="bar1 bar"></div>
+                    <div class="bar2 bar"></div>
+                    <div class="bar3 bar"></div>
+                </div>
             </div>
         </header>
         
@@ -118,7 +128,15 @@
 </main>
 
              
+<script>
+ let bars = document.querySelector('#bars')
+ let nav = document.querySelector('#nav')
+bars.addEventListener('click', (e)=>{
+   bars.classList.toggle('change');
 
+   nav.className == 'header_close'? nav.classList.add('header_open') :  nav.classList.remove('header_open')
+});
+</script>
 
 
 </body>
