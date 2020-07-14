@@ -1,19 +1,7 @@
-.section__btn{
-    margin:60px 0 0;
-    padding:10px 0 ;
-
-
-    &_wrap{
+    .section__btn_wrap{
         width:  85%;
         margin:40px auto;
 
-        .btn_flex_wrap{
-            width:  100%;
-
-            button {
-                margin: 0 10px;
-            }
-        }
 
     h3{
             font-family: 'Poppins';
@@ -22,18 +10,16 @@
             font-size: 28px;
             color: #1B6CA8;
     }
-    p.btn_radius{
+      p.btn_radius{
             font-family: 'Poppins';
             font-style: normal;
             font-weight: normal;
             font-size: 16px;
             padding: 8px 0;
             text-transform: uppercase;
-    
             color: #1B6CA8;
-    }
+      }
    
     
     }
     
-}
