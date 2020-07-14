@@ -36,33 +36,33 @@
 }
 
 // BTN SIZE ELG
-.btn__ex__lg{
+.btn_ex_lg{
     padding: .77rem 1.1rem;
     min-width: 150px;
     font-size: 1.4em;
   }
 
 // BTN SIZE LG
- .btn__lg{
+ .btn_lg{
       padding: .62rem .9rem;
       min-width: 140px;
       font-size: 1.3em;
   }
   // BTN SIZE MD
-  .btn__md{
+  .btn_md{
       padding: .50rem .7rem;
       min-width: 130px;
       font-size: 1.2em;
   }
   //  BTN SIZE SM
-  .btn__sm{
+  .btn_sm{
       padding: .45rem .5rem;
       min-width: 120px;
       font-size: 1.1em;
   }
 
-  // BTN SIZE EXSM .btn__round__info{
-  .btn__ex__sm{
+  // BTN SIZE EXSM .btn_round_info{
+  .btn_ex_sm{
       padding: .40rem .7rem;
       min-width: 100px;
       font-size: 1em;
@@ -72,30 +72,30 @@
 
 
 //======================= Default Hovering Effect==========================
-.btn__hover:hover{
-  background-color: $btnDefaultColorHover;
+.btn_hover:hover{
+  background-color: $btnDefaultColorHover!important;
 }
 
 // btn__iocn_border__radius
 
-.btn__icon__circle{
+.btn_icon_circle{
     border-radius: 50%;
     height: 50px;
     width: 50px;
     padding: 0;
     min-width: 0;
 }
-.btn__icon__squre{
+.btn_icon_squre{
     height: 50px;
     width: 50px;
     min-width: 0;
 }
 //======================= Reset Border  ==========================
-.btn__no__border_radius{
+.btn_no_border_radius{
   border-radius: unset!important;
 }
 // <================ Button Radius  Global Styling here   ========================>
-.btn__round__primary, .btn__round__warning, .btn__round__success, .btn__round__danger, .btn__round__info{
+.btn_round_primary, .btn_round_warning, .btn_round_success, .btn_round_danger, .btn_round_info{
     background-color: unset;
     color: $black-color;
     border-radius: 23.8154px;
@@ -108,7 +108,7 @@
 
 
 // <================  BORDER Round  Global Styling here ========================>
-.btn__border__primary, .btn__border__warning,  .btn__border__success, .btn__border__danger, .btn__border__info{
+.btn_border_primary, .btn_border_warning,  .btn_border_success, .btn_border_danger, .btn_border_info{
     background-color: unset;
     color: $black-color;
     border-radius: 10px;
@@ -119,11 +119,11 @@
 }
 
 
-.btn__primary{
-   background-color:$primary-color;
+.btn_primary{
+   background-color:$primary-color!important;
    color: $secondary-color;
 
-    &.btn__hover:hover{
+    &.btn_hover:hover{
       background-color: $primary-color-hover;
     }
     &:focus{
@@ -132,10 +132,10 @@
 
 }
 // Button Radius and BORDER
-.btn__round__primary, .btn__border__primary{
+.btn_round_primary, .btn_border_primary{
   border: 2px solid $component-color;
 
-  &.btn__hover:hover{
+  &.btn_hover:hover{
     background-color: $primary-color-hover;
     color:$secondary-color!important;
   }
@@ -145,11 +145,11 @@
 }
 
 
-.btn__success{
-  background-color: $success-color;
+.btn_success{
+  background-color: $success-color!important;
   color: $secondary-color;
 
-  &.btn__hover:hover{
+  &.btn_hover:hover{
     background-color: $success-color-hover;
   }
   &:focus{
@@ -157,10 +157,10 @@
   }
 }
 // Button Radius and BORDER
-.btn__round__success, .btn__border__success{
+.btn_round_success, .btn_border_success{
   border: 2px solid  $success-color;
 
-  &.btn__hover:hover{
+  &.btn_hover:hover{
     background-color:$success-color;
     color:$secondary-color!important;
   }
@@ -170,11 +170,11 @@
 }
 
 // #7fbcff
-.btn__warning{
-   background-color: $warning-color;
+.btn_warning{
+   background-color: $warning-color!important;
    color: $secondary-color;
 
-   &.btn__hover:hover{
+   &.btn_hover:hover{
     background-color:$warning-hover-color; 
   }
   &:focus {
@@ -182,10 +182,10 @@
   }
 }
 // Button Radius and BORDER
-.btn__round__warning, .btn__border__warning{
+.btn_round_warning, .btn_border_warning{
   border: 2px solid  $warning-color;
 
-  &.btn__hover:hover{
+  &.btn_hover:hover{
     background-color: $warning-color;
     color:$secondary-color!important;
   }
@@ -197,11 +197,11 @@
 
 
 
-.btn__info{
-  background-color: $info-color;
+.btn_info{
+  background-color: $info-color!important;
   color: $secondary-color;
 
-  &.btn__hover:hover{
+  &.btn_hover:hover{
     background-color:  $info-hover-color;
   }
   &:focus{
@@ -210,11 +210,11 @@
       
 }
 // Button Radius and BORDER
-.btn__round__info, .btn__border__info{
+.btn_round_info, .btn_border_info{
   border: 2px solid $info-color;
 
-  &.btn__hover:hover{
-    background-color: $info-color;
+  &.btn_hover:hover{
+    background-color: $info-color !important;
     color:$secondary-color!important;
   }
   &:focus{
@@ -226,11 +226,11 @@
 
 
 
-.btn__danger{
+.btn_danger{
   background-color:$danger-color;
   color: $secondary-color;
 
-  &.btn__hover:hover{
+  &.btn_hover:hover{
     background-color:$danger-hover;
   }
   &:focus {
@@ -238,10 +238,10 @@
   }
 }
 // Button Radius and BORDER
-.btn__round__danger, .btn__border__danger{
+.btn_round_danger, .btn_border_danger{
   border: 2px solid $danger-color;
 
-  &.btn__hover:hover{
+  &.btn_hover:hover{
     background-color: $danger-color;
     color:$secondary-color!important;
   }
@@ -253,11 +253,11 @@
 }
 
 
-.btn__dark{
+.btn_dark{
   background-color:$dark;
   color: $secondary-color;
 
-  &.btn__hover:hover{
+  &.btn_hover:hover{
     background-color:#222;
   }
 
