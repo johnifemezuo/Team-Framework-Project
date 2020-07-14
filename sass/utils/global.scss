@@ -8,9 +8,11 @@
   margin: 0;
 }
 body{
-  font-family: FontAwesome;
+  font-family: 'Poppins';
 
 }
+
+
 
 @mixin default_transition {
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
@@ -38,4 +40,7 @@ body{
 
 @mixin full_w-80 {
   width: 20%;
+}
+.full_w{
+  @include full_w();
 }
