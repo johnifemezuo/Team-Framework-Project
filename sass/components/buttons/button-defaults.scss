@@ -124,7 +124,7 @@
    color: $secondary-color;
 
     &.btn_hover:hover{
-      background-color: $primary-color-hover;
+      background-color: $primary-color-hover!important;;
     }
     &:focus{
       box-shadow: 0px 0px 0px 2px #7fbcff
@@ -136,7 +136,7 @@
   border: 2px solid $component-color;
 
   &.btn_hover:hover{
-    background-color: $primary-color-hover;
+    background-color: $primary-color-hover!important;;
     color:$secondary-color!important;
   }
   &:focus{
@@ -150,7 +150,7 @@
   color: $secondary-color;
 
   &.btn_hover:hover{
-    background-color: $success-color-hover;
+    background-color: $success-color-hover!important;;
   }
   &:focus{
     box-shadow: 0px 0px 0px 2px #93d3a1;
@@ -175,7 +175,7 @@
    color: $secondary-color;
 
    &.btn_hover:hover{
-    background-color:$warning-hover-color; 
+    background-color:$warning-hover-color!important; 
   }
   &:focus {
     box-shadow: 0px 0px 0px 2px #ffe082;
@@ -202,7 +202,7 @@
   color: $secondary-color;
 
   &.btn_hover:hover{
-    background-color:  $info-hover-color;
+    background-color:  $info-hover-color!important;;
   }
   &:focus{
     box-shadow: 0px 0px 0px 2px#1b6d85;
@@ -227,11 +227,11 @@
 
 
 .btn_danger{
-  background-color:$danger-color;
+  background-color:$danger-color!important;;
   color: $secondary-color;
 
   &.btn_hover:hover{
-    background-color:$danger-hover;
+    background-color:$danger-hover!important;;
   }
   &:focus {
     box-shadow: 0px 0px 0px 2px#ed99a1;
@@ -254,11 +254,11 @@
 
 
 .btn_dark{
-  background-color:$dark;
+  background-color:$dark!important;;
   color: $secondary-color;
 
   &.btn_hover:hover{
-    background-color:#222;
+    background-color:#222!important;
   }
 
   &:focus{
@@ -268,9 +268,3 @@
 }
 
 
-
-
-
-// .btn_rad{
-//   border-radius: 23.8154px
-// }
