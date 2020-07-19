@@ -53,7 +53,7 @@ header {
           order: 1; } }
       @media (min-width: 1100px) {
         header #nav .nav_ul {
-          flex-grow: .3; } }
+          flex-grow: .4; } }
       header #nav .nav_ul .nav_ul_li a {
         font-family: 'Poppins';
         font-style: normal;
