@@ -128,7 +128,7 @@
       background-color: $primary-color-hover!important;;
     }
     &:focus{
-      box-shadow: 0px 0px 0px 2px #7fbcff
+      box-shadow: 0px 0px 0px 2px #7fbcff!important;
     }
 
 }
@@ -171,7 +171,7 @@
   }
 }
 
-// #7fbcff
+// 
 .btn_warning{
    background-color: $warning-color!important;
    box-shadow: 0px 0px 3px $warning-color!important;
@@ -181,7 +181,7 @@
     background-color:$warning-hover-color!important; 
   }
   &:focus {
-    box-shadow: 0px 0px 0px 2px #ffe082;
+    box-shadow: 0px 0px 0px 2px #ffe082!important;
   }
 }
 // Button Radius and BORDER
@@ -209,7 +209,7 @@
     background-color:  $info-hover-color!important;;
   }
   &:focus{
-    box-shadow: 0px 0px 0px 2px#1b6d85;
+    box-shadow: 0px 0px 0px 2px#1384a7!important;
   }
       
 }
@@ -239,7 +239,7 @@
     background-color:$danger-hover!important;;
   }
   &:focus {
-    box-shadow: 0px 0px 0px 2px#ed99a1;
+    box-shadow: 0px 0px 0px 2px#ed99a1!important;
   }
 }
 // Button Radius and BORDER
@@ -268,7 +268,7 @@
   }
 
   &:focus{
-    box-shadow: 0px 0px 0px 2px #999c9f;
+    box-shadow: 0px 0px 0px 2px #999c9f!important;
   
   }
 }

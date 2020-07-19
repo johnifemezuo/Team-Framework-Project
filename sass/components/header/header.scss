@@ -7,7 +7,7 @@ header{
         
         @include TablelSize{
             display: flex;
-            padding: 10px 40px;
+            padding:8px 40px;
        }
     }
   .logo{
@@ -38,55 +38,23 @@ header{
             flex-grow: 1;
             padding:0;
        }
-       
-    .header_search_box{
-        
-        @include TablelSize{
-            order: 2;
-            flex-grow: .3;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-         }
-
-         input{
-            background: #4589BB;
-            border-radius: 6px;
-            border: none;
-            outline: none;
-            padding: 10px;
-            width: 100%;
-            color:white;
-            margin: 15px 0;
-
-            @include TablelSize{
-                width: 50%;   
-                margin: 0;
-            }
-
-           &::placeholder{
-                color:white;
-            }
-        }
-        .register{
-            flex-grow: .5;
-            display: flex;
-            justify-content: space-between;
-        }
-    }
-       
 
         .nav_ul{
             list-style-type: none;
             padding: 0;
             margin: 0;
-            flex-grow: .2;
-
+            flex-grow:1;
 
             @include TablelSize{
+                flex-grow: .5;
                 display: flex;
                 justify-content: space-between;
+                align-items: center;
                 order:1;
+            }
+            @include DesktopSize{
+                  flex-grow: .3;
+            
             }
            
         .nav_ul_li a{
@@ -100,6 +68,53 @@ header{
         }
     }
 
+    .header_search_box{
+        
+        @include TablelSize{
+            display: none;
+         }
+         @include DesktopSize{
+            order: 2;
+            flex-grow: .1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+         }
+
+         input{
+            background: #4589BB;
+            border-radius: 6px;
+            border: none;
+            outline: none;
+            padding: 10px;
+            width: 100%;
+            color:white;
+           
+            @include DesktopSize{
+                width: 50%;   
+            }
+
+           &::placeholder{
+                color:white;
+            }
+        }
+        .register{
+            flex-grow: .5;
+            display: flex;
+            justify-content: space-between;
+
+           
+
+            @include TablelSize{
+                display:none;
+            }
+            @include DesktopSize{
+                  display:flex;
+                  flex-grow: .5;
+                  
+            }
+        }
+    }
     .header_close{
         height: 0;
         overflow: hidden;
@@ -108,6 +123,7 @@ header{
 
         @include TablelSize{
             height: auto!important;
+            opacity: 1;
         }
     }
     .header_open{
