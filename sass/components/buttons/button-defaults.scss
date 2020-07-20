@@ -121,13 +121,14 @@
 
 .btn_primary{
    background-color:$primary-color!important;
+   box-shadow: 0px 0px 3px $primary-color!important;
    color: $secondary-color;
 
     &.btn_hover:hover{
       background-color: $primary-color-hover!important;;
     }
     &:focus{
-      box-shadow: 0px 0px 0px 2px #7fbcff
+      box-shadow: 0px 0px 0px 2px #7fbcff!important;
     }
 
 }
@@ -148,6 +149,7 @@
 .btn_success{
   background-color: $success-color!important;
   color: $secondary-color;
+  box-shadow: 0px 0px 3px $success-color;
 
   &.btn_hover:hover{
     background-color: $success-color-hover!important;;
@@ -169,16 +171,17 @@
   }
 }
 
-// #7fbcff
+// 
 .btn_warning{
    background-color: $warning-color!important;
+   box-shadow: 0px 0px 3px $warning-color!important;
    color: $secondary-color;
 
    &.btn_hover:hover{
     background-color:$warning-hover-color!important; 
   }
   &:focus {
-    box-shadow: 0px 0px 0px 2px #ffe082;
+    box-shadow: 0px 0px 0px 2px #ffe082!important;
   }
 }
 // Button Radius and BORDER
@@ -199,13 +202,14 @@
 
 .btn_info{
   background-color: $info-color!important;
+  box-shadow: 0px 0px 3px $info-color!important;
   color: $secondary-color;
 
   &.btn_hover:hover{
     background-color:  $info-hover-color!important;;
   }
   &:focus{
-    box-shadow: 0px 0px 0px 2px#1b6d85;
+    box-shadow: 0px 0px 0px 2px#1384a7!important;
   }
       
 }
@@ -227,14 +231,15 @@
 
 
 .btn_danger{
-  background-color:$danger-color!important;;
+  background-color:$danger-color!important;
   color: $secondary-color;
+  box-shadow: 0px 0px 3px $danger-color!important;
 
   &.btn_hover:hover{
     background-color:$danger-hover!important;;
   }
   &:focus {
-    box-shadow: 0px 0px 0px 2px#ed99a1;
+    box-shadow: 0px 0px 0px 2px#ed99a1!important;
   }
 }
 // Button Radius and BORDER
@@ -255,6 +260,7 @@
 
 .btn_dark{
   background-color:$dark!important;;
+  box-shadow: 0px 0px 3px $dark!important;
   color: $secondary-color;
 
   &.btn_hover:hover{
@@ -262,7 +268,7 @@
   }
 
   &:focus{
-    box-shadow: 0px 0px 0px 2px #999c9f;
+    box-shadow: 0px 0px 0px 2px #999c9f!important;
   
   }
 }
