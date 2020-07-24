@@ -1,4 +1,4 @@
-.showcase__Area{
+.showcase_Area{
     height:27vh;
    
      &-img{
@@ -22,21 +22,29 @@
              width: 100%;
              background: linear-gradient(100.56deg, rgba(27, 104, 174, 0.73) 26%, #D100A3 104.2%);
            }
-       .creative__team{
-           height: 200px;
-           display: grid;
-           grid-template-columns: repeat(2, 1fr);
-           align-items: center;
+       .creative_team{
+           height: 300px;
+           display: block!important;
            z-index: 1;
            position: relative;
-           place-content: center;
            width:  85%;
            margin: 0 auto;
            font-family: 'Poppins';
            color:$secondary-color;
 
-          
- 
+              //  Responsivenes fo Tablet Size
+           @include TablelSize{
+            display: grid!important;
+            align-items: center;
+            z-index: 1;
+            position: relative;
+            place-content: center;
+            width:  85%;
+            margin: 0 auto;
+            font-family: 'Poppins';
+            color:$secondary-color;
+           }
+
  
              .Ds_wrapper{
                  text-align: center;
@@ -61,6 +69,13 @@
                      display: flex;
                      justify-content: center;
                      align-items: center;
+                     padding-top: 40px;
+
+                    //  Responsivenes fo Tablet Size
+                    @include TablelSize{
+                        padding-top: 0px;
+                    }
+
 
                      div{
                          position: relative;
