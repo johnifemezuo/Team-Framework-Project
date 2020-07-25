@@ -216,6 +216,11 @@ bars.addEventListener('click', (e)=>{
 
    nav.className == 'header_close'? nav.classList.add('header_open') :  nav.classList.remove('header_open')
 });
+
+fetch('https://reqres.in/api/users?page=2')
+.then(data =>{
+    console.log(data)
+})
 </script>
 
 
