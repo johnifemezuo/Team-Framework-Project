@@ -3892,6 +3892,56 @@ Using display: grid;
 .color {
   background-color: transparent; }
 
+/**
+|| Carousel SECTION
+*/
+.slider_wrapper_tracker {
+  background-color: navy;
+  padding: 10px 0; }
+  .slider_wrapper_tracker .slider_content_tracker {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    overflow-x: hidden; }
+  .slider_wrapper_tracker .slider_ul_tracker {
+    display: flex;
+    list-style-type: none;
+    padding: 0px 0;
+    background-color: coral;
+    height: 200px;
+    transition: transform 0.7s ease-in-out;
+    width: 100%; }
+  .slider_wrapper_tracker .slider_li_tracker {
+    background-color: purple;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    display: block; }
+    .slider_wrapper_tracker .slider_li_tracker:nth-child(2) {
+      background-color: orangered !important; }
+    .slider_wrapper_tracker .slider_li_tracker:nth-child(3) {
+      background-color: pink !important; }
+  .slider_wrapper_tracker .carousel_btn_wrapper {
+    width: 110px;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    right: 20px;
+    bottom: 20px; }
+    .slider_wrapper_tracker .carousel_btn_wrapper button {
+      display: block;
+      border: 1px solid #1b1b1b;
+      outline: none;
+      width: 40px;
+      border-radius: 50%;
+      height: 40px;
+      background-color: unset;
+      color: white; }
+      .slider_wrapper_tracker .carousel_btn_wrapper button:hover {
+        background-color: black; }
+
 footer {
   background: #1b6ca8;
   margin: 50px 0 0; }
