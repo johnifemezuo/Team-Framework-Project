@@ -1,78 +1,37 @@
-.inp_1{
-    border: none;
-    outline: none;
-    font-size: 1rem;
-    color: $text-color;
-    font-size: inherit;
-    letter-spacing: 1px;
-    font-family: inherit;
+.input{
+
     box-shadow: 0px 0px 6px 2px $shadow-color;
-    
-    @include default_transition();
+    border: 0px 0px 0px 1px 1px lightgray;
+    background: white;
+    height: 2rem;
+    padding: 20px;
+    position: relative;
 
-    &::placeholder{
-        font-size: 1rem;
-        padding-left: 4px;
-        letter-spacing: 1px;
-        color: $placeholder-color;
-    }    
+   
 
-    &:focus{
-    box-shadow: 0px 0px 2px 1px $success-color;
+        input{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            border:none;     
+            padding: 13px 0 0 12px;    
+            outline: none;
+            background: transparent;
+
+            font-size: 1rem;
+            color: $text-color;
+            letter-spacing: 1px;
+
+        &::placeholder{
+            font-size: 1rem;
+            padding: 4px;
+            letter-spacing: 1px;
+            color: $placeholder-color;
+        }   
     }
 
-}
+    // &:focus{
+    // }
 
-.inp_2{
-    border: none;
-    outline: none;
-    font-size: 1rem;
-    color: $text-color;
-    font-size: inherit;
-    letter-spacing: 1px;
-    font-family: inherit;
-    border-bottom: 1px solid black;
-    box-shadow: 0px 0px 6px 2px $shadow-color;
-    
-    @include default_transition();
-
-    &::placeholder{
-        font-size: 1rem;
-        padding-left: 4px;
-        letter-spacing: 1px;
-        color: $placeholder-color;
-    }    
-
-    &:focus{
-    box-shadow: 0px 0px 2px 1px $success-color;
-    }
-}
-
-.inp_3{
-    border: none;
-    outline: none;
-    font-size: 1rem;
-    color: $text-color;
-    font-size: inherit;
-    letter-spacing: 1px;
-    font-family: inherit;
-    box-shadow: 0px 0px 6px 2px $shadow-color;
-    
-    @include default_transition();
-
-    &::placeholder{
-        font-size: 1rem;
-        padding-left: 4px;
-        letter-spacing: 1px;
-        color: $placeholder-color;
-    }    
-
-    &:focus{
-    box-shadow: 0px 0px 2px 1px $success-color;
-    }
-
-}
-
-.color{
-    background-color: $transparent;
 }

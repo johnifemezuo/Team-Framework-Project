@@ -3841,86 +3841,41 @@ Using display: grid;
     margin-bottom: 50px; }
 
 .inp_full_w-20 {
-  width: 80%; }
-
-.inp_full_w-40 {
-  width: 60%; }
-
-.inp_full_w-60 {
-  width: 40%; }
-
-.inp_full_w-80 {
   width: 20%; }
 
-.inp_1 {
-  border: none;
-  outline: none;
-  font-size: 1rem;
-  color: #575d63;
-  font-size: inherit;
-  letter-spacing: 1px;
-  font-family: inherit;
-  box-shadow: 0px 0px 6px 2px #dadada;
-  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-  -webkit-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-  -moz-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-  -ms-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-  -o-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out; }
-  .inp_1::placeholder {
-    font-size: 1rem;
-    padding-left: 4px;
-    letter-spacing: 1px;
-    color: #696969; }
-  .inp_1:focus {
-    box-shadow: 0px 0px 2px 1px #449d44; }
+.inp_full_w-40 {
+  width: 40%; }
 
-.inp_2 {
-  border: none;
-  outline: none;
-  font-size: 1rem;
-  color: #575d63;
-  font-size: inherit;
-  letter-spacing: 1px;
-  font-family: inherit;
-  border-bottom: 1px solid black;
-  box-shadow: 0px 0px 6px 2px #dadada;
-  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-  -webkit-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-  -moz-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-  -ms-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-  -o-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out; }
-  .inp_2::placeholder {
-    font-size: 1rem;
-    padding-left: 4px;
-    letter-spacing: 1px;
-    color: #696969; }
-  .inp_2:focus {
-    box-shadow: 0px 0px 2px 1px #449d44; }
+.inp_full_w-60 {
+  width: 60%; }
 
-.inp_3 {
-  border: none;
-  outline: none;
-  font-size: 1rem;
-  color: #575d63;
-  font-size: inherit;
-  letter-spacing: 1px;
-  font-family: inherit;
-  box-shadow: 0px 0px 6px 2px #dadada;
-  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-  -webkit-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-  -moz-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-  -ms-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-  -o-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out; }
-  .inp_3::placeholder {
-    font-size: 1rem;
-    padding-left: 4px;
-    letter-spacing: 1px;
-    color: #696969; }
-  .inp_3:focus {
-    box-shadow: 0px 0px 2px 1px #449d44; }
+.inp_full_w-80 {
+  width: 80%; }
 
-.color {
-  background-color: transparent; }
+.input {
+  box-shadow: 0px 0px 6px 2px #dadada;
+  border: 0px 0px 0px 1px 1px lightgray;
+  background: white;
+  height: 2rem;
+  padding: 20px;
+  position: relative; }
+  .input input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: none;
+    padding: 13px 0 0 12px;
+    outline: none;
+    background: transparent;
+    font-size: 1rem;
+    color: #575d63;
+    letter-spacing: 1px; }
+    .input input::placeholder {
+      font-size: 1rem;
+      padding: 4px;
+      letter-spacing: 1px;
+      color: #696969; }
 
 footer {
   background: #1b6ca8;
