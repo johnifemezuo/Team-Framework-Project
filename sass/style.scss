@@ -63,5 +63,14 @@
 @import "./components/inputs/input-widths.scss";
 @import "./components/inputs/input-default.scss";
 
+
+/**
+|| Carousel SECTION
+*/
+@import "./components/carousel/carousel.scss";
+
+// scrollSnaps
+@import './components/scrollSnaps/scrollSnaps.scss';
+
 // footer
 @import '../sass/components/footer/footer.scss'
