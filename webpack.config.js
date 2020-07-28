@@ -11,8 +11,7 @@ module.exports = {
       // Extracts the compiled CSS from the SASS files defined in the entry
       {
         test: /\.scss$/,
-        use: [
-          {
+        use: [{
             loader: MiniCssExtractPlugin.loader
           },
           {
@@ -26,6 +25,14 @@ module.exports = {
             loader: 'sass-loader' // 将 Sass 编译成 CSS
           }
         ]
+      },
+      {
+        test: /\.svg$/,
+        loader: 'svg-inline-loader'
+      },
+      {
+        test: /\.(png|woff|woff2|eot|ttf|svg)$/,
+        loader: 'url-loader?limit=100000'
       }
     ],
   },

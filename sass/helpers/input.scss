@@ -1,3 +1,7 @@
+html{
+   scroll-behavior: smooth;
+}
+
 .input_section{
     width: 100%;
     background-color: $lightGray-color;
@@ -6,7 +10,12 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+<<<<<<< Updated upstream
+=======
+        align-content: space-between;
+>>>>>>> Stashed changes
         width: 80%;
+        height: 200px;
         padding: 20px 0;
         margin: 0px auto;
     }
@@ -15,3 +24,14 @@
         margin-bottom: 50px;
     }
 }
+
+
+
+input[type="text"]{
+    @extend %fa-icon;
+    @extend .fas;
+  
+    &::before {
+      content: fa-content($fa-var-user);
+    }
+  }
