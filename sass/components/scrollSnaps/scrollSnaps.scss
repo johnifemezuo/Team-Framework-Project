@@ -1,0 +1,17 @@
+.scroll_snaps{
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+
+    .scroll_snaps_container{
+        display: grid;
+        grid-template-columns: repeat(6, 10%fr);
+        grid-gap:20px;
+    }
+
+    .scroll_snaps_item{
+        background-color: red;
+        height: 100px;
+        width: 100%;
+    }
+}

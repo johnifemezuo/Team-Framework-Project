@@ -3951,6 +3951,19 @@ Using display: grid;
       .slider_wrapper_tracker .carousel_btn_wrapper button:hover {
         background-color: black; }
 
+.scroll_snaps {
+  height: auto;
+  width: 100%;
+  margin: 0 auto; }
+  .scroll_snaps .scroll_snaps_container {
+    display: grid;
+    grid-template-columns: repeat(6, 10% fr);
+    grid-gap: 20px; }
+  .scroll_snaps .scroll_snaps_item {
+    background-color: red;
+    height: 100px;
+    width: 100%; }
+
 footer {
   background: #1b6ca8;
   margin: 50px 0 0; }
