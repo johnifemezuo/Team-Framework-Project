@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .input{
 
     box-shadow: 0px 0px 6px 2px $shadow-color;
@@ -24,8 +25,35 @@
             color: $placeholder-color;
         }   
     }
+=======
+.inp{
+    border: none;
+    outline: none;
+    padding: .9rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    color: $text-color;
+    font-size: inherit;
+    letter-spacing: 1px;
+    font-family: inherit;
+    box-shadow: 0px 0px 6px 2px $shadow-color;
+    
+    @include default_transition();
+
+    &::placeholder{
+        font-size: 1rem;
+        letter-spacing: 1px;
+        color: $placeholder-color;
+    }    
+>>>>>>> parent of a29e084... adding more inputs
 
     // &:focus{
     // }
 
+<<<<<<< HEAD
 }
+=======
+.color{
+    background-color: $transparent;
+}
+>>>>>>> parent of a29e084... adding more inputs

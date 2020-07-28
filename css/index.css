@@ -8546,6 +8546,7 @@ input[type="text"]::before {
     height: 200px;
     width: 100%; }
 
+<<<<<<< HEAD
 footer {
   background: #1b6ca8;
   margin: 50px 0 0; }
@@ -8607,6 +8608,9 @@ footer {
         padding: 0 10px; }
 =======
 .inp_1 {
+=======
+.inp {
+>>>>>>> parent of a29e084... adding more inputs
   border: none;
   outline: none;
   padding: .9rem;
@@ -8622,11 +8626,11 @@ footer {
   -moz-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   -ms-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   -o-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out; }
-  .inp_1::placeholder {
+  .inp::placeholder {
     font-size: 1rem;
-    padding-left: 4px;
     letter-spacing: 1px;
     color: #696969; }
+<<<<<<< HEAD
   .inp_1:focus {
     box-shadow: 0px 0px 2px 1px #449d44; }
 
@@ -8676,6 +8680,10 @@ footer {
     color: #696969; }
   .inp_3:focus {
     box-shadow: 0px 0px 2px 1px #449d44; }
+=======
+  .inp:focus {
+    box-shadow: 0px 0px 2px 1px #2bb449; }
+>>>>>>> parent of a29e084... adding more inputs
 
 .color {
   background-color: transparent; }
