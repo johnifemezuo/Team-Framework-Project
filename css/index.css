@@ -3896,32 +3896,41 @@ Using display: grid;
 || Carousel SECTION
 */
 .slider_wrapper_tracker {
-  background-color: navy;
   padding: 10px 0; }
   .slider_wrapper_tracker .slider_content_tracker {
     position: relative;
     width: 60%;
     margin: 0 auto;
-    overflow-x: hidden; }
-  .slider_wrapper_tracker .slider_ul_tracker {
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background-color: navy; }
+  .slider_wrapper_tracker .slide_container {
     display: flex;
-    list-style-type: none;
-    padding: 0px 0;
-    background-color: coral;
-    height: 200px;
-    transition: transform 0.7s ease-in-out;
-    width: 100%; }
-  .slider_wrapper_tracker .slider_li_tracker {
-    background-color: purple;
-    height: 100%;
+    min-width: 100%; }
+  .slider_wrapper_tracker .slide {
     text-align: center;
-    width: 100%;
-    position: absolute;
-    display: block; }
-    .slider_wrapper_tracker .slider_li_tracker:nth-child(2) {
-      background-color: orangered !important; }
-    .slider_wrapper_tracker .slider_li_tracker:nth-child(3) {
-      background-color: pink !important; }
+    min-width: 100%;
+    display: block;
+    height: 300px;
+    overflow-x: hidden; }
+    .slider_wrapper_tracker .slide .slide_img {
+      width: 100%;
+      position: absolute;
+      height: 300px;
+      top: 0;
+      bottom: 0;
+      display: block;
+      object-fit: cover; }
+    .slider_wrapper_tracker .slide .caption {
+      position: relative;
+      z-index: 1;
+      background-color: rgba(0, 0, 0, 0.863);
+      border: 1px solid white;
+      width: 100%;
+      padding: 30px;
+      width: 50%;
+      margin: 100px auto;
+      color: white; }
   .slider_wrapper_tracker .carousel_btn_wrapper {
     width: 110px;
     z-index: 2;
