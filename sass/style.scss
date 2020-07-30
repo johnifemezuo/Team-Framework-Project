@@ -25,8 +25,14 @@
 @import "./utils/margin.scss";
 
 @import "./utils/global.scss";
+
+//COLORS
 @import '../sass/colors/main-colors';
 @import '../sass/colors/button-colors';
+
+//COLOR CLASSES
+@import '../sass/colors/color-classes.scss';
+
 @import "./components/buttons/main-buttons";
 @import "./components/margins/bigger-margins";
 @import "./components/buttons/button-defaults.scss";
@@ -52,6 +58,7 @@
 // Border radius SECTIONS
 **/
 @import '../sass/utils/border_radius.scss';
+@import '../sass/utils/border.scss';
 
 
 /**
