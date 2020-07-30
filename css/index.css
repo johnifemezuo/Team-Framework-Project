@@ -3906,10 +3906,7 @@ Using display: grid;
   font-size: 1rem; }
 
 p {
-  font-size: 1.3rem;
-  color: #4e4e4e;
-  line-height: 2rem;
-  padding-bottom: 12px; }
+  display: nonw; }
 
 .lgt_txt {
   font-weight: 100; }
