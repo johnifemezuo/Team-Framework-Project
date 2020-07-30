@@ -3193,6 +3193,12 @@ body {
   font-family: 'Poppins';
   overflow-x: hidden; }
 
+.transparent {
+  background-color: transparent; }
+
+.white {
+  background-color: white; }
+
 /**
   DEFAULTS
 **/
@@ -3667,6 +3673,12 @@ Using display: grid;
 .br-20 {
   border-radius: 20px; }
 
+.b-1 {
+  border: 0.9px solid #999999; }
+
+.bb-1 {
+  border-bottom: 1px solid black; }
+
 /**
 || Tooltips SECTIONS
 **/
@@ -3859,7 +3871,6 @@ Using display: grid;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: solid 1px lightgray;
   box-shadow: 0px 0px 6px 2px #dadada;
   transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
   -webkit-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
@@ -3881,9 +3892,8 @@ Using display: grid;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 10%; }
-  .input:focus {
-    background-color: greenyellow !important; }
+    width: 10%;
+    color: gray; }
 
 /**
 || Carousel SECTION

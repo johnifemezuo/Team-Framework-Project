@@ -2,10 +2,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: solid 1px lightgray;
     box-shadow: 0px 0px 6px 2px $shadow-color;
     
     @include default_transition();
+
+
 
     input{
         border: 0;
@@ -27,9 +28,10 @@
         justify-content: center;
         align-items: center;
         width: 10%;
+        color: $light-gray;
     }
 
-    &:focus{
-        background-color: greenyellow !important;
-    }
+    // &:focus{
+    //     background-color: greenyellow !important;
+    // }
 }
