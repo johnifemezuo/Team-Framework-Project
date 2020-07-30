@@ -1,3 +1,24 @@
+.input{
+    display: flex;
+    justify-content: space-evenly;
+    height: 20%;
+    box-shadow: 0px 0px 6px 2px $shadow-color;
+
+    input{
+        width: 100%;
+        height: 100%;
+        background-color: greenyellow   ;
+        border: 0;
+    }
+
+    i{
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 .inp_1{
     border: none;
     outline: none;
