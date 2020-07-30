@@ -85,4 +85,10 @@
 @import './components/scrollSnaps/scrollSnaps.scss';
 
 // footer
-@import '../sass/components/footer/footer.scss'
+@import '../sass/components/footer/footer.scss';
+
+/**
+// CARD SECTION
+*/
+@import './components/cards/card.scss';
+@import './helpers/card_helper.scss';
