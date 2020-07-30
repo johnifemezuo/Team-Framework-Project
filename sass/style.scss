@@ -45,8 +45,13 @@
 /**
 || Showcase image  SECTIONS
 **/
-@import '../sass/showcase_image/showcase__Area';
-@import './showcase_image/Component';
+@import '../sass/helpers/showcase__Area';
+@import '../sass/helpers/Component';
+
+/**
+// Border radius SECTIONS
+**/
+@import '../sass/utils/border_radius.scss';
 
 
 /**
@@ -65,53 +70,12 @@
 
 
 /**
-|| CARD SECTION
+|| Carousel SECTION
 */
-@import "./helpers/card_helper.scss";
-@import "./components/cards/card.scss";
+@import "./components/carousel/carousel.scss";
 
+// scrollSnaps
+@import './components/scrollSnaps/scrollSnaps.scss';
 
-
-/**
-|| CARD SECTION
-*/
-@import "./colors/all_colors.scss";
-
-
-
-/**
-|| FONT SIZES SECTION
-*/
-@import "../sass/sizes/font_sizes.scss";
-
-
-
-/**
-|| MEDIA QUERY
-*/
-@import "../sass/media_query/card_media-query.scss";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// footer
+@import '../sass/components/footer/footer.scss'

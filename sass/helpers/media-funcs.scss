@@ -1,5 +1,5 @@
 $tablet: 700px;
-$desktop : 1000px;
+$desktop : 1100px;
 
 
 @mixin  TablelSize {  
@@ -7,5 +7,12 @@ $desktop : 1000px;
     @media (min-width: $tablet) {
         @content;
     };
-    
 };
+
+@mixin  DesktopSize {
+    
+    @media  (min-width: $desktop) {
+        @content;
+        
+    }
+}
