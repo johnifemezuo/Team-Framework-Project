@@ -9,77 +9,38 @@
 </head>
 <html>
 
+<!-- THE HEAD SECTION -->
+<!-- NAVIGATION COMPONENT -->
+
     <main>
-        <header>
-            <div class="header_content">
-                 <div class="logo">
-                     <img src="/public/assets/img/thompson.JPG" alt="">
-                 </div>
-
-                 <nav id="nav" class="header_close">
-                    <div class="header_search_box">
-                        <input type="text" placeholder="Search">    
-                       
-                        <div class="register">
-                            <button class="btn btn_ex_sm btn_hover btn_info ">Register</button>
-                            <button class="btn btn_ex_sm btn_hover btn_info">Login</button>
-                        </div>   
-                    </div>
-                    
-
-                     <ul class="nav_ul">
-                         <li class="nav_ul_li"><a href="#">Home</a></li>
-                         <li class="nav_ul_li"><a href="#">Features</a></li>
-                         <li class="nav_ul_li"><a href="#">Pages</a></li>
-                         <li class="nav_ul_li"><a href="#">Contacts Us</a></li>
-                         <li class="nav_ul_li"><a href="#">About us</a></li>
-                     </ul>
-                 </nav>
-            </div>
-
-            <div class="menu">
-                <div id="bars">
-                    <div class="bar1 bar"></div>
-                    <div class="bar2 bar"></div>
-                    <div class="bar3 bar"></div>
-                </div>
-            </div>
-        </header>
+        
+        
         
         <div class="showcase__Area">
                 <div class="showcase_Area-img">
-                    <div class="creative_team col-m-4-4">
-                        <div class="creative_team-Ds team">
-                            <div class="Ds_wrapper"> 
-                                <div class="Ds">Ds</div>
-                                <p>A beautiful design System For Our team its Free and Open Source</p>
+                    <div class="container">
+                        <div class="creative_team">
+                            <div class="creative_team-Ds team">
+                                <div class="Ds_wrapper"> 
+                                    <div class="Ds">DS</div>
+                                    <h2>TEAM UI KIT</h2>
+                                    <p>A beautiful design System For Our team its Free and Open Source</p>
+                                    <button class="btn btn_md btn_hover  btn_danger">Download</button>
+                                </div>
                             </div>
-                        </div>
-                        <div class="creative_team-design-team team">
-                            <p> Design & coded By </p>
-                            <div><img src="/public/assets/img/thompson.JPG" alt=""></div>
-                            <p> Creative Team</p>
                         </div>
                     </div>
                 </div>
         </div>
-          
-        <section class="components">
-            <div class="cp_title">
-                <h3>Components</h3>
-            </div>
-                <div class="bg_color">
-                    <ul class="cp_ul">
-                        <li class="cp_li"><a href="./index.html">Buttons</a></li>
-                        <li class="cp_li"><a href="./input.html">Forms</a></li>
-                        <li class="cp_li"><a href="./cards.html">Cards</a></li>
-                        <li class="cp_li"><a href="./tooltips.html">ToolTips</a></li>
-            
-                    </ul>
-                </div>
-        </section>
+    </main>
 
+<!-- ========================================================================================================================== -->
+<!-- =====================================================================BUTTON COMPONENT===================================================== -->
+<!-- ========================================================================================================================== -->
+<div class="container bg-color">
         <section class="section__btn_wrap">
+            <h3 class="header">BUTTONS</h3>
+                <!-- Default buttons sizes -->
                 <div class="btn_flex_wrap col-m-4-4">
                         <button class="btn btn_ex_lg btn_hover btn_primary">Ext lg Button</button>
                         <button class="btn btn_lg btn_hover btn_primary">Lg Button</button>
@@ -94,8 +55,8 @@
                         <button class="btn btn_sm  btn_hover btn_primary"> btn radius</button>
                         <button class="btn btn_sm  btn_hover btn_primary btn_no_border_radius">  no radius</button>
                         <button class="btn btn_sm  btn_hover btn_primary  btn_round_primary">Lg Button</button>
-                        <button class="btn btn_sm  btn_hover  btn_round_primary">Lg Button</button>
-                        <button class="btn btn_sm  btn_hover btn_border_primary">Lg Button</button>
+                        <button class="btn btn_sm  btn_hover btn_round_primary">Lg Button</button>
+                        <button class="btn btn_sm  btn_hover btn_border_primary">Rounded</button>
                         <button class="btn btn_sm  btn_hover btn_no_border_radius btn_border_primary">Lg Button</button>
                     </div>
             </div> 
@@ -111,9 +72,7 @@
               </div>
           </div> 
 
-
-         <div class="section__btn_wrap">
-         <div>
+            <!-- buttons Colors -->
             <p class="btn_radius">Buttons Colors</p>
              <div class="btn_flex_wrap col-m-4-4">
                 <button class="btn btn_sm  btn_hover"> Dafault Color</button>
@@ -123,11 +82,433 @@
                 <button class="btn btn_sm  btn_hover  btn_warning">Warning Color</button>
                 <button class="btn btn_sm  btn_hover btn_dark">Dark color</button>
                 <button class="btn btn_sm  btn_hover btn_info">Info color</button>
-          
-              </div>
-        </div>
+            </div>
    </section>
    
+
+
+<!-- ========================================================================================================================== -->
+<!-- =====================================================================INPUT COMPONENT===================================================== -->
+<!-- ========================================================================================================================== -->
+
+<div class="input_section ">
+        <h2 class="header head">FORM</h2>
+    <div class="container">
+        <div class="input_section-container">
+            <div class="input helper white  inp_full_w-60 ">
+                <input type="text" class="" placeholder="Enter your text here ...">
+            </div>
+    
+            <div class="input b-1 transparent inp_full_w-60">
+                <input type="text" class="p-20" placeholder="Enter your text here ...">
+                <span class="fas fa-search fa-lg "></span>
+            </div>
+    
+            <div class="input white inp_full_w-60">
+                <i class="fas fa-envelope fa-lg "></i>
+                <input type="text" class="p-20" placeholder="Enter your text here ...">
+            </div>
+    
+            <div class="input white inp_full_w-60">
+                <input type="text" class="p-20" placeholder="Enter your text here ...">
+            </div>
+            
+            <div class="input white inp_full_w-60">
+                <i class="fas fa-user fa-lg icon-bg"></i>
+                <input type="text" class="p-20" placeholder="Enter your text here ...">
+            </div>
+    
+            <div class="input white inp_full_w-60">
+                <input type="text" class="p-20" placeholder="Enter your text here ...">
+                <span class="fas fa-user fa-lg icon-bg"></span>
+            </div>
+    
+            <div class="input bb-1 white inp_full_w-60">
+                <input type="text" class="p-20" placeholder="Enter your text here ...">
+            </div>
+    
+            <div class="input bb-1 white inp_full_w-60">
+                <i class="fas fa-envelope fa-lg"></i>
+                <input type="text" class="p-20" placeholder="Enter your text here ...">
+            </div>
+        </div>
+    </div>
+    </div>
+
+   
+
+
+<!-- ========================================================================================================================== -->
+<!-- =====================================================================CARD COMPONENT===================================================== -->
+<!-- ========================================================================================================================== -->
+
+<h2 class="header head">FORM</h2>
+<div class="cards__wrapper">
+
+    <!-- Card with normal button -->
+    <div class="card own_st">
+        <img src="./assets/img/Sbornik_oboev_253_129.jpg" alt="" class="card_img ">
+        <div class="card_txt">
+             <a href="#" class="card_txt_link">This is an incredible card header</a>
+             <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis  minima eum laLorem ipsum dolor siudantium.</p>
+            <div class="card_button">
+                <button class="btn btn_md btn_primary full_w">Read More</button>
+            </div>
+        </div>
+    </div>
+
+
+     <!-- Card with border radius button and border -->
+     <div class="card own_st  ">
+        <img src="./assets/img/Sbornik_oboev_253_61.jpg" alt="" class="card_img">
+        <div class="card_txt">
+            <a href="#" class="card_txt_link">This is an incredible card header</a>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis  minima eum laLorem ipsum dolor siudantium.</p>
+            <div class="card_button br6">
+                <button class="btn btn_primary btn_md">Read More</button>
+            </div>
+        </div>
+    </div>
+
+       <!-- Card with writer profile -->
+       <div class="card own_st">
+        <div class="card_profile ">
+            <img src="../public/assets/img/thompson.JPG" alt="">
+            <div class="card_profile_txt">
+                <b>Thompson Okoli</b>
+                <p>Top Writter</p>
+            </div>
+        </div>
+        <img src="./assets/img/Sbornik_oboev_253_65.JPG" alt="" class="card_img">
+        <div class="card_txt">
+             <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis  minima eum laLorem ipsum dolor siudantium.</p>
+             <div class="txt_link">
+               <a href="#">Action 1</a>
+               <a href="#">Action 1</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card own_st">
+        <img src="./assets/img/Sbornik_oboev_253_87.jpg" alt="" class="card_img ">
+        <div class="card_txt">
+             <div class="card_profile">
+                <img src="../public/assets/img/thompson.JPG" alt="">
+                <div class="card_profile_txt">
+                    <b>Thompson Okoli</b></body>
+                    <p>Top Writter</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+          <!-- Card with no button and flate-->
+    <div class="card own_st ">
+        <img src="./assets/img/Sbornik_oboev_253_67.jpg" alt="" class="card_img br-9 p-12">
+        <div class="card_txt">
+             <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis  minima eum laLorem ipsum dolor siudantium.</p>
+        </div>
+    </div>
+
+
+
+    <div class="lengthed-wrapper">
+        <div class="card_aligned br6">
+            <img src="./assets/img/Sbornik_oboev_253_67.jpg" alt="" class="card_aligned_img ">
+            <div class="card_aligned_txt">
+                <a href="#" class="card_aligned_txt_link">This is an incredible header</a>
+                <p class="">Lorem ipsum ctetur adipisicing elit. Offici eum laLorem ipsum dolor siudantium.</p>
+            </div>
+          </div>
+
+          <div class="card_aligned br6">
+            <div class="card_aligned_txt">
+                <a href="#" class="card_aligned_txt_link">This is an incredible card header</a>
+                <p class="">Lorem ipsum dolicing elit. Officiis Officiis  minima eum laLorem ipsum dolor siudantium.</p>
+                <button class="btn btn_ex_sm btn_primary">Contact Us</button>
+            </div>
+          </div>
+        
+    </div>
+
+
+    <div class="profile br6">
+        <div class="profile_content">
+            <img src="./assets/img/thompson.JPG" alt="" class="profile_content_img">
+            <h4>Jenifer simmons</h4>
+            <p class="title">Executive Producer</p>
+            <button class=" btn btn_ex_sm btn_primary">Normal Button</button>
+        </div>
+    </div>
+
+</div>
+
+<!-- ========================================================================================================================== -->
+<!-- =====================================================================TOOLTIPS COMPONENT===================================================== -->
+<!-- ========================================================================================================================== -->
+
+
+<div class="tooltips_section">
+    <h2 class="header head"> TOOLTIPS</h2>
+
+    <!-- <div class="tooltips__helper">
+        <div class="tooltips_wrapper  col-m-4-4">
+            <button class="btn btn_sm btn_primary toolTips">
+                Tooltips  Top
+                <div class="tooltips_top">Tooltips Top</div> 
+            </button>
+
+
+            <button class="btn btn_sm btn_primary toolTips">
+                Tooltips Bottom
+                <div class="tooltips_bottom">Tooltips Bottom</div> 
+            </button>
+
+            <button class="btn btn_sm btn_primary toolTips">
+                Tooltips Left
+                <div class="tooltips_left">Tooltips  Right</div> 
+            </button>
+
+            <button class="btn btn_sm btn_primary toolTips">
+                Tooltips Left
+                <div class="tooltips_right">Tooltips Right</div> 
+            </button>
+        </div>
+    </div> -->
+
+
+
+    <div class="tooltips__helper">
+        <div class="tooltips_wrapper  col-m-4-4">
+            <button class="btn btn_md btn_primary toolTips bmr">
+                 Top Arrow
+                <div class="tooltips_top_arrow">Tooltips Top Arrow</div> 
+            </button>
+
+
+            <button class="btn btn_md btn_primary toolTips bmr">
+                 Bottom Arrow
+                <div class="tooltips_bottom_arrow">Tooltips Bottom Arrow</div> 
+            </button>
+
+            <button class="btn btn_md btn_primary toolTips bmr">
+                 Left Arrow
+                <div class="tooltips_left_arrow">Tooltips Left Arrow</div> 
+            </button>
+
+            <button class="btn btn_md btn_primary toolTips bmr">
+                 right  Arrow
+                <div class="tooltips_right_arrow">Tooltips Right  Arrow</div> 
+            </button>
+        </div>
+    </div>
+</div>       
+
+
+<!-- ========================================================================================================================== -->
+<!-- =====================================================================COURSEL COMPONENT===================================================== -->
+<!-- ========================================================================================================================== -->
+
+<div class="navber_wrapper">
+    <h2 class="header head"> NAVBERS</h2>
+    <header  class="m-space">
+    <div class="header_content">
+         <div class="logo">
+             <a href="#">LOGO</a>
+         </div>
+
+         <nav id="nav" class="header_close">
+            <div class="header_search_box">
+                <input type="text" placeholder="Search">    
+                <div class="register">
+                    <button class="btn btn_ex_sm btn_hover btn_info ">Register</button>
+                    <button class="btn btn_ex_sm btn_hover btn_info">Login</button>
+                </div>   
+            </div>
+            
+             <ul class="nav_ul">
+                 <li class="nav_ul_li"><a href="#">Home</a></li>
+                 <li class="nav_ul_li"><a href="#">Features</a></li>
+                 <li class="nav_ul_li"><a href="#">Pages</a></li>
+                 <li class="nav_ul_li"><a href="#">Contacts Us</a></li>
+                 <li class="nav_ul_li"><a href="#">About us</a></li>
+             </ul>
+         </nav>
+    </div>
+
+    <div class="menu">
+        <div id="bars">
+            <div class="bar1 bar"></div>
+            <div class="bar2 bar"></div>
+            <div class="bar3 bar"></div>
+        </div>
+    </div>
+</header>
+
+<!-- ----------------------------------------------------------------------------------------------------------------- -->
+
+<header class="m-space">
+    <div class="header_content">
+         <div class="logo">
+            <a href="#">LOGO</a>
+         </div>
+
+         <nav id="nav" class="header_close">
+            <!-- <div class="header_search_box">
+                <input type="text" placeholder="Search">    
+                <div class="register">
+                    <button class="btn btn_ex_sm btn_hover btn_info ">Register</button>
+                    <button class="btn btn_ex_sm btn_hover btn_info">Login</button>
+                </div>   
+            </div> -->
+            
+             <ul class="nav_ul">
+                 <li class="nav_ul_li"><a href="#">Home</a></li>
+                 <li class="nav_ul_li"><a href="#">Features</a></li>
+                 <li class="nav_ul_li"><a href="#">Pages</a></li>
+                 <li class="nav_ul_li"><a href="#">Contacts Us</a></li>
+                 <li class="nav_ul_li"><a href="#">About us</a></li>
+             </ul>
+         </nav>
+    </div>
+
+    <div class="menu">
+        <div id="bars">
+            <div class="bar1 bar"></div>
+            <div class="bar2 bar"></div>
+            <div class="bar3 bar"></div>
+        </div>
+    </div>
+</header>
+
+<!-- -------------------------------------------------------------------- -->
+
+<header class="m-space">
+    <div class="header_content">
+         <div class="logo">
+            <a href="#">LOGO</a>
+         </div>
+
+         <nav id="nav" class="header_close">
+            <div class="header_search_box">
+                <input type="text" placeholder="Search">    
+                <div class="register">
+                    <button class="btn btn_ex_sm btn_hover btn_info ">Register</button>
+                    <button class="btn btn_ex_sm btn_hover btn_info">Login</button>
+                </div>   
+            </div>
+            
+             <ul class="nav_ul">
+                 <li class="nav_ul_li"><a href="#">Home</a></li>
+                 <li class="nav_ul_li"><a href="#">Features</a></li>
+                 <li class="nav_ul_li"><a href="#">Pages</a></li>
+                 <li class="nav_ul_li"><a href="#">Contacts Us</a></li>
+                 <li class="nav_ul_li"><a href="#">About us</a></li>
+             </ul>
+         </nav>
+    </div>
+
+    <div class="menu">
+        <div id="bars">
+            <div class="bar1 bar"></div>
+            <div class="bar2 bar"></div>
+            <div class="bar3 bar"></div>
+        </div>
+    </div>
+</header>
+
+</div>
+
+<!-- ========================================================================================================================== -->
+<!-- =====================================================================NAVIGATION COMPONENT===================================================== -->
+<!-- ========================================================================================================================== -->
+
+
+<div class="slider_wrapper_tracker">
+    <h2 class="header head"> CAROUSEL</h2>
+    <div class="slider_content_tracker">
+            <div class="slide_container">
+
+                <div class="slide" id="last_slide">
+                    <div class="caption">
+                        <h1>First Slide</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam aliquid unde incidunt!</p>
+                    </div>
+                </div>
+                <div class="slide ">
+                    <div class="caption">
+                        <h1>Slider One</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam aliquid unde incidunt!</p>
+                    </div>
+                    <img src="./assets/img/35.jpg" alt="" class="slide_img">
+                </div>
+                <div class="slide">
+                    <div class="caption">
+                        <h1>Slider Two</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam aliquid unde incidunt!</p>
+                    </div>
+                    <img src="./assets/img/79.jpg" alt="" class="slide_img">
+                </div>
+                
+                <div class="slide">
+                    <div class="caption">
+                        <h1>Slider three</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam aliquid unde incidunt!</p>
+                    </div>
+                    <img src="./assets/img/99.jpg" alt="" class="slide_img">
+                </div>
+                <div class="slide">
+                    <div class="caption">
+                        <h1>Slider three</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam aliquid unde incidunt!</p>
+                    </div>
+                    <img src="./assets/img/city-buildings-during-sunset-1470502.jpg" alt="" class="slide_img">
+                </div>
+                <div class="slide">
+                    <div class="caption">
+                        <h1>Slider Four</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam aliquid unde incidunt!</p>
+                    </div>
+                    <img src="./assets/img/bunch-of-camels-in-desert-dune-2222241.jpg" alt="" class="slide_img">
+
+                </div>
+                <div class="slide" id="first_slide">
+                    <div class="caption">
+                        <h1> fist Slide</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam aliquid unde incidunt!</p>
+                    </div>
+                    <img src="./assets/img/Sbornik_oboev_253_150.jpg" alt="" class="slide_img">
+                </div>
+            </div>
+
+            <div class="carousel_btn_wrapper">
+                <div><button class="prev_slide"><i class="fa fa-arrow-left"></i></button></div>
+                <div><button class="next_slide"><i class="fa fa-arrow-right"></i></button></div>
+            </div>
+
+    </div>
+</div>
+
+<div class="scroll_snaps">
+    <div class="scroll_snaps_container">
+        <div class="scroll_snaps_item c-txt">Image one</div>
+        <div class="scroll_snaps_item c-txt">Image Two</div>
+        <div class="scroll_snaps_item c-txt">Image Three</div>
+        <div class="scroll_snaps_item c-txt">Image Four</div>
+        <div class="scroll_snaps_item c-txt">Image Five</div>
+        <div class="scroll_snaps_item c-txt">Image Six</div>
+    </div>
+</div>
+
+
+
+ 
+<!-- ========================================================================================================================== -->
+<!-- =====================================================================NAVIGATION COMPONENT===================================================== -->
+<!-- ========================================================================================================================== -->
+
+
 <section>
     <footer>
       <div class="footer_content">
@@ -205,7 +586,15 @@
     
 </section>
 
-</main>
+
+
+</div>
+
+
+
+
+
+
 
 <script src="./js/app.js"></script>
 </body>

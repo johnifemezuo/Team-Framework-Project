@@ -5,15 +5,18 @@
 .btn {
   box-sizing: border-box;
   display: inline-block;
-  padding: .8rem .80rem;
+  padding: 0.25rem;
   outline: none;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   min-width: 100px;
   font-size: inherit;
   font-family: inherit;
+  line-height: 1.5;
   margin: 0;
-  border-radius: 6px;
-  box-shadow: 0px 0px 3px $btnDefaultColor;
+  font-size: 1rem;
+  transition: 0.15s ease-in-out;
+  border-radius: 5px;
+  // box-shadow: 0px 0px 3px $btnDefaultColor;
   cursor: pointer;
   appearance: button;
   -webkit-appearance: button;
@@ -38,36 +41,30 @@
 
 // BTN SIZE ELG
 .btn_ex_lg{
-    padding: .77rem 1.1rem;
-    min-width: 150px;
+    padding: 14px;
     font-size: 1.4em;
   }
 
 // BTN SIZE LG
  .btn_lg{
-      padding: .62rem .9rem;
-      min-width: 140px;
+      padding: 12px;
       font-size: 1.3em;
   }
   // BTN SIZE MD
   .btn_md{
-      padding: .50rem .7rem;
-      min-width: 130px;
+      padding: 10px;
       font-size: 1.2em;
   }
   //  BTN SIZE SM
   .btn_sm{
-      padding: .45rem .5rem;
-      min-width: 120px;
+      padding: 9px;
       font-size: 1.1em;
   }
 
   // BTN SIZE EXSM .btn_round_info{
   .btn_ex_sm{
-      padding: .40rem .7rem;
-      min-width: 100px;
+      padding: 7px;
       font-size: 1em;
-    
   }
 
 
@@ -99,7 +96,7 @@
 .btn_round_primary, .btn_round_warning, .btn_round_success, .btn_round_danger, .btn_round_info{
     background-color: unset;
     color: $black-color;
-    border-radius: 23.8154px;
+    // border-radius: 23.8154px;
 
   &:focus{
     border-radius: 23.8154px;
@@ -112,17 +109,12 @@
 .btn_border_primary, .btn_border_warning,  .btn_border_success, .btn_border_danger, .btn_border_info{
     background-color: unset;
     color: $black-color;
-    border-radius: 10px;
-
-  &:focus{
-    border-radius: 10px;
-  }
+    border-radius: 50px;
 }
-
 
 .btn_primary{
    background-color:$primary-color!important;
-   box-shadow: 0px 0px 3px $primary-color!important;
+  //  box-shadow: 0px 0px 3px $primary-color!important;
    color: $secondary-color;
 
     &.btn_hover:hover{
@@ -135,7 +127,7 @@
 }
 // Button Radius and BORDER
 .btn_round_primary, .btn_border_primary{
-  border: 2px solid $component-color;
+  border: 1px solid $component-color;
 
   &.btn_hover:hover{
     background-color: $primary-color-hover!important;;
@@ -150,7 +142,7 @@
 .btn_success{
   background-color: $success-color!important;
   color: $secondary-color;
-  box-shadow: 0px 0px 3px $success-color;
+  // box-shadow: 0px 0px 3px $success-color;
 
   &.btn_hover:hover{
     background-color: $success-color-hover!important;;
@@ -175,7 +167,7 @@
 // 
 .btn_warning{
    background-color: $warning-color!important;
-   box-shadow: 0px 0px 3px $warning-color!important;
+  //  box-shadow: 0px 0px 3px $warning-color!important;
    color: $secondary-color;
 
    &.btn_hover:hover{
@@ -203,7 +195,7 @@
 
 .btn_info{
   background-color: $info-color!important;
-  box-shadow: 0px 0px 3px $info-color!important;
+  // box-shadow: 0px 0px 3px $info-color!important;
   color: $secondary-color;
 
   &.btn_hover:hover{
@@ -234,7 +226,7 @@
 .btn_danger{
   background-color:$danger-color!important;
   color: $secondary-color;
-  box-shadow: 0px 0px 3px $danger-color!important;
+  // box-shadow: 0px 0px 3px $danger-color!important;
 
   &.btn_hover:hover{
     background-color:$danger-hover!important;;
@@ -261,7 +253,7 @@
 
 .btn_dark{
   background-color:$dark!important;;
-  box-shadow: 0px 0px 3px $dark!important;
+  // box-shadow: 0px 0px 3px $dark!important;
   color: $secondary-color;
 
   &.btn_hover:hover{

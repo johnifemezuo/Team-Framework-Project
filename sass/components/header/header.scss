@@ -8,6 +8,7 @@ header{
         @include TablelSize{
             display: flex;
             padding:8px 40px;
+            height: 80px;
        }
     }
   .logo{
@@ -21,9 +22,10 @@ header{
         display: flex;
         align-items: center;
     }
-     img{
-        width:40px;
-        height: 40px;
+     a{
+        font-size: 26px;
+        color: white;
+        font-weight: 500;
         border-radius: 50%;
     }
   }
@@ -61,10 +63,17 @@ header{
             font-family: 'Poppins';
             font-style: normal;
             font-weight: normal;
-            font-size: 16px;
+            font-size: 1.2rem;
             line-height: 3;
             color: #FFFFFF;
+
+            &:hover {
+                color:rgb(6, 6, 163);
+                transition : all 380ms ease-in-out;
+
+            }
           }
+
         }
     }
 
@@ -171,4 +180,14 @@ header{
 .change .bar3{
   width: 100%!important;
   transform: translateY(-7px) rotateZ(-45deg);
+}
+
+// helper css--dont minde please
+.m-space {
+    margin: 9px 0px 9px 0px;
+}
+.navbar_wrapper {
+    margin-bottom: 50px;
+    display: none;
+    background-color: red;
 }

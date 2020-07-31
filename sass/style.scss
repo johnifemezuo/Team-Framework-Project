@@ -33,14 +33,13 @@
 //COLOR CLASSES
 @import '../sass/colors/color-classes.scss';
 
-@import "./components/buttons/main-buttons";
 @import "./components/margins/bigger-margins";
 @import "./components/buttons/button-defaults.scss";
 
 /**
   Button SECTIONS HELPERS
 **/
-@import './helpers/button__section.scss';
+@import './helpers/button_helper.scss';
 
 /**
    GRID SECTIONS
@@ -70,7 +69,7 @@
 /**
 || INPUT SECTION
 */
-@import "./helpers/input.scss";
+@import "./helpers/input_helper.scss";
 @import "../sass/colors/form-colors.scss";
 @import "./components/inputs/input-widths.scss";
 @import "./components/inputs/input-default.scss";
