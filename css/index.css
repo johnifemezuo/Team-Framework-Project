@@ -3887,7 +3887,6 @@ Using display: grid;
     -o-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out; }
     .input input::placeholder {
       font-size: 1rem;
-      padding-left: 6px;
       letter-spacing: 1px;
       color: #696969; }
   .input span,
@@ -3902,6 +3901,8 @@ Using display: grid;
     -moz-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     -ms-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     -o-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out; }
+  .input:hover {
+    border: 1px solid lightgreen; }
 
 .icon-bg {
   width: 200px;

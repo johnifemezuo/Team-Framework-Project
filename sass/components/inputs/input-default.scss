@@ -17,7 +17,6 @@
 
         &::placeholder{
             font-size: 1rem;
-            padding-left: 6px;
             letter-spacing: 1px;
             color: $placeholder-color;
         } 
@@ -33,7 +32,10 @@
         @include default_transition();
     }
 
-    
+    &:hover{
+        border: 1px solid lightgreen;
+    }
+    // &:focus
 }
 
 .icon-bg{
