@@ -27,11 +27,19 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 10%;
+        width: 80px;
         color: $light-gray;
     }
 
-    // &:focus{
-    //     background-color: greenyellow !important;
-    // }
+    &:focus{
+        background-color: greenyellow !important;
+    }
+}
+
+.icon-bg{
+    width: 200px;
+    height: 100%;
+    background-color: gray;
+    color: rgb(255, 255, 255) !important;
+    border-radius: 5px;
 }
