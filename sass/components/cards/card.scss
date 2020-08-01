@@ -1,5 +1,5 @@
 @import "./colors/all_colors.scss";
-@import "./media_query/card_media-query.scss";
+@import "./media_query/media_query.scss";
 
 
 
@@ -12,7 +12,9 @@
     height: auto;
     // border-radius: 9px;
     box-sizing: border-box;
-
+    margin-bottom: 12px;
+    
+    
     @include mobile {
            margin-bottom: 12px;
     }
@@ -44,7 +46,7 @@
         }
         p {
             padding: 10px 0;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
         }
         .txt_link {
             a {
@@ -152,7 +154,7 @@
     }
     p {
         color: rgb(97, 97, 97);
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         padding-bottom: 5px;
     }
 
@@ -160,7 +162,11 @@
 
 
 
-
+@media screen and (max-width: 390px) {
+    .card {
+        display: none;
+    }
+}
 
 
 

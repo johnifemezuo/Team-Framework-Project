@@ -10,7 +10,7 @@
            //  Responsivenes fo Tablet Size
 
         .btn_flex_wrap{
-          @include TablelSize{
+          @include medium-desktop {
             display:block!important;
             grid-template-columns:unset!important;
 

@@ -6,9 +6,9 @@
 
 
 .container {
-    width : 1200px;
+    max-width : 1100px;
     margin : 0 auto;
-    display: none;
+    width: 100%;
 }
 
 .container_fluid {
@@ -25,10 +25,9 @@ a {
     }
 }
 
-p {
-    line-height: 1.7rem;
+.framework_bg {
+    background: #ddd;
 }
-
 
 
 

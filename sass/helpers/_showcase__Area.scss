@@ -1,5 +1,11 @@
+
+@import '../media_query/media_query.scss';
+
+
 .showcase_Area{
-    height:27vh;
+    
+   
+    // height:27vh;
         &-img{
         background-image: url('/public/assets/img/bgg.jpg');
         width: 100%;
@@ -10,7 +16,10 @@
         padding: 10px 0 ;
         position: relative;
         margin-bottom: 70px;
-        
+
+        @include mobile {
+            height: 400px;
+        }
            &::after{
              content: '';
              position: absolute;
@@ -22,40 +31,46 @@
            }
        .creative_team{
            height: 400px;
-           margin-top: 300px;
+           margin-top: 100px;
            display: block!important;
            position: relative;
            width:  100%;
            background-color: transparent;
            font-family: 'Poppins';
            color:$secondary-color;
-
-              //  Responsivenes fo Tablet Size
-           @include TablelSize{
-            display: grid!important;
-            align-items: center;
-            z-index: 1;
-            position: relative;
-            place-content: center;
-            width:  85%;
-            margin: 0 auto;
-            font-family: 'Poppins';
-            color:$secondary-color;
+           z-index: 1;
+                     
+           @include mobile {
+               margin-top: 30px;
+               height: 200px;
            }
+           
+           @include tablet {
+               display: none;
+           }
+          
 
- 
              .Ds_wrapper{
                  text-align: center;
+                 padding: 20px;
+                 
                  h2 {
                     font-size: 40px;
                     font-weight: 300;
                     font-family: 'poppins';
+
+                    @include mobile {
+                       font-size: 2.2rem;
+                    }
                  }
 
                  p{
                     font-size: 18px;
                     padding-top: 10px;
                     margin-bottom: 12px;
+                    @include mobile {
+                        font-size: 1.3rem;
+                     }
                 }
                  .Ds{
                      background-color:  $primary-color;
@@ -66,7 +81,13 @@
                      font-size: 35px;
                      height: 70px;
                      width: 70px;
-                     margin: 0 auto;
+                     margin: 15px auto;
+                     
+                     @include mobile {
+                        font-size: 2.2rem;
+                        height: 50px;
+                        width: 50px;
+                     }
                  }
              }
  
@@ -77,10 +98,9 @@
                      padding-top: 40px;
 
                     //  Responsivenes fo Tablet Size
-                    @include TablelSize{
+                    @include tablet{
                         padding-top: 0px;
                     }
-
 
                      div{
                          position: relative;
@@ -114,3 +134,4 @@
       }
     
    }
+

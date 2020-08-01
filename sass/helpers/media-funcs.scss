@@ -1,18 +1,24 @@
-$tablet: 700px;
-$desktop : 1100px;
+// $tablet: 700px;
+// $desktop : 1100px;
 
 
-@mixin  TablelSize {  
+// @mixin  TablelSize {  
     
-    @media (min-width: $tablet) {
-        @content;
-    };
-};
+//     @media (min-width: $tablet) {
+//         @content;
+//     };
+// };
 
-@mixin  DesktopSize {
+// @mixin  DesktopSize {
     
-    @media  (min-width: $desktop) {
-        @content;
+//     @media  (min-width: $desktop) {
+//         @content;
         
-    }
-}
+//     }
+// }
+
+
+
+
+
+

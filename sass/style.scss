@@ -16,10 +16,8 @@
 @import './helpers/media-funcs.scss';
 
 // header.scss
-@import './components/header/header.scss';
+@import './components/navbar/navbar.scss';
 
-// WRAPPERS
-@import "./utils/wrapper.scss";
 
 // MARGIN AND PADDINGS
 @import "./utils/margin.scss";
@@ -57,7 +55,6 @@
 // Border radius SECTIONS
 **/
 @import '../sass/utils/border_radius.scss';
-@import '../sass/utils/border.scss';
 
 
 /**
@@ -71,7 +68,6 @@
 */
 @import "./helpers/input_helper.scss";
 @import "../sass/colors/form-colors.scss";
-@import "./components/inputs/input-widths.scss";
 @import "./components/inputs/input-default.scss";
 
 
@@ -91,3 +87,8 @@
 */
 @import './components/cards/card.scss';
 @import './helpers/card_helper.scss';
+@import './media_query/media_query.scss';
+
+
+
+@import './reset/reset';

@@ -1,21 +1,14 @@
 
-@import '../media_query/card_media-query.scss';
-body {
-    background-color: #ddd;
-}
+@import '../media_query/media_query.scss';
+
 .bg-color {
     background-color: white;
 }
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    width: 100%;
-}
+
 .cards__wrapper {
     padding: 15px; 
     max-width: 1200px;
     margin: 30px;
-
 
    @include tablet {
             display: grid;

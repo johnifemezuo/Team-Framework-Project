@@ -1,3 +1,6 @@
+
+@import './media_query/media_query.scss';
+
 header{
     background: #1B6CA8;
     height: 100%;
@@ -6,7 +9,7 @@ header{
     .header_content {
         height: 80px;
         
-        @include TablelSize{
+        @include tablet{
             display: flex;
             padding:8px 40px;
        }
@@ -15,7 +18,7 @@ header{
     padding: 7px 10px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.733);
       
-    @include TablelSize{
+    @include tablet{
         flex-grow: .5;
         padding: 0;
         border-bottom: none;
@@ -34,7 +37,7 @@ header{
     #nav {
         padding:0 10px;
 
-        @include TablelSize{
+        @include tablet{
             display: flex;
             justify-content: space-between;
             flex-grow: 1;
@@ -47,14 +50,14 @@ header{
             margin: 0;
             flex-grow:1;
 
-            @include TablelSize{
+            @include tablet{
                 flex-grow: .5;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 order:1;
             }
-            @include DesktopSize{
+            @include medium-desktop{
                   flex-grow: .4;
             
             }
@@ -79,10 +82,10 @@ header{
 
     .header_search_box{
         
-        @include TablelSize{
+        @include tablet{
             display: none;
          }
-         @include DesktopSize{
+         @include medium-desktop{
             order: 2;
             flex-grow: .1;
             display: flex;
@@ -101,7 +104,7 @@ header{
             margin: 10px 0;
             font-size: 1.1rem;
            
-            @include DesktopSize{
+            @include medium-desktop{
                 width: 100%;  
                 margin-right: 5px; 
             }
@@ -117,12 +120,12 @@ header{
            
             
 
-            @include TablelSize{
+            @include tablet{
                 display:none;
 
                 
             }
-            @include DesktopSize{
+            @include medium-desktop{
                   display:flex;
                   flex-grow: .5;
 
@@ -135,7 +138,7 @@ header{
         transition: all 0.5s ease-in-out;
         opacity: 0;
 
-        @include TablelSize{
+        @include tablet{
             height: auto!important;
             opacity: 1;
         }
@@ -158,7 +161,7 @@ header{
     position: absolute;
     top: 15px;
     right: 20px;
-    @include TablelSize{
+    @include medium-desktop {
         display: none;
     }
 }
