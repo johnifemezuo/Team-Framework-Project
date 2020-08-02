@@ -2,33 +2,36 @@
 
 //  tooltips_section //
 .tooltips_section{
-    background-color: rgba(129, 113, 113, 0.281);
+    background-color: #f1efef;
     padding: 20px 0;
-    text-align: center;
-
-    h1{
-        font-size:23px;
-        padding:0 0 10px;
-        text-align: center;
-    }
+    margin: 50px 0 50px 0;
+    height: auto;
+    
+   
     // tooltips__helper
     .tooltips__helper{
-        width: 80%;
-        margin: 10px auto;
-        border: 1px solid black;
+        width: 100%;
         padding: 20px 0;
+        background-color: transparent;
+        display: grid;
 
 
         // Tooltips wrappr //
         .tooltips_wrapper{
             position: relative;
-            width: 80%;
-            margin: 30px auto;
-        
+            width: auto;
+            margin: 40px;
+            display: flex;
+            padding: 12px;
+            flex-wrap: wrap;
+            
+            
         }
     }
 }
  
-  
+.bmr {
+    margin: 10px;
+}
   
     

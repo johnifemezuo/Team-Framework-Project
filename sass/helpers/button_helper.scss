@@ -1,17 +1,16 @@
     .section__btn_wrap{
         width:  100%;
-        margin:0px auto;
-        padding: 0 10px;
+        padding: 50px;
     
    //  Responsivenes fo Tablet Size
-        @include TablelSize{
-          width:  85%;
-          margin:40px auto ;
-        }
+        // @include TablelSize{
+        //   width:  85%;
+        //   margin:40px auto ;
+        // }
            //  Responsivenes fo Tablet Size
 
         .btn_flex_wrap{
-          @include TablelSize{
+          @include medium-desktop {
             display:block!important;
             grid-template-columns:unset!important;
 
@@ -26,13 +25,17 @@
             font-family: 'Poppins';
             font-style: normal;
             font-weight: normal;
-            font-size: 16px;
+            font-size: 13px;
+            font-weight: 500;
             padding: 8px 0;
             text-transform: uppercase;
-            color: #1B6CA8;
+            color: #1b1b1b;
             margin:40px auto 0;
          }
    
     
     }
     
+    .lg_btn_wrapper {
+      margin: 10px 0px 50px 0px;
+    }
