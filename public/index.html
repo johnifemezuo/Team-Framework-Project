@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plveris Frame Work</title>
+    <title>Design Guide</title>
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="/public/assets/font/fontawesome-free-5.13.1-web/css/all.css">
 </head>
@@ -31,32 +31,92 @@
         </div>
     </main>
 
+
 <!-- ========================================================================================================================== -->
 <!-- =====================================================================BUTTON COMPONENT===================================================== -->
 <!-- ========================================================================================================================== -->
 <div class="container bg-color">
         <section class="section__btn_wrap">
             <h3 class="header">BUTTONS</h3>
-                <!-- Default buttons sizes -->
+
+                <!-- LARGE BUTTONS -->
+            <div class="lg_btn_wrapper">
+                <p class="btn_radius">Large Buttons Types</p>
                 <div class="btn_flex_wrap col-m-4-4">
-                        <button class="btn btn_ex_lg btn_hover btn_primary">Ext lg Button</button>
-                        <button class="btn btn_lg btn_hover btn_primary">Lg Button</button>
-                        <button class="btn btn_md btn_hover btn_primary">Md button</button>
-                        <button class="btn btn_sm btn_hover btn_primary">Sm Button</button>
-                        <button class="btn btn_ex_sm btn_hover btn_primary">Ex sm Button</button>
+                    <button class="btn btn_lg btn_primary dis"> Primary </button>
+                    <button class="btn btn_lg btn_success">Success</button>
+                    <button class="btn btn_lg btn_info">Info</button>
+                    <button class="btn btn_lg btn_danger">Danger</button>
+                    <button class="btn btn_lg btn_dark">Dark</button>
+                    <button class="btn btn_lg btn_warning">Warning</button>
+                    <button class="btn btn_lg  ">Light</button>
                 </div>
-              
-              <div>
-                      <p class="btn_radius">Buttons Types</p>
-                     <div class="btn_flex_wrap col-m-4-4">
-                        <button class="btn btn_sm  btn_hover btn_primary"> btn radius</button>
-                        <button class="btn btn_sm  btn_hover btn_primary btn_no_border_radius">  no radius</button>
-                        <button class="btn btn_sm  btn_hover btn_primary  btn_round_primary">Lg Button</button>
-                        <button class="btn btn_sm  btn_hover btn_round_primary">Lg Button</button>
-                        <button class="btn btn_sm  btn_hover btn_border_primary">Rounded</button>
-                        <button class="btn btn_sm  btn_hover btn_no_border_radius btn_border_primary">Lg Button</button>
+            </div>
+
+                 <!-- DEFAULT BUTTON -->
+                 <div class="lg_btn_wrapper">
+                    <p class="btn_radius">Large Buttons Types</p>
+                    <div class="btn_flex_wrap col-m-4-4">
+                        <button class="btn btn_md btn_primary dis"> Primary </button>
+                        <button class="btn btn_md btn_success">Success</button>
+                        <button class="btn btn_md btn_info">Info</button>
+                        <button class="btn btn_md btn_danger">Danger</button>
+                        <button class="btn btn_md btn_dark">Dark</button>
+                        <button class="btn btn_md btn_warning">Warning</button>
+                        <button class="btn btn_md ">Light</button>
                     </div>
-            </div> 
+                </div>
+
+                     <!-- SMALL BUTTONS -->
+            <div class="lg_btn_wrapper">
+                <p class="btn_radius">Large Buttons Types</p>
+                <div class="btn_flex_wrap col-m-4-4">
+                    <button class="btn btn_sm btn_primary dis"> Primary</button>
+                    <button class="btn btn_sm btn_success">Success</button>
+                    <button class="btn btn_sm btn_info">Info</button>
+                    <button class="btn btn_sm btn_danger">Danger</button>
+                    <button class="btn btn_sm btn_dark">Dark</button>
+                    <button class="btn btn_sm btn_warning">Warning</button>
+                    <button class="btn btn_sm ">Light</button>
+                </div>
+            </div>
+
+                  <!-- OUTLINE BUTTONS -->
+                  <div class="lg_btn_wrapper">
+                    <p class="btn_radius">Outline Buttons</p>
+                    <div class="btn_flex_wrap col-m-4-4">
+                        <button class="btn btn_md btn_lineBtn_primary">primary</button>
+                        <button class="btn btn_md btn_lineBtn_success">Success</button>
+                        <button class="btn btn_md btn_lineBtn_info">Info</button>
+                        <button class="btn btn_md btn_lineBtn_danger">Danger</button>
+                        <button class="btn btn_md btn_lineBtn_dark">Dark</button>
+                        <button class="btn btn_md btn_lineBtn_warning">Warning</button>
+                        <button class="btn btn_md btn_lineBtn_light">Light</button>
+                    </div>
+                </div>
+    
+                <!--  BUTTONS STYLE -->
+                <div class="lg_btn_wrapper">
+                    <p class="btn_radius"> Buttons Style</p>
+                    <div class="btn_flex_wrap col-m-4-4">
+                        <button class="btn btn_md  btn_hover btn_lineBtn_primary btn_flat">primary</button>
+                        <button class="btn btn_md  btn_hover btn_lineBtn_primary btn_flat">primary  <i class="fa fa-arrow-right"></i></button>
+                        <button class="btn btn_md  btn_hover btn_lineBtn_primary btn_flat"><i class="fa fa-arrow-right"></i></button>
+ 
+                        <button class="btn btn_md  btn_hover btn_lineBtn_success">primary <i class="fa fa-arrow-right"></i></button>    
+                        <button class="btn btn_md  btn_hover btn_lineBtn_success">primary</button> 
+                        <button class="btn btn_md  btn_hover btn_lineBtn_success"><i class="fa fa-arrow-right"></i></button>
+
+                        <button class="btn btn_md  btn_hover btn_danger"><i class="fa fa-arrow-left"></i> danger</button>
+                        <button class="btn btn_md  btn_hover btn_danger">primary</button>
+                        <button class="btn btn_md  btn_hover btn_danger"><i class="fa fa-arrow-right"></i></button>
+
+                        <button class="btn btn_md  btn_hover btn_round btn-outline">Rounded</button>
+
+                    </div>
+                </div>
+
+              
 
             <div>
                 <p class="btn_radius">Buttons Types</p>
@@ -68,17 +128,7 @@
               </div>
           </div> 
 
-            <!-- buttons Colors -->
-            <p class="btn_radius">Buttons Colors</p>
-             <div class="btn_flex_wrap col-m-4-4">
-                <button class="btn btn_sm  btn_hover"> Dafault Color</button>
-                <button class="btn btn_sm  btn_hover btn_primary"> Primary Color</button>
-                <button class="btn btn_sm  btn_hover btn_danger"> Danger Color</button>
-                <button class="btn btn_sm  btn_hover btn_success">success Color</button>
-                <button class="btn btn_sm  btn_hover  btn_warning">Warning Color</button>
-                <button class="btn btn_sm  btn_hover btn_dark">Dark color</button>
-                <button class="btn btn_sm  btn_hover btn_info">Info color</button>
-            </div>
+           
    </section>
    
 
