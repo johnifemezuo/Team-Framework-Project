@@ -48,11 +48,13 @@
         align-items: center;
         width: 80px;
         color: $light-gray;
+        @include default_transition();
     }
 
-    &:focus{
-        background-color: greenyellow !important;
+    &:hover{
+        border: 1px solid lightgreen;
     }
+    // &:focus
 }
 
 .icon-bg{

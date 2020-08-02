@@ -3933,9 +3933,14 @@ Using display: grid;
     justify-content: center;
     align-items: center;
     width: 80px;
-    color: gray; }
-  .input:focus {
-    background-color: greenyellow !important; }
+    color: gray;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    -webkit-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    -moz-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    -ms-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    -o-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out; }
+  .input:hover {
+    border: 1px solid lightgreen; }
 
 .icon-bg {
   width: 200px;
