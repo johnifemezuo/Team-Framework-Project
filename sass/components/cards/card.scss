@@ -1,4 +1,3 @@
-@import "./colors/all_colors.scss";
 @import "./media_query/media_query.scss";
 
 
@@ -42,7 +41,7 @@
         &_link {
             font-size: 1.4rem;
             padding-bottom: 10px;
-            color: $link_color;
+            color: blue;
         }
         p {
             padding: 10px 0;
@@ -51,7 +50,7 @@
         .txt_link {
             a {
                 font-size: 15px;
-                color: $link_color;
+                color: blue;
                 margin-right: 12px;
             }
         
@@ -113,7 +112,7 @@
 
         &_link {
             font-size: 1.3rem;
-            color: $link_color;
+            color: blue;
         }
         & p {
             padding:7px 0px;

@@ -1,6 +1,13 @@
+    
+    @import "../media_query/media_query.scss";
+
     .section__btn_wrap{
         width:  100%;
-        padding: 50px;
+        padding: 20px;
+
+        @include mobile {
+          padding: 15px;
+        }
     
    //  Responsivenes fo Tablet Size
         // @include TablelSize{
@@ -13,13 +20,12 @@
           @include medium-desktop {
             display:block!important;
             grid-template-columns:unset!important;
-
-            button{
-              margin: 10px 5px;
-            }
           }  
         }
 
+        .dis {
+          margin: 12px 6px 0px 0px;
+        }
      
         p.btn_radius{
             font-family: 'Poppins';
@@ -33,7 +39,6 @@
             margin:40px auto 0;
          }
    
-    
     }
     
     .lg_btn_wrapper {
