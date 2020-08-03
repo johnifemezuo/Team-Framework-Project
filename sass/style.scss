@@ -10,10 +10,7 @@
 
 // SIZE
 @import "./sizes/major-sizes.scss";
-/**
- MEDIA QUERY HELPERS
-**/
-@import './helpers/media-funcs.scss';
+
 
 // header.scss
 @import './components/navbar/navbar.scss';
@@ -30,7 +27,7 @@
 
 
 @import "./components/margins/bigger-margins";
-@import "./components/buttons/button-defaults.scss";
+@import "./components/buttons/button.scss";
 
 /**
   Button SECTIONS HELPERS
@@ -66,7 +63,7 @@
 */
 @import "./helpers/input_helper.scss";
 @import "../sass/colors/form-colors.scss";
-@import "./components/inputs/input-default.scss";
+@import "./components/inputs/input.scss";
 
 
 /**

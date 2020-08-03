@@ -2,6 +2,10 @@
   DEFAULTS
 **/
 
+button {
+  -webkit-appearance: button;
+}
+
 .btn {
   box-sizing: border-box;
   display: inline-block;
@@ -45,13 +49,13 @@
 
 // BTN SIZE LG
  .btn_lg{
-      padding: 10px 14px;
+      padding: 9px 14px;
       font-size: 1.3em;
   }
   // BTN SIZE MD
   .btn_md{
       padding: 9px 13px;
-      font-size: 1.2em;
+      font-size: 1em;
   }
   //  BTN SIZE SM
   .btn_sm{
@@ -99,7 +103,10 @@
 
 
 
-
+.btn_block_level {
+  width: 100%;
+  padding: 12px 0px;
+}
 
 
 // ======================================================BUTTON COLORS============================================
@@ -108,27 +115,25 @@
   background-color: unset;
   color: $black-color;
   border-radius: 50px;
+  padding: 9px 18px;
 }
 
 .btn_primary{
  background-color:$primary-color;
- border-color:$primary-color;
  color: $secondary-color;
 
-  &.btn_hover:hover{
-    background-color: $primary-color-hover!important;;
+  &:hover{
+    background-color: $primary-color-hover!important;
+    color: white;
   }
   &:focus{
     box-shadow: 0px 0px 0px 2px #7fbcff!important;
   }
-
 }
 
 .btn_success{
   background-color: $success-color;
-  border-color: $success-color;
   color: $secondary-color;
-  // box-shadow: 0px 0px 3px $success-color;
 
   &:hover{
     background-color: $success-color-hover!important;;
@@ -137,13 +142,13 @@
     box-shadow: 0px 0px 0px 2px #93d3a1;
   }
 }
-// Button Radius and BORDER
-.btn_round_success, .btn_border_success{
+
+// Button Round
+.btn_round_success{
   border: 2px solid  $success-color;
 
   &:hover{
     background-color:$success-color;
-    color:$secondary-color!important;
   }
   &:focus{
     box-shadow: 0px 0px 0px 2px #93d3a1;
@@ -153,7 +158,6 @@
 // 
 .btn_warning{
    background-color: $warning-color;
-  //  box-shadow: 0px 0px 3px $warning-color!important;
    color: $secondary-color;
 
    &:hover{
@@ -163,13 +167,13 @@
     box-shadow: 0px 0px 0px 2px $warning-outline;
   }
 }
-// Button Radius and BORDER
-.btn_round_warning, .btn_border_warning{
+// 
+.btn_round_warning{
   border: 2px solid  $warning-color;
+  border-radius: 20px;
 
   &:hover{
-    background-color: $warning-color ;
-    color:$secondary-color!important;
+    background-color: $warning-hover-color ;
   }
   &:focus{
     box-shadow: 0px 0px 0px 2px #ffe082;
@@ -181,7 +185,6 @@
 
 .btn_info{
   background-color: $info-color;
-  border-color: $info-color;
   color: $secondary-color;
 
   &:hover{
@@ -193,13 +196,13 @@
       
 }
 
-// Button Radius and BORDER
-.btn_round_info, .btn_border_info{
-  border: 2px solid $info-color;
+//
+.btn_round_info{
+  // border: 2px solid $info-color;
+  border-radius: 20px;
 
   &:hover{
     background-color: $info-color !important;
-    color:$secondary-color!important;
   }
   &:focus{
     box-shadow: 0px 0px 0px 2px #1b6d85;
@@ -207,6 +210,7 @@
   }
 }
 
+//
 .btn_danger{
   background-color:$danger-color;
   border-color: $danger-color;
@@ -220,8 +224,9 @@
     box-shadow: 0px 0px 0px 2px$danger-outline;
   }
 }
-// Button Radius and BORDER
-.btn_round_danger, .btn_border_danger{
+
+// 
+.btn_round_danger{
   border: 2px solid $danger-color;
 
   &:hover{
@@ -235,7 +240,7 @@
   }
 }
 
-
+// Dark Color
 .btn_dark{
   background-color:$dark!important;;
   // box-shadow: 0px 0px 3px $dark!important;
@@ -259,7 +264,7 @@
   color: $primary-color;
 
   &:hover{
-    background-color: $primary-color-hover!important;;
+    background-color: $primary-color-hover!important;
     color:$secondary-color;
   }
   &:focus{

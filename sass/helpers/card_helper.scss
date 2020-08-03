@@ -21,25 +21,20 @@
 
 }
 
-// .own_st {
-//     margin: 10px;
-
-// }
-
-
-// .lengthed-wrapper {
-//     margin: 12px;
-// }
 
 .header {
-    color: #3a3a3a;
-    font-size: 22px;
+    color: rgb(12, 12, 12);
+    font-size: 1.6rem;
     font-weight: 400;
-    padding: 0px 0px 10px 0px;
+    // padding: 0px 0px 10px 0px;
 }
 .head {
     margin-left: 50px;
-    padding: 16px 0 0 0 
+    // padding: 16px 0 0 0 ;
+
+    @include mobile {
+        margin: 15px;
+    }
 }
 
 
