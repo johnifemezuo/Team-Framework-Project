@@ -3240,7 +3240,7 @@ button {
   .btn.btn_full_w {
     width: 100%; }
   .btn:focus {
-    box-shadow: 0px 0px 0px 2px #d6d5d5;
+    box-shadow: 0px 0px 0px 2px #b1b1b1;
     box-sizing: border-box; }
   .btn:hover {
     background-color: #dadada !important; }
@@ -3411,14 +3411,14 @@ button {
     box-shadow: 0px 0px 0px 2px #f6d9b0; }
 
 .btn_lineBtn_light, .btn_border_primary {
-  border: 1px solid #d3d5db;
+  border: 1px solid #b1b2b6;
   background-color: transparent;
-  color: #d3d5db; }
+  color: #b1b2b6; }
   .btn_lineBtn_light:hover, .btn_border_primary:hover {
     background-color: white;
     color: white; }
   .btn_lineBtn_light:focus, .btn_border_primary:focus {
-    box-shadow: 0px 0px 0px 2px #d6d5d5; }
+    box-shadow: 0px 0px 0px 2px #b1b1b1; }
 
 /**
   Button SECTIONS HELPERS
@@ -3788,21 +3788,19 @@ Using display: grid;
   border-radius: 3px;
   display: block;
   background-clip: padding-box;
-  padding: 0.60rem 1.2rem;
+  padding: 10px;
   line-height: 1.5;
   color: gray;
   font-weight: 300;
   background-color: #fff;
   font-family: inherit;
-  border: 1px solid #d3d5db;
+  border: 1px solid #b1b2b6;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
-  .form_input:hover {
-    border: 1px solid #b8b8b8; }
   .form_input::placeholder {
     color: #afafaf;
     padding-left: 2px; }
   .form_input:focus {
-    border: 2px solid #b8b8b8; }
+    box-shadow: 0px 0px 1px 1.5px #93d3a1; }
 
 .input_wrap {
   display: flex;
@@ -3810,7 +3808,7 @@ Using display: grid;
   align-items: center;
   justify-content: center;
   padding: 0px;
-  border: 1px solid #d3d5db;
+  border: 1px solid #b1b2b6;
   transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
   -webkit-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
   -moz-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
@@ -3820,19 +3818,17 @@ Using display: grid;
   background-color: transparent; }
   .input_wrap input {
     border: none; }
-    .input_wrap input:hover {
-      border: none; }
   .input_wrap span {
     padding: 0px 12px; }
     .input_wrap span i {
-      color: #d3d5db;
+      color: #b1b2b6;
       font-size: 18px;
       transition: color 0.15s ease-in-out;
       cursor: pointer; }
       .input_wrap span i:hover {
-        color: #b8b8b8; }
-  .input_wrap:hover {
-    border: 1px solid #b8b8b8; }
+        color: gray; }
+  .input_wrap:focus {
+    box-shadow: 0px 0px 1px 1.5px #93d3a1; }
 
 .rounded_input {
   display: flex;
@@ -3841,7 +3837,7 @@ Using display: grid;
   justify-content: center;
   padding: 0px;
   border-radius: 60px;
-  border: 1px solid #d3d5db;
+  border: 1px solid #b1b2b6;
   transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
   -webkit-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
   -moz-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
@@ -3852,19 +3848,15 @@ Using display: grid;
   .rounded_input input {
     border: none;
     border-radius: 60px; }
-    .rounded_input input:hover {
-      border: none; }
   .rounded_input span {
     padding: 0px 15px; }
     .rounded_input span i {
-      color: #d3d5db;
+      color: #b1b2b6;
       font-size: 18px;
       transition: color 0.15s ease-in-out;
       cursor: pointer; }
       .rounded_input span i:hover {
-        color: #b8b8b8; }
-  .rounded_input:hover {
-    border: 2px solid #b8b8b8; }
+        color: gray; }
 
 /**
 || Carousel SECTION
@@ -4079,7 +4071,7 @@ footer {
 */
 .card {
   background-color: #fff;
-  border: 1px solid #d3d5db;
+  border: 1px solid #b1b2b6;
   min-width: 280px;
   height: auto;
   box-sizing: border-box;
