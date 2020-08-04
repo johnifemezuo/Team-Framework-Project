@@ -13,13 +13,11 @@
 .form_input  {
     width: 100%;
     border-radius: 3px;
-    height: 50px;
     display: block;
     background-clip: padding-box;
-    font-size: 1.1rem;
     padding: 0.60rem 1.2rem;
     line-height: 1.5;
-    color: #959595;
+    color: $light-gray;
     font-weight: 300;
     background-color: white;
     font-family: inherit;
@@ -29,11 +27,13 @@
     &:hover {
         border: 1px solid $border-hover; 
     }
-    &:focus {
-        border: px solid $border-hover; 
-    }
+    
     &::placeholder {
         color: #afafaf;
+        padding-left: 2px;
+    }
+    &:focus {
+        border: 2px solid $border-hover; 
     }
 }
 
@@ -115,7 +115,7 @@
         }
     }
     &:hover {
-        border: 1px solid $border-hover;
+        border: 2px solid $border-hover;
     }
 }
    
