@@ -10,12 +10,10 @@ header {
   background: #1B6CA8;
   height: 100%;
   position: relative; }
-  header .header_content {
-    height: 80px; }
-    @media (min-width: 769px) {
-      header .header_content {
-        display: flex;
-        padding: 8px 40px; } }
+  @media (min-width: 769px) {
+    header .header_content {
+      display: flex;
+      padding: 0px 40px; } }
   header .logo {
     padding: 7px 10px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.733); }
@@ -64,42 +62,44 @@ header {
         header #nav .nav_ul .nav_ul_li a:hover {
           color: #0606a3;
           transition: all 380ms ease-in-out; }
-  @media (min-width: 769px) {
-    header .header_search_box {
-      display: none; } }
-  @media (min-width: 1100px) {
-    header .header_search_box {
-      order: 2;
-      flex-grow: .1;
-      display: flex;
-      align-items: center; } }
-  header .header_search_box input {
-    background: #4589BB;
-    border-radius: 6px;
-    border: none;
-    outline: none;
-    padding: 12px;
-    width: 100%;
-    color: white;
-    margin: 10px 0;
-    font-size: 1.1rem; }
-    @media (min-width: 1100px) {
-      header .header_search_box input {
-        width: 100%;
-        margin-right: 5px; } }
-    header .header_search_box input::placeholder {
-      color: white; }
-  header .header_search_box .register {
-    flex-grow: .5;
-    display: flex;
-    justify-content: space-between; }
+  header .header_search_box {
+    padding: 5px 0; }
     @media (min-width: 769px) {
-      header .header_search_box .register {
+      header .header_search_box {
         display: none; } }
     @media (min-width: 1100px) {
-      header .header_search_box .register {
+      header .header_search_box {
+        order: 2;
+        flex-grow: .1;
         display: flex;
-        flex-grow: .5; } }
+        align-items: center; } }
+    header .header_search_box input {
+      background: #4589BB;
+      border-radius: 6px;
+      border: none;
+      outline: none;
+      padding: 12px;
+      width: 100%;
+      color: white;
+      margin: 10px 0;
+      font-size: 1.1rem; }
+      @media (min-width: 1100px) {
+        header .header_search_box input {
+          width: 100%;
+          margin-right: 5px; } }
+      header .header_search_box input::placeholder {
+        color: white; }
+    header .header_search_box .register {
+      flex-grow: .5;
+      display: flex;
+      justify-content: space-between; }
+      @media (min-width: 769px) {
+        header .header_search_box .register {
+          display: none; } }
+      @media (min-width: 1100px) {
+        header .header_search_box .register {
+          display: flex;
+          flex-grow: .5; } }
   header .header_close {
     height: 0;
     overflow: hidden;
@@ -3656,12 +3656,10 @@ Using display: grid;
   padding: 10px;
   border-radius: 6px;
   position: absolute;
-  margin: 0;
-  left: 0;
+  right: 110%;
   top: 0px;
   z-index: 2;
   display: block;
-  transform: translateX(-120%);
   color: white;
   visibility: hidden;
   opacity: 0;
@@ -3678,24 +3676,22 @@ Using display: grid;
   background-color: #555;
   padding: 10px;
   border-radius: 6px;
-  position: absolute;
-  margin: 0;
-  right: 0;
-  top: 0px;
-  z-index: 2;
-  display: block;
-  transform: translateX(120%);
+  position: absolute !important;
   color: white;
   visibility: hidden;
   opacity: 0;
   transition: all 0.3s ease-in-out;
   border: 1px solid white;
-  width: unset; }
+  top: 0;
+  left: 110%; }
 
 .toolTips:hover .tooltips_right, .toolTips:hover .tooltips_right_arrow {
   visibility: visible;
   opacity: 1;
   transition: all 0.3s ease-in-out; }
+
+.toolTips {
+  position: relative; }
 
 .tooltips_top_arrow::after {
   content: '';
@@ -3899,9 +3895,12 @@ Using display: grid;
       z-index: 1;
       width: 100%;
       padding: 30px;
-      width: 50%;
+      width: 100%;
       margin: 100px auto;
       color: white; }
+      @media (min-width: 769px) {
+        .slider_wrapper_tracker .slide .caption {
+          width: 50%; } }
       .slider_wrapper_tracker .slide .caption h1 {
         font-size: 25px; }
   .slider_wrapper_tracker .carousel_btn_wrapper {
