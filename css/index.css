@@ -3934,13 +3934,11 @@ Using display: grid;
 .form_input {
   width: 100%;
   border-radius: 3px;
-  height: 50px;
   display: block;
   background-clip: padding-box;
-  font-size: 1.1rem;
   padding: 0.60rem 1.2rem;
   line-height: 1.5;
-  color: #959595;
+  color: gray;
   font-weight: 300;
   background-color: white;
   font-family: inherit;
@@ -3948,10 +3946,11 @@ Using display: grid;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
   .form_input:hover {
     border: 1px solid #b8b8b8; }
-  .form_input:focus {
-    border: px solid #b8b8b8; }
   .form_input::placeholder {
-    color: #afafaf; }
+    color: #afafaf;
+    padding-left: 2px; }
+  .form_input:focus {
+    border: 2px solid #b8b8b8; }
 
 .input_wrap {
   display: flex;
@@ -4013,7 +4012,7 @@ Using display: grid;
       .rounded_input span i:hover {
         color: #b8b8b8; }
   .rounded_input:hover {
-    border: 1px solid #b8b8b8; }
+    border: 2px solid #b8b8b8; }
 
 /**
 || Carousel SECTION
