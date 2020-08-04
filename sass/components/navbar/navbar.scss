@@ -7,11 +7,10 @@ header{
     position: relative;
     
     .header_content {
-        height: 80px;
         
         @include tablet{
             display: flex;
-            padding:8px 40px;
+            padding:0px 40px;
        }
     }
   .logo{
@@ -81,6 +80,7 @@ header{
     }
 
     .header_search_box{
+        padding: 5px 0;
         
         @include tablet{
             display: none;
@@ -89,7 +89,6 @@ header{
             order: 2;
             flex-grow: .1;
             display: flex;
-            // justify-content: space-between;
             align-items: center;
          }
 
