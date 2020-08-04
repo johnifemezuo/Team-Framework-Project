@@ -1,7 +1,7 @@
 
 // INPUT MIXINS
 @mixin border {
-    border: 1px solid #d3d5db; 
+    border: 1px solid $border-color; 
 }
 @mixin transition {
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -19,9 +19,9 @@
     font-size: 1.1rem;
     padding: 0.60rem 1.2rem;
     line-height: 1.5;
-    color: #959595;
+    color: $form-color;
     font-weight: 300;
-    background-color: white;
+    background-color: $light;
     font-family: inherit;
     @include border;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -30,10 +30,10 @@
         border: 1px solid $border-hover; 
     }
     &:focus {
-        border: px solid $border-hover; 
+        border: 1px solid $border-hover; 
     }
     &::placeholder {
-        color: #afafaf;
+        color: $placeholder-color;
     }
 }
 

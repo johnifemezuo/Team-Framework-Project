@@ -101,8 +101,6 @@ button {
 // }
 
 
-
-
 .btn_block_level {
   width: 100%;
   padding: 12px 0px;
@@ -124,10 +122,10 @@ button {
 
   &:hover{
     background-color: $primary-color-hover!important;
-    color: white;
+    color: $light;
   }
   &:focus{
-    box-shadow: 0px 0px 0px 2px #7fbcff!important;
+    box-shadow: 0px 0px 0px 2px $primary-focus !important;
   }
 }
 
@@ -139,7 +137,7 @@ button {
     background-color: $success-color-hover!important;;
   }
   &:focus{
-    box-shadow: 0px 0px 0px 2px #93d3a1;
+    box-shadow: 0px 0px 0px 2px $success-focus;
   }
 }
 
@@ -151,7 +149,7 @@ button {
     background-color:$success-color;
   }
   &:focus{
-    box-shadow: 0px 0px 0px 2px #93d3a1;
+    box-shadow: 0px 0px 0px 2px $success-focus;
   }
 }
 
@@ -176,7 +174,7 @@ button {
     background-color: $warning-hover-color ;
   }
   &:focus{
-    box-shadow: 0px 0px 0px 2px #ffe082;
+    box-shadow: 0px 0px 0px 2px $warning-focus;
   
   }
 }
@@ -191,7 +189,7 @@ button {
     background-color:  $info-hover-color!important;;
   }
   &:focus{
-    box-shadow: 0px 0px 0px 2px#45b7d1;
+    box-shadow: 0px 0px 0px 2px $info-focus;
   }
       
 }
@@ -205,7 +203,7 @@ button {
     background-color: $info-color !important;
   }
   &:focus{
-    box-shadow: 0px 0px 0px 2px #1b6d85;
+    box-shadow: 0px 0px 0px 2px $info-focus;
   
   }
 }
@@ -215,13 +213,12 @@ button {
   background-color:$danger-color;
   border-color: $danger-color;
   color: $secondary-color;
-  // box-shadow: 0px 0px 3px $danger-color!important;
 
   &:hover{
-    background-color:$danger-hover!important;;
+    background-color:$danger-hover !important;;
   }
   &:focus {
-    box-shadow: 0px 0px 0px 2px$danger-outline;
+    box-shadow: 0px 0px 0px 2px $danger-outline;
   }
 }
 
@@ -235,8 +232,7 @@ button {
   }
 
   &:focus{
-    box-shadow: 0px 0px 0px 2px #ed99a1;
-  
+    box-shadow: 0px 0px 0px 2px $danger-focus;
   }
 }
 
@@ -247,12 +243,11 @@ button {
   color: $secondary-color;
 
   &:hover{
-    background-color:#222!important;
+    background-color:$dark-hover !important;
   }
 
   &:focus{
-    box-shadow: 0px 0px 0px 2px $dark-outline !important;
-  
+    box-shadow: 0px 0px 0px 2px $dark-focus !important;
   }
 }
 
@@ -268,7 +263,7 @@ button {
     color:$secondary-color;
   }
   &:focus{
-    box-shadow: 0px 0px 0px 2px #7fbcff;
+    box-shadow: 0px 0px 0px 2px $primary-focus;
   }
 }
 // --------------------------------
@@ -282,7 +277,7 @@ button {
     color:$secondary-color;
   }
   &:focus{
-    box-shadow: 0px 0px 0px 2px #7fbcff;
+    box-shadow: 0px 0px 0px 2px $primary-focus;
   }
 }
 
@@ -297,7 +292,7 @@ button {
     color:$secondary-color!important;
   }
   &:focus{
-    box-shadow: 0px 0px 0px 2px #7fbcff;
+    box-shadow: 0px 0px 0px 2px $primary-focus;
   }
 }
 
@@ -327,7 +322,7 @@ button {
     color:$secondary-color!important;
   }
   &:focus{
-    box-shadow: 0px 0px 0px 2px $dark-outline;
+    box-shadow: 0px 0px 0px 2px $dark-focus;
   }
 }
 
