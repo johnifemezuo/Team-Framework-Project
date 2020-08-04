@@ -26,7 +26,7 @@
 
     
     &::placeholder {
-        color: #afafaf;
+        color: $placeholder-color;
         padding-left: 2px;
     }
     &:focus {
