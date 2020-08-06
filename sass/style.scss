@@ -12,9 +12,14 @@
 @import "./sizes/major-sizes.scss";
 
 
+// media screen
+@import './media_query/media_query.scss';
+
+// Main-color
+@import "./colors/main-colors";
+
 // header.scss
 @import './components/navbar/navbar.scss';
-
 
 // MARGIN AND PADDINGS
 @import "./utils/margin.scss";
@@ -76,7 +81,6 @@
 // CARD SECTION
 */
 @import './components/cards/card.scss';
-@import './media_query/media_query.scss';
 
 
 
