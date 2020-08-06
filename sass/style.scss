@@ -10,31 +10,34 @@
 
 // SIZE
 @import "./sizes/major-sizes.scss";
-/**
- MEDIA QUERY HELPERS
-**/
-@import './helpers/media-funcs.scss';
+
+
+// media screen
+@import './media_query/media_query.scss';
+
+// Main-color
+@import "./colors/main-colors";
 
 // header.scss
-@import './components/header/header.scss';
-
-// WRAPPERS
-@import "./utils/wrapper.scss";
+@import './components/navbar/navbar.scss';
 
 // MARGIN AND PADDINGS
 @import "./utils/margin.scss";
 
 @import "./utils/global.scss";
+
+//COLORS
 @import '../sass/colors/main-colors';
 @import '../sass/colors/button-colors';
-@import "./components/buttons/main-buttons";
+
+
 @import "./components/margins/bigger-margins";
-@import "./components/buttons/button-defaults.scss";
+@import "./components/buttons/button.scss";
 
 /**
   Button SECTIONS HELPERS
 **/
-@import './helpers/button__section.scss';
+@import './framework_helpers/button_helper.scss';
 
 /**
    GRID SECTIONS
@@ -42,11 +45,6 @@
 @import "./utils/grids.scss";
 @import "./utils/grid_helper.scss";
 
-/**
-|| Showcase image  SECTIONS
-**/
-@import '../sass/helpers/showcase__Area';
-@import '../sass/helpers/Component';
 
 /**
 // Border radius SECTIONS
@@ -57,16 +55,15 @@
 /**
 || Tooltips SECTIONS
 **/
-@import './helpers/TooltipsHelper.scss';
+@import './framework_helpers/TooltipsHelper.scss';
 @import './components/Tooltips/DefaultTooltips.scss';
 @import './components/Tooltips/arrowTooltips.scss';
 /**
 || INPUT SECTION
 */
-@import "./helpers/input.scss";
+@import "./framework_helpers/input_helper.scss";
 @import "../sass/colors/form-colors.scss";
-@import "./components/inputs/input-widths.scss";
-@import "./components/inputs/input-default.scss";
+@import "./components/inputs/input.scss";
 
 
 /**
@@ -78,4 +75,17 @@
 @import './components/scrollSnaps/scrollSnaps.scss';
 
 // footer
-@import '../sass/components/footer/footer.scss'
+@import '../sass/components/footer/footer.scss';
+
+/**
+// CARD SECTION
+*/
+@import './components/cards/card.scss';
+
+
+
+@import './reset/reset';
+
+
+// framework helpers
+@import './framework_helpers/homepage.scss'

@@ -26,6 +26,8 @@ footer {
             line-height: 2.5;
             color: #adc2d1;
             display: inline-block;
+            transition: all 360ms ease-in-out;
+
             &:hover{
                 color:white;
             }
@@ -50,10 +52,13 @@ footer {
            padding: 0;
        }
 
-       i{
+       a{
            font-size: 20px;
+           transition: all 360ms ease-in-out;
            color:#c3c9cd;
-
+        &:hover {
+            color: white;
+        }
        }
     }
 
