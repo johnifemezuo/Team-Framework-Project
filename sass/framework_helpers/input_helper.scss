@@ -1,21 +1,9 @@
-
 @import "../media_query/media_query.scss";
 
 .input_section{
     width: 100%;
     background-color: #f6f6f6ad;
-    margin-top: 50px;
     padding: 20px;
-    margin-bottom: 100px;
-    
-    &-container{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        width: 100%;
-        padding: 20px 0;
-        margin: 0px auto;
-    }
 
     div{
         margin-bottom: 20px;
@@ -31,8 +19,11 @@
         margin-right: 0px;
     }
 }
+
 .input_container {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     @include mobile {
         display: block;
     }
