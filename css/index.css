@@ -3495,30 +3495,18 @@ button {
   .btn_border_primary:focus {
     box-shadow: 0px 0px 0px 2px #f6d9b0; }
 
-
 .btn_lineBtn_light,
 .btn_border_primary {
-  border: 1px solid #d3d5db;
+  border: 1px solid #b1b2b6;
   background-color: transparent;
-  color: #d3d5db; }
+  color: #b1b2b6; }
   .btn_lineBtn_light:hover,
   .btn_border_primary:hover {
     background-color: white;
     color: white; }
   .btn_lineBtn_light:focus,
   .btn_border_primary:focus {
-    box-shadow: 0px 0px 0px 2px #d6d5d5; }
-
-.btn_lineBtn_light, .btn_border_primary {
-  border: 1px solid #b1b2b6;
-  background-color: transparent;
-  color: #b1b2b6; }
-  .btn_lineBtn_light:hover, .btn_border_primary:hover {
-    background-color: white;
-    color: white; }
-  .btn_lineBtn_light:focus, .btn_border_primary:focus {
     box-shadow: 0px 0px 0px 2px #b1b1b1; }
-
 
 /**
   Button SECTIONS HELPERS
@@ -3861,6 +3849,7 @@ Using display: grid;
 
 .input_container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly; }
   @media (max-width: 400px) {
     .input_container {
@@ -3889,8 +3878,6 @@ Using display: grid;
     color: #696969;
     letter-spacing: 1px;
     padding-left: 2px; }
-  .form_input:focus {
-    box-shadow: 0px 0px 1px 1.5px #93d3a1; }
 
 .input_wrap {
   display: flex;
@@ -3908,6 +3895,8 @@ Using display: grid;
   background-color: transparent; }
   .input_wrap input {
     border: none; }
+    .input_wrap input:focus {
+      box-shadow: 0px 0px 1px 1.5px #93d3a1; }
   .input_wrap span {
     padding: 0px 12px; }
     .input_wrap span i {
@@ -3917,8 +3906,6 @@ Using display: grid;
       cursor: pointer; }
       .input_wrap span i:hover {
         color: gray; }
-  .input_wrap:focus {
-    box-shadow: 0px 0px 1px 1.5px #93d3a1; }
 
 .rounded_input {
   display: flex;
@@ -3938,6 +3925,8 @@ Using display: grid;
   .rounded_input input {
     border: none;
     border-radius: 60px; }
+    .rounded_input input:focus {
+      box-shadow: 0px 0px 1px 1.5px #93d3a1; }
   .rounded_input span {
     padding: 0px 15px; }
     .rounded_input span i {
@@ -3946,6 +3935,31 @@ Using display: grid;
       transition: color 0.15s ease-in-out;
       cursor: pointer; }
       .rounded_input span i:hover {
+        color: gray; }
+
+.line_input {
+  display: flex;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #b1b2b6;
+  border-radius: 0;
+  border-top: none;
+  border-left: none;
+  border-right: none; }
+  .line_input input {
+    border: none;
+    background-color: transparent; }
+    .line_input input:focus {
+      border-bottom: 1px solid #93d3a1; }
+  .line_input span {
+    padding: 0px 12px; }
+    .line_input span i {
+      color: #b1b2b6;
+      font-size: 18px;
+      transition: color 0.15s ease-in-out;
+      cursor: pointer; }
+      .line_input span i:hover {
         color: gray; }
 
 /**
