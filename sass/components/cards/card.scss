@@ -23,14 +23,14 @@
     background-color: #fff;
     background-clip: border-box;
     border: 1px solid $border_color;
-    min-width: 280px;
+    width: auto;
     height: auto;
     // border-radius: 9px;
     box-sizing: border-box;
     margin-bottom: 12px;
     
     
-    @include mobile {
+    @include max_mobile {
            margin-bottom: 12px;
     }
 
@@ -43,10 +43,10 @@
         height: 140px;
         object-fit: cover;
 
-        @include mobile {
+        @include max_mobile {
             
         }
-        @include mobile {
+        @include max_mobile {
             
         }
     }
@@ -119,20 +119,16 @@
     
 
 .profile {
-    display: flex;
-    align-items: center;
-    margin-top: 8px;
-    margin: 10px 0px 8px 12px;
-    width: 100%;
-    background-color: red;
+    padding: 12px;
 
-    & img {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        border: 3px solid rgb(31, 30, 30);
-        margin-right: 5px;
+    &_title  {
+        display: flex;
+        align-items: center;
+        margin-bottom: 9px;
     }
+    
+
+    
 
     &_txt {
         a {
@@ -143,25 +139,66 @@
         & b {
             font-size: 1rem;
         }
+
         & p {
             font-size: 0.9rem;
-            font-style: italic;
+            color: $para-color;
         }
     }
 }
 
+.profile_img {
+    img {
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        border: 3px solid rgb(31, 30, 30);
+        margin-right: 5px;
+    }
+}
 
+.card_icons {
+    display: flex;
+    padding: 10px 12px;
+    font-size: 1rem;
+    justify-content: space-between;
+
+}
+.likes_icon, .message_icon, .share_icon {
+    margin-right: 12px;
+    cursor: pointer;
+    color: $para-color;
+
+    & i {
+        font-size: 1.4rem;
+    }
+}
+.likes_icon {
+    color: $danger;
+}
 // lenghted card
+
+
+
+
+
 
 .card_aligned {
     width: 100%;
-    height: 140px;
+    height: auto;
     border: 1px solid #ccc;
     display: flex;
     margin-bottom: 12px;;
 
+    & img {
+        width: 120px;
+        height: 100px;
+        padding: 10px;
+    }
+
     &_img {
         width: 40%;
+        padding: 10px;
         height: auto;
 }
     &_txt {
@@ -169,61 +206,82 @@
         padding: 12px;
 
         &_link {
-            font-size: 1.3rem;
-            color: blue;
+            font-size: 1rem;
+            color:$dark;
+
+            &:hover {
+                color: $dark;
+            }
         }
         & p {
             padding:7px 0px;
-            font-size: 1rem;
+            color: $para-color
         }
+    }
+}
+
+.card_planImg {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 7px 12px;
+    background: rgba(21, 21, 21, 0.49);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    a {
+        font-size: 1.4rem;
+        color: $light;
+
+        &:hover {
+            color:$para-color;
+        }
+    }
+    & .heart {
+        color: $danger;
+        font-size: 1.3rem;
     }
 }
 
 // mordal card
 
-.profile {
-    width: 300px;
-    height: 200px;
-    background-color: white;
-    border: 1px solid #ddd;
+// .profile {
+//     width: 300px;
+//     height: 200px;
+//     background-color: white;
+//     border: 1px solid #ddd;
    
 
-    &_content {
-        padding: 20px;
-        text-align: center;
+//     &_content {
+//         padding: 20px;
+//         text-align: center;
         
-        &_img {
-            width: 70px;
-            height: 70px;
-            border-radius: 50%;
-            -webkit-border-radius: 50%;
-            -moz-border-radius: 50%;
-            -ms-border-radius: 50%;
-            -o-border-radius: 50%;
-        }
-    }
+//         &_img {
+//             width: 70px;
+//             height: 70px;
+//             border-radius: 50%;
+//             -webkit-border-radius: 50%;
+//             -moz-border-radius: 50%;
+//             -ms-border-radius: 50%;
+//             -o-border-radius: 50%;
+//         }
+//     }
 
    
-    h4 {
-        font-size: 1.3rem;
-        padding:3px;
-        font-weight: 500;
-    }
-    p {
-        color: rgb(97, 97, 97);
-        font-size: 1.2rem;
-        padding-bottom: 5px;
-    }
+//     h4 {
+//         font-size: 1.3rem;
+//         padding:3px;
+//         font-weight: 500;
+//     }
+//     p {
+//         color: rgb(97, 97, 97);
+//         font-size: 1.2rem;
+//         padding-bottom: 5px;
+//     }
 
-}
-
-
-
-@media screen and (max-width: 390px) {
-    .card {
-        display: none;
-    }
-}
+// }
 
 
 
